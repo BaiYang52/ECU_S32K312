@@ -1,0 +1,18 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\IAR_Project\\S32K312_IAR_WorkSpace.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\IAR_Project\\S32K312_IAR_WorkSpace.eww": {
+      "configs": {
+        "${workspaceFolder}\\IAR_Project\\S32K312_IAR_Project.ewp": "Debug"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\IAR_Project\\S32K312_IAR_Project.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "D:\\SoftWare\\Programming\\IARSystems\\IAR_9.32.1"
+  }
+}
