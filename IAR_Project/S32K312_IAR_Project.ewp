@@ -184,7 +184,7 @@
                 </option>
                 <option>
                     <name>DSPExtension</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>TrustZone</name>
@@ -226,7 +226,12 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state></state>
+                    <state>S32K312</state>
+                    <state>S32K3XX</state>
+                    <state>_ICCARM_</state>
+                    <state>_AR_C_S32K3XX_</state>
+                    <state>USING_OS_AUTOSAROS</state>
+                    <state>DISABLE_MCAL_INTERMODULE_ASR_CHECK</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -515,7 +520,12 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    <state></state>
+                    <state>S32K312</state>
+                    <state>S32K3XX</state>
+                    <state>_ICCARM_</state>
+                    <state>_AR_C_S32K3XX_</state>
+                    <state>USING_OS_AUTOSAROS</state>
+                    <state>DISABLE_MCAL_INTERMODULE_ASR_CHECK</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -591,7 +601,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state></state>
+                    <state>$FILE_BNAME$.o</state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -645,7 +655,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>S32K312_IAR_Project.srec</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -752,11 +762,11 @@
                 </option>
                 <option>
                     <name>IlinkIcfOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\generic_cortex.icf</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Platform_TS_T40D34M40I0R0\build_files\iar\linker_flash_s32k312.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
