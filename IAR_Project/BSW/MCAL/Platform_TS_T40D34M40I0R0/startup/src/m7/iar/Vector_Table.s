@@ -32,7 +32,7 @@
 *
 ==================================================================================================*/
 
-    SECTION .intvec:DATA:ROOT(2)
+    SECTION .intvec_init:DATA:ROOT(2)
     EXTERN undefined_handler
     EXTERN undefined_handler
     EXTERN _core_loop
@@ -50,6 +50,7 @@
     EXTERN SysTick_Handler           /* SysTick Handler */ /* 15*/
 
 VTABLE
+__vector_table:
     DCD __Stack_dtcm_start        /* Top of Stack for Initial Stack Pointer */
 #ifdef MCAL_TESTING_ENVIRONMENT
     DCD _core_loop
