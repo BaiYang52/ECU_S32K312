@@ -10,5 +10,9 @@ int main()
     }
     Mcu_DistributePllClock();
     Mcu_SetMode(McuModeSettingConf_0);
+    while(1)
+    {
+        /* Busy wait */
+    }
     return 0;
 }
