@@ -221,7 +221,7 @@ static const Clock_Ip_PllConfigType Clock_Ip_PllConfigurations_0[CLOCK_IP_CONFIG
 
     {
         PLL_CLK,                  /*!<     name;                    */
-        0U,                           /*!<     enable;                  */
+        1U,                           /*!<     enable;                  */
         FXOSC_CLK,                    /*!<     inputReference           */
         0U,                           /*!<     bypass;                  */
         2U,                           /*!<     predivider;              */
@@ -253,17 +253,17 @@ static const Clock_Ip_SelectorConfigType Clock_Ip_SelectorConfigurations_0[CLOCK
 
     {
         SCS_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        PLL_PHI0_CLK,                       /* Name of the selected input source */
     },
         
     {
         STMA_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        AIPS_PLAT_CLK,                       /* Name of the selected input source */
     },
         
     {
         FLEXCANA_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        AIPS_PLAT_CLK,                       /* Name of the selected input source */
     },
         
     {
@@ -296,7 +296,7 @@ static const Clock_Ip_SelectorConfigType Clock_Ip_SelectorConfigurations_0[CLOCK
 static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_IP_CONFIGURED_DIVIDERS_0_NO] = {
     {
         PLL_POSTDIV_CLK,
-        2U,
+        4U,
         {
             0U,
         }
@@ -304,7 +304,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         PLL_PHI0_CLK,
-        0U,
+        2U,
         {
             0U,
         }
@@ -312,7 +312,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         PLL_PHI1_CLK,
-        0U,
+        5U,
         {
             0U,
         }
@@ -328,14 +328,6 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         AIPS_PLAT_CLK,
-        1U,
-        {
-            0U,
-        }
-    },
-
-    {
-        AIPS_SLOW_CLK,
         2U,
         {
             0U,
@@ -343,8 +335,16 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
     },
 
     {
+        AIPS_SLOW_CLK,
+        4U,
+        {
+            0U,
+        }
+    },
+
+    {
         HSE_CLK,
-        1U,
+        2U,
         {
             0U,
         }
@@ -352,7 +352,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         DCM_CLK,
-        1U,
+        4U,
         {
             0U,
         }
@@ -360,7 +360,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         STMA_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -368,7 +368,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0[CLOCK_I
 
     {
         FLEXCANA_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -444,7 +444,7 @@ static const Clock_Ip_CmuConfigType Clock_Ip_CmuConfigurations_0[CLOCK_IP_CONFIG
         CMU_FC_IER_FLLAIE(0U) |
         CMU_FC_IER_FHHAIE(0U)
         ),
-        48000000U,
+        120000000U,
         {
             0U,          /* Start index in register values array */
             0U,          /* End index in register values array */
@@ -459,7 +459,7 @@ static const Clock_Ip_CmuConfigType Clock_Ip_CmuConfigurations_0[CLOCK_IP_CONFIG
         CMU_FC_IER_FLLAIE(0U) |
         CMU_FC_IER_FHHAIE(0U)
         ),
-        48000000U,
+        60000000U,
         {
             0U,          /* Start index in register values array */
             0U,          /* End index in register values array */
@@ -488,19 +488,19 @@ static const Clock_Ip_ConfiguredFrequencyType Clock_Ip_ConfiguredFrequencyConfig
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 3U
     {
         CORE_CLK,
-        48000000U,
+        120000000U,
     },
     #endif
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 4U
     {
         AIPS_PLAT_CLK,
-        48000000U,
+        60000000U,
     },
     #endif
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 5U
     {
         AIPS_SLOW_CLK,
-        24000000U,
+        30000000U,
     },
     #endif
 };
