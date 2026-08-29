@@ -47,6 +47,24 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
+      <d:ctr name="CanIf">
+        <d:var name="ConfigurationFileURL" value="config\CanIf.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="CanIf_TS_T40D34M40I0R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="4.0.0 P24_D2405"/>
+      </d:ctr>
       <d:ctr name="Can_43_FLEXCAN">
         <d:var name="ConfigurationFileURL" value="config\Can_43_FLEXCAN.xdm"/>
         <d:var name="ConfigurationFormat" value="xdm"/>
@@ -78,6 +96,24 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
         <d:var name="ModuleId" value="Dio_TS_T40D34M40I0R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="4.0.0 P24_D2405"/>
+      </d:ctr>
+      <d:ctr name="EcuM">
+        <d:var name="ConfigurationFileURL" value="config\EcuM.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="EcuM_TS_T40D34M40I0R0"/>
         <d:var name="Enabled" value="TRUE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>

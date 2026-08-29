@@ -134,13 +134,13 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB[1U]=
         (boolean)FALSE,
         #if (FLEXCAN_IP_FEATURE_HAS_ENHANCED_RX_FIFO == STD_ON)
         /* The number of standard ID filter elements */
-        0U,
+        2U,
         /* The number of extended ID filter elements */
         0U,
         /* The number of enhanced Rx FIFO watermark */
         19U,
         /* The Enhanced Rx FIFO feature is enabled or not. */
-        (boolean)FALSE,
+        (boolean)TRUE,
         #endif
         /* Loopback enabled .flexcanMode */
         FLEXCAN_NORMAL_MODE,
@@ -165,19 +165,19 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB[1U]=
         (boolean)FALSE,
         /* Values for normal baudrate .bitrate */
         {
-            (uint8)4U,
-            (uint8)4U,
-            (uint8)5U,
-            (uint16)9,
-            (uint8)0U
+            (uint8)3U,
+            (uint8)2U,
+            (uint8)1U,
+            (uint16)11,
+            (uint8)1U
         },
         /* Values for CBT baudrate .bitrate_cbt */
         {
-            (uint8)5U,
             (uint8)4U,
-            (uint8)5U,
-            (uint16)9U,
-            (uint8)0U
+            (uint8)2U,
+            (uint8)1U,
+            (uint16)11U,
+            (uint8)1U
         },
         /* Fifo Transfer Type .transfer_type */
         FLEXCAN_RXFIFO_USING_INTERRUPTS,
