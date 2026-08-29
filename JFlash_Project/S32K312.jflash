@@ -3,7 +3,7 @@
 [GENERAL]
   aATEModuleSel[24] = 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
   ConnectMode = 0
-  CurrentFile = "E:\Autosar S32K\weifengdq\s32k3\s32k312_can_x6\Release_FLASH\s32k312_can_x6.hex"
+  CurrentFile = "E:\Autosar S32K\weifengdq\s32k3\s32k312_can0\Release_FLASH\s32k312_can0.hex"
   DataFileSAddr = 0x00000000
   GUIMode = 0
   HostName = ""

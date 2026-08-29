@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCANExplorerProject Version="5.0" Name="S32K312_CANFD">
+    <Connections AutoReset="0" IgnoreRTRLength="0" ProcessRTR="1">
+        <Connection Bus="1" Enabled="0" Protocol="0" BitRate="276" Connection="PCAN1@pcan_usb" Name="Connection1"/>
+        <Connection Bus="2" Enabled="0" Protocol="0" BitRate="276" Connection="PCAN1@pcan_usb" Name="Connection2"/>
+        <Connection Bus="3" Enabled="0" Protocol="0" BitRate="276" Connection="PCAN1@pcan_usb" Name="Connection3"/>
+        <Connection Bus="4" Enabled="0" Protocol="0" BitRate="276" Connection="PCAN1@pcan_usb" Name="Connection4"/>
+    </Connections>
+    <MessageFilters/>
+    <Files/>
+</PCANExplorerProject>
