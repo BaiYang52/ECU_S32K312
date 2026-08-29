@@ -1,0 +1,74 @@
+{
+    "configurations": [
+        {
+            "name": "S32K312-IAR",
+            "includePath": [
+                "${workspaceFolder}/IAR_Project",
+                "${workspaceFolder}/IAR_Project/BSW",
+                "${workspaceFolder}/IAR_Project/BSW/Config",
+                "${workspaceFolder}/IAR_Project/BSW/Config/MCAL_Config",
+                "${workspaceFolder}/IAR_Project/BSW/Config/MCAL_Config/Include",
+                "${workspaceFolder}/IAR_Project/BSW/Config/MCAL_Config/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/BaseNXP_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/BaseNXP_TS_T40D34M40I0R0/header",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/BaseNXP_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/BaseNXP_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Det_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Det_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Det_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Dio_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Dio_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Dio_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Gpt_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Gpt_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Gpt_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcl_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcl_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcl_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcu_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcu_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Mcu_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Os_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Os_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Os_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/build_files",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/build_files/iar",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/startup",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/startup/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/startup/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/startup/src/m7",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Platform_TS_T40D34M40I0R0/startup/src/m7/iar",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Port_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Port_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Port_TS_T40D34M40I0R0/src",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Rte_TS_T40D34M40I0R0",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Rte_TS_T40D34M40I0R0/include",
+                "${workspaceFolder}/IAR_Project/BSW/MCAL/Rte_TS_T40D34M40I0R0/src"
+            ],
+            "defines": [
+                "__ICCARM__",
+                "_ICCARM_",
+                "S32K312",
+                "S32K3XX",
+                "_AR_C_S32K3XX_",
+                "USING_OS_AUTOSAROS",
+                "DISABLE_MCAL_INTERMODULE_ASR_CHECK"
+            ],
+            "compilerPath": "D:/SoftWare/Programming/IARSystems/EmbeddedWorkbench9.2/arm/bin/iccarm.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/IAR_Project"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
