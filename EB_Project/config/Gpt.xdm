@@ -172,9 +172,7 @@
                       <a:v>@CALC</a:v>
                     </a:a>
                   </d:var>
-                  <d:var name="GptIsrEnable" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="@DEF"/>
-                  </d:var>
+                  <d:var name="GptIsrEnable" type="BOOLEAN" value="true"/>
                   <d:var name="GptChannelIsUsed" type="BOOLEAN" value="true"/>
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_6" type="IDENTIFIABLE">
@@ -184,9 +182,7 @@
                       <a:v>@CALC</a:v>
                     </a:a>
                   </d:var>
-                  <d:var name="GptIsrEnable" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="@DEF"/>
-                  </d:var>
+                  <d:var name="GptIsrEnable" type="BOOLEAN" value="true"/>
                   <d:var name="GptChannelIsUsed" type="BOOLEAN" value="true"/>
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_7" type="IDENTIFIABLE">

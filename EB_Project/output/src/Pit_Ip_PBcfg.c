@@ -122,7 +122,7 @@ const Pit_Ip_ChannelConfigType PIT_0_ChannelConfig_PB[1U] =
         /** @brief PIT Channel Id */
         0U,
         /** @brief PIT Enable Interrupt */
-        (boolean)(FALSE), /* Interrupt disabled */
+        (boolean)(TRUE), /* Interrupt enabled */
         /** @brief PIT callback name */
         &Gpt_ProcessCommonInterrupt,
         /** @brief PIT callbackparam */

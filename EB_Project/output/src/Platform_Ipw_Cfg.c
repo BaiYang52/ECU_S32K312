@@ -93,7 +93,7 @@ extern "C" {
 
 /* Definition of the configuration structure for Platform IPW */
 const Platform_Ipw_ConfigType ipwConfig = {
-     NULL_PTR, /* Interrupt controller configuration */
+    &intCtrlConfig , /* Interrupt controller configuration */
      NULL_PTR, /* System settings */
      NULL_PTR  /* Interrupt monitor settings */
     

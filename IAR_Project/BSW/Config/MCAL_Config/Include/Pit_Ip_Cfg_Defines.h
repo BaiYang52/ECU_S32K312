@@ -106,6 +106,7 @@ extern "C"{
 *
 * @brief IRQ Defines for each channel used
 */
+#define PIT_0_ISR_USED
 
 /**
 *

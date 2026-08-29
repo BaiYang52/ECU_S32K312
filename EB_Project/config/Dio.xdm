@@ -55,7 +55,7 @@
                   <d:ctr name="DioPort_PTB_L" type="IDENTIFIABLE">
                     <d:var name="DioPortId" type="INTEGER" value="2"/>
                     <d:lst name="DioChannel" type="MAP">
-                      <d:ctr name="DioChannel_0" type="IDENTIFIABLE">
+                      <d:ctr name="DioChannel_PB10" type="IDENTIFIABLE">
                         <d:var name="DioChannelId" type="INTEGER" value="10"/>
                         <d:var name="PDACSlot" type="ENUMERATION" 
                                value="VIRTUAL_WRAPPER_PDAC0">

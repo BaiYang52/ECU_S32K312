@@ -1,4 +1,7 @@
 #include "Mcu.h"
+#include "Mcl.h"
+#include "Platform.h"
+#include "Gpt.h"
 
 int main()
 {
@@ -10,6 +13,13 @@ int main()
     }
     Mcu_DistributePllClock();
     Mcu_SetMode(McuModeSettingConf_0);
+
+    Mcl_Init(NULL_PTR);
+    Platform_Init(NULL_PTR);
+
+    Gpt_Init(&Gpt_Config);
+    Gpt_EnableNotification(GptConf_GptChannelConfiguration_GptChannelConfiguration_0);
+    Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_0, 6.0E4);
     while(1)
     {
         /* Busy wait */
