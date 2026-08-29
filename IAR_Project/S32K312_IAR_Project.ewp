@@ -367,6 +367,9 @@
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\header</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\src</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src</state>
@@ -683,6 +686,9 @@
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\header</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\src</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src</state>
@@ -2289,6 +2295,21 @@
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Cache_Ip_Cfg_DeviceRegisters.h</name>
                     </file>
                     <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Can_43_FLEXCAN_Cfg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Can_43_FLEXCAN_Externals.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Can_43_FLEXCAN_Ipw_Cfg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Can_43_FLEXCAN_Ipw_PBcfg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Can_43_FLEXCAN_PBcfg.h</name>
+                    </file>
+                    <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\CDD_Mcl_Cfg.h</name>
                     </file>
                     <file>
@@ -2344,6 +2365,15 @@
                     </file>
                     <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Emios_Mcl_Ip_PBcfg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\FlexCAN_Ip_Cfg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\FlexCAN_Ip_CfgDefines.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\FlexCAN_Ip_PBcfg.h</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\Include\Flexio_Mcl_Ip_Cfg.h</name>
@@ -2529,6 +2559,12 @@
                 <group>
                     <name>src</name>
                     <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\Can_43_FLEXCAN_Ipw_PBcfg.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\Can_43_FLEXCAN_PBcfg.c</name>
+                    </file>
+                    <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\CDD_Mcl_Cfg.c</name>
                     </file>
                     <file>
@@ -2554,6 +2590,9 @@
                     </file>
                     <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\Emios_Mcl_Ip_PBcfg.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\FlexCAN_Ip_PBcfg.c</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\BSW\Config\MCAL_Config\src\Flexio_Mcl_Ip_PBcfg.c</name>
@@ -3169,6 +3208,72 @@
                     </file>
                     <file>
                         <name>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\src\OsIf_Timer_System_Internal_Systick.c</name>
+                    </file>
+                </group>
+            </group>
+            <group>
+                <name>Can_43_FLEXCAN_TS_T40D34M40I0R0</name>
+                <group>
+                    <name>include</name>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_43_FLEXCAN.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_43_FLEXCAN_Ipw.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_43_FLEXCAN_Ipw_Irq.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_43_FLEXCAN_Ipw_Types.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_43_FLEXCAN_Irq.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\Can_Flexcan_Types.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_DeviceReg.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_HwAccess.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_Irq.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_TrustedFunctions.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_Types.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\FlexCAN_Ip_Wrapper.h</name>
+                    </file>
+                </group>
+                <group>
+                    <name>src</name>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\Can_43_FLEXCAN.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\Can_43_FLEXCAN_Ipw.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\Can_43_FLEXCAN_Irq.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\FlexCAN_Ip.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\FlexCAN_Ip_HwAccess.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\FlexCAN_Ip_Irq.c</name>
                     </file>
                 </group>
             </group>
