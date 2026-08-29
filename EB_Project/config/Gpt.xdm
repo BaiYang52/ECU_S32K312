@@ -41,7 +41,7 @@
                     <d:var name="GptChannelMode" type="ENUMERATION" 
                            value="GPT_CH_MODE_CONTINUOUS"/>
                     <d:var name="GptChannelTickFrequency" type="FLOAT" 
-                           value="6.0E7">
+                           value="3.0E7">
                       <a:a name="IMPORTER_INFO">
                         <a:v>@CALC</a:v>
                         <a:v>@DEF</a:v>
@@ -631,7 +631,7 @@
                 <d:lst name="GptClockReferencePoint" type="MAP">
                   <d:ctr name="GptClockReferencePoint_0" type="IDENTIFIABLE">
                     <d:ref name="GptClockReference" type="REFERENCE" 
-                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReference_STM0_CLK"/>
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReference_AIPS_SLOW_CLK"/>
                   </d:ctr>
                 </d:lst>
               </d:ctr>
