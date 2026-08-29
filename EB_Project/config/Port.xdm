@@ -220,9 +220,7 @@
                 <d:lst name="UntouchedIMCR" type="MAP"/>
               </d:ctr>
               <d:ctr name="PortGeneral" type="IDENTIFIABLE">
-                <d:var name="PortDevErrorDetect" type="BOOLEAN" value="true">
-                  <a:a name="IMPORTER_INFO" value="@DEF"/>
-                </d:var>
+                <d:var name="PortDevErrorDetect" type="BOOLEAN" value="false"/>
                 <d:var name="SIUL2PortIPDevErrorDetect" type="BOOLEAN" 
                        value="false">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>

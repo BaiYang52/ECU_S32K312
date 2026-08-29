@@ -354,9 +354,6 @@
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\BSW</state>
                     <state>$PROJ_DIR$\BSW\Config</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config\Include</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config\src</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config\Include</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config\src</state>
@@ -365,6 +362,9 @@
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\header</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\src</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0\src</state>
@@ -662,9 +662,6 @@
                     <name>AUserIncludes</name>
                     <state>$PROJ_DIR$\BSW</state>
                     <state>$PROJ_DIR$\BSW\Config</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config\Include</state>
-                    <state>$PROJ_DIR$\BSW\Config\BSW_Config\src</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config\Include</state>
                     <state>$PROJ_DIR$\BSW\Config\MCAL_Config\src</state>
@@ -673,6 +670,9 @@
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\header</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\BaseNXP_TS_T40D34M40I0R0\src</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include</state>
+                    <state>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0\include</state>
                     <state>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0\src</state>
@@ -3145,6 +3145,27 @@
                 </group>
             </group>
             <group>
+                <name>Det_TS_T40D34M40I0R0</name>
+                <group>
+                    <name>include</name>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include\Det.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\include\Det_stub.h</name>
+                    </file>
+                </group>
+                <group>
+                    <name>src</name>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src\Det.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Det_TS_T40D34M40I0R0\src\Det_stub.c</name>
+                    </file>
+                </group>
+            </group>
+            <group>
                 <name>Dio_TS_T40D34M40I0R0</name>
                 <group>
                     <name>include</name>
@@ -4233,6 +4254,6 @@
         </group>
     </group>
     <file>
-        <name>$PROJ_DIR$\main.c</name>
+        <name>$PROJ_DIR$\Main.c</name>
     </file>
 </project>

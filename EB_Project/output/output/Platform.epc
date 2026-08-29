@@ -108,7 +108,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M40I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>PIT0_IRQn</VALUE>
+                      <VALUE>PIT_0_ISR</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M40I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>

@@ -83,7 +83,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="PIT0_IRQn"/>
+                             value="PIT_0_ISR"/>
                     </d:ctr>
                   </d:lst>
                   <d:ref name="PlatformNvicEcucPartitionRef" type="REFERENCE" >

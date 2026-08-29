@@ -1590,7 +1590,7 @@ PORT_CONFIG_PB
 *
 * @implements   PORT_DEV_ERROR_DETECT_define
 */
-#define PORT_DEV_ERROR_DETECT           (STD_ON)
+#define PORT_DEV_ERROR_DETECT           (STD_OFF)
 
 /**
 * @brief Use/remove Port_SetPinDirection function from the compiled driver

@@ -70,7 +70,7 @@ extern "C" {
     
 /* List of configurations for interrupts */
 static const IntCtrl_Ip_IrqConfigType aIrqConfiguration[] = {
-    {PIT0_IRQn, (boolean)TRUE, 0U, PIT0_IRQn},
+    {PIT0_IRQn, (boolean)TRUE, 0U, PIT_0_ISR},
 };
 
 /* Configuration structure for interrupt controller */

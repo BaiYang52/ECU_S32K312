@@ -102,7 +102,7 @@ extern "C"{
 * @brief    GPT_REPORT_WAKEUP_SOURCE switch
 * @details  Enable/disable GPT_REPORT_WAKEUP_SOURCE.
 */
-#define GPT_REPORT_WAKEUP_SOURCE (STD_ON)
+#define GPT_REPORT_WAKEUP_SOURCE (STD_OFF)
 
 /*================================================================================================*/
 /**
@@ -139,7 +139,7 @@ extern "C"{
 * @brief    GPT_WAKEUP_FUNCTIONALITY_API switch
 * @details  Enable/disable GPT_VERSION_INFO_API.
 */
-#define GPT_WAKEUP_FUNCTIONALITY_API (STD_ON)
+#define GPT_WAKEUP_FUNCTIONALITY_API (STD_OFF)
 
 /*================================================================================================*/
 /**

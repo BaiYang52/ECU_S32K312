@@ -76,7 +76,7 @@ extern const IntCtrl_Ip_CtrlConfigType intCtrlConfig;
 /* Declaration of interrupt handlers 
  * NOTE: For application specific handlers, these functions must be implemented in the application code!
  */
-extern void PIT0_IRQn(void);
+extern void PIT_0_ISR(void);
 
 
 #define PLATFORM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
