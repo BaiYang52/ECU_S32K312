@@ -77,6 +77,9 @@ extern const IntCtrl_Ip_CtrlConfigType intCtrlConfig;
  * NOTE: For application specific handlers, these functions must be implemented in the application code!
  */
 extern void PIT_0_ISR(void);
+extern void CAN0_ORED_IRQHandler(void);
+extern void CAN0_ORED_0_31_MB_IRQHandler(void);
+extern void CAN0_ORED_32_63_MB_IRQHandler(void);
 
 
 #define PLATFORM_STOP_SEC_CONFIG_DATA_UNSPECIFIED

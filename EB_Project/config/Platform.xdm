@@ -85,6 +85,36 @@
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
                              value="PIT_0_ISR"/>
                     </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_1" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FlexCAN0_0_IRQn"/>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="CAN0_ORED_IRQHandler"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_2" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FlexCAN0_1_IRQn"/>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="CAN0_ORED_0_31_MB_IRQHandler"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_3" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FlexCAN0_2_IRQn"/>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="CAN0_ORED_32_63_MB_IRQHandler"/>
+                    </d:ctr>
                   </d:lst>
                   <d:ref name="PlatformNvicEcucPartitionRef" type="REFERENCE" >
                     <a:a name="ENABLE" value="false"/>
