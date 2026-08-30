@@ -265,7 +265,7 @@
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>CanHardwareObject_1_RX</SHORT-NAME>
+                  <SHORT-NAME>CanHardwareObject_1_Rx</SHORT-NAME>
                   <INDEX>1</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M40I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -315,7 +315,7 @@
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>CanHardwareObject_2_TX</SHORT-NAME>
+                  <SHORT-NAME>CanHardwareObject_2_Tx</SHORT-NAME>
                   <INDEX>2</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Can_43_FLEXCAN_TS_T40D34M40I0R0/Can/CanConfigSet/CanHardwareObject</DEFINITION-REF>
                   <PARAMETER-VALUES>

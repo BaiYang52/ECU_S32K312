@@ -570,7 +570,7 @@
                     </d:lst>
                     <d:lst name="CanTTHardwareObjectTrigger" type="MAP"/>
                   </d:ctr>
-                  <d:ctr name="CanHardwareObject_1_RX" type="IDENTIFIABLE">
+                  <d:ctr name="CanHardwareObject_1_Rx" type="IDENTIFIABLE">
                     <d:var name="CanFdPaddingValue" type="INTEGER" value="0">
                       <a:a name="ENABLE" value="false"/>
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
@@ -622,7 +622,7 @@
                     </d:lst>
                     <d:lst name="CanTTHardwareObjectTrigger" type="MAP"/>
                   </d:ctr>
-                  <d:ctr name="CanHardwareObject_2_TX" type="IDENTIFIABLE">
+                  <d:ctr name="CanHardwareObject_2_Tx" type="IDENTIFIABLE">
                     <d:var name="CanFdPaddingValue" type="INTEGER" value="0">
                       <a:a name="ENABLE" value="false"/>
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
