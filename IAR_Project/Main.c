@@ -54,7 +54,7 @@ void Task_1ms(void)
 
 	/* Transmit via the configured Tx Hardware Object */
 	Ret = Can_43_FLEXCAN_Write(
-	         Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_2_TX,
+	         Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_2_Tx,
 	         &CanWrite_Data);
 
 	/* Increment payload counter regardless of write result
