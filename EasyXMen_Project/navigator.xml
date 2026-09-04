@@ -1,4 +1,12 @@
 <?xml version="1.1" encoding="ASCII"?>
 <cn.com.isoft.mal.model:BswBuilderModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cn.com.isoft.mal.model="http:///cn/com/isoft/mal/model.ecore" name="BSW_Builder" projectName="S32K312_BSW">
-  <ecuConfigurationModels pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml" projectName="S32K312_BSW"/>
+  <ecuConfigurationModels pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml" projectName="S32K312_BSW">
+    <moduleKindModels kindName="MCAL">
+      <moduleModels moduleName="Can" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="Dio" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="Gpt" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="Mcu" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="Port" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+    </moduleKindModels>
+  </ecuConfigurationModels>
 </cn.com.isoft.mal.model:BswBuilderModel>
