@@ -5,6 +5,7 @@
       <moduleModels moduleName="CanIf" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="CanSM" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="Com" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="ComM" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="EcuC" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="PduR" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
     </moduleKindModels>
