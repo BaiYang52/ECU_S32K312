@@ -18,6 +18,7 @@
     </moduleKindModels>
     <moduleKindModels kindName="SYS">
       <moduleModels moduleName="BswM" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="EcuM" projectName="S32K312_BSW" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
     </moduleKindModels>
   </ecuConfigurationModels>
 </cn.com.isoft.mal.model:BswBuilderModel>

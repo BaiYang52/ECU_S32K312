@@ -24,10 +24,330 @@
                 <ECUC-CONTAINER-VALUE UUID="4a4c82cf-5928-4a48-99e2-db50fe9b8ddb">
                   <SHORT-NAME>BswMArbitration</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_OV7RYKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMEventRequestPort_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMEventRequestPort</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMEventRequestPort/BswMEventRequestProcessing</DEFINITION-REF>
+                          <VALUE>BSWM_IMMEDIATE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_OV7RYahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMEventRequestSource</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMEventRequestPort/BswMEventRequestSource</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_QjmC0KhjEfGWp62puc052w">
+                              <SHORT-NAME>BswMComMInitiateReset</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMEventRequestPort/BswMEventRequestSource/BswMComMInitiateReset</DEFINITION-REF>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_TukKAKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMLogicalExpression_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression/BswMArgumentRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMModeCondition_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_UytuoKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMModeRequestPort_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMRequestProcessing</DEFINITION-REF>
+                          <VALUE>BSWM_IMMEDIATE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_UytuoahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMModeRequestSource</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMModeRequestSource</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_Xzew8KhjEfGWp62puc052w">
+                              <SHORT-NAME>BswMEcuMIndication</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMModeRequestSource/BswMEcuMIndication</DEFINITION-REF>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_Y6IP8KhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMModeRequestPort_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMRequestProcessing</DEFINITION-REF>
+                          <VALUE>BSWM_IMMEDIATE</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_Y6IP8ahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMModeRequestSource</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMModeRequestSource</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_fFkegKhjEfGWp62puc052w">
+                              <SHORT-NAME>BswMGenericRequest</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMModeRequestSource/BswMGenericRequest</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-NUMERICAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort/BswMModeRequestSource/BswMGenericRequest/BswMModeRequesterId</DEFINITION-REF>
+                                  <VALUE>0</VALUE>
+                                </ECUC-NUMERICAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_jjOVkKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMModeCondition_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionType</DEFINITION-REF>
+                          <VALUE>BSWM_EQUALS</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionMode</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_Caxp0KhqEfGWp62puc052w">
+                          <SHORT-NAME>BswMConditionValue</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_D4zuEKhqEfGWp62puc052w">
+                              <SHORT-NAME>BswMBswMode</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue/BswMBswMode</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue/BswMBswMode/BswModeCompareValue</DEFINITION-REF>
+                                  <VALUE>ECUM_STATE_STARTUP</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_obTe0KhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMModeCondition_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionType</DEFINITION-REF>
+                          <VALUE>BSWM_EQUALS</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionMode</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMModeRequestPort_1</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_GOoV8KhqEfGWp62puc052w">
+                          <SHORT-NAME>BswMConditionValue</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_GkFBgKhqEfGWp62puc052w">
+                              <SHORT-NAME>BswMBswMode</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue/BswMBswMode</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMModeCondition/BswMConditionValue/BswMBswMode/BswMBswRequestedMode</DEFINITION-REF>
+                                  <VALUE>1</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_xBPZ4KhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMLogicalExpression_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression/BswMArgumentRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMModeCondition_1</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_zZ3eIKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMRule_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMNestedExecutionOnly</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleInitState</DEFINITION-REF>
+                          <VALUE>BSWM_UNDEFINED</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleExpressionRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleTrueActionList</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMModeControl/BswMActionList_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_zx2gUKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMRule_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMNestedExecutionOnly</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleInitState</DEFINITION-REF>
+                          <VALUE>BSWM_UNDEFINED</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleExpressionRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMArbitration/BswMLogicalExpression_1</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMArbitration/BswMRule/BswMRuleTrueActionList</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMModeControl/BswMActionList_1</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE UUID="5ce9976d-a157-4c74-a560-fc2b507f378a">
                   <SHORT-NAME>BswMModeControl</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_8BNucKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMAction_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_8BNucahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMAvailableActions</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_Gnsk8KhkEfGWp62puc052w">
+                              <SHORT-NAME>BswMEcuMDriverInitListBswM</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions/BswMEcuMDriverInitListBswM</DEFINITION-REF>
+                              <REFERENCE-VALUES>
+                                <ECUC-REFERENCE-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions/BswMEcuMDriverInitListBswM/BswMEcuMDriverInitListBswMRef</DEFINITION-REF>
+                                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMDriverInitListBswM_0</VALUE-REF>
+                                </ECUC-REFERENCE-VALUE>
+                              </REFERENCE-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_8NkvcKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMAction_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_8NkvcahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMAvailableActions</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions</DEFINITION-REF>
+                          <SUB-CONTAINERS>
+                            <ECUC-CONTAINER-VALUE UUID="_Pr2tEKhkEfGWp62puc052w">
+                              <SHORT-NAME>BswMUserCallout</SHORT-NAME>
+                              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions/BswMUserCallout</DEFINITION-REF>
+                              <PARAMETER-VALUES>
+                                <ECUC-TEXTUAL-PARAM-VALUE>
+                                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMAction/BswMAvailableActions/BswMUserCallout/BswMUserCalloutFunction</DEFINITION-REF>
+                                  <VALUE>BswMUserCalloutFunc</VALUE>
+                                </ECUC-TEXTUAL-PARAM-VALUE>
+                              </PARAMETER-VALUES>
+                            </ECUC-CONTAINER-VALUE>
+                          </SUB-CONTAINERS>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_9xfZQKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMActionList_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListExecution</DEFINITION-REF>
+                          <VALUE>BSWM_CONDITION</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_9xfZQahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMActionListItem_0</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMAbortOnFail</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMActionListItemIndex</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMActionListItemRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMModeControl/BswMAction_0</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_99iRMKhjEfGWp62puc052w">
+                      <SHORT-NAME>BswMActionList_1</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListExecution</DEFINITION-REF>
+                          <VALUE>BSWM_CONDITION</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_99iRMahjEfGWp62puc052w">
+                          <SHORT-NAME>BswMActionListItem_0</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMAbortOnFail</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMActionListItemIndex</DEFINITION-REF>
+                              <VALUE>0</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/BswM/BswMConfig/BswMModeControl/BswMActionList/BswMActionListItem/BswMActionListItemRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/BswM/BswMConfig/BswMModeControl/BswMAction_1</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
@@ -57,7 +377,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMEcuMEnabled</DEFINITION-REF>
-                  <VALUE>false</VALUE>
+                  <VALUE>true</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMEthIfEnabled</DEFINITION-REF>
@@ -73,7 +393,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMGenericRequestEnabled</DEFINITION-REF>
-                  <VALUE>false</VALUE>
+                  <VALUE>true</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMJ1939DcmEnabled</DEFINITION-REF>
@@ -110,6 +430,10 @@
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMVersionInfoApi</DEFINITION-REF>
                   <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTOSAR/BswM/BswMGeneral/BswMMainFunctionPeriod</DEFINITION-REF>
+                  <VALUE>0.01</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
