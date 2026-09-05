@@ -18,7 +18,7 @@ def scan_directories(root_dir):
     # 递归遍历所有子目录
     for dirpath, dirnames, filenames in os.walk(root_dir):
         # 过滤掉隐藏目录（以.开头的目录）和DEBUG目录
-        dirnames[:] = [d for d in dirnames if not d.startswith('.') and d != 'Debug' and d != 'Release']
+        dirnames[:] = [d for d in dirnames if not d.startswith('.') and d != 'Debug' and d != 'Release' and d != 'settings']
         
         # 计算相对路径
         rel_path = os.path.relpath(dirpath, PROJECT_ROOT)

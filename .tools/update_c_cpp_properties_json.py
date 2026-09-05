@@ -28,7 +28,7 @@ def scan_directories(root_dir):
         # 过滤掉隐藏目录、Debug、Release
         dirnames[:] = [d for d in dirnames
                        if not d.startswith('.')
-                       and d not in ('Debug', 'Release')]
+                       and d not in ('Debug', 'Release', 'settings')]
 
         # 计算相对路径
         rel_path = os.path.relpath(dirpath, root_dir)

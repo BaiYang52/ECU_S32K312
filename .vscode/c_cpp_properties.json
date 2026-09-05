@@ -79,8 +79,7 @@
                 "${workspaceFolder}/IAR_Project/BSW/MCAL/Rte_TS_T40D34M40I0R0/src",
                 "${workspaceFolder}/IAR_Project/BSW/PduR",
                 "${workspaceFolder}/IAR_Project/BSW/PduR/inc",
-                "${workspaceFolder}/IAR_Project/BSW/PduR/src",
-                "${workspaceFolder}/IAR_Project/settings"
+                "${workspaceFolder}/IAR_Project/BSW/PduR/src"
             ],
             "defines": [
                 "__ICCARM__",
