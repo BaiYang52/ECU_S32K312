@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_Cbk.h
  * @licence     : 
- * @date        : 2026-09-05 09:47:08
+ * @date        : 2026-09-05 20:35:57
  * @customer    : iSoft
  * @description : Callback header file of Rte
  * @generator   : AUTOSAR classic Platform R23-11

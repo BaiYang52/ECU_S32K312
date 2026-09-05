@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : EcuM_Callout_Stubs.c
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-05 20:35:47
  * @customer    : iSoft
  * @description : Post-build configuration parameter of EcuM
  * @generator   : AUTOSAR classic Platform R23-11
