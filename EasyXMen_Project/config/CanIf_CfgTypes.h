@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_CfgTypes.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-05 20:35:46
  * @customer    : iSoft
  * @description : Configuration type for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -80,14 +80,17 @@ typedef struct CanIf_DispatchConfigTag
  */
 typedef struct Can_DriverApiTag
 {
-    Can_ReturnType (*CanSetControllerModeApi)(uint8 Controller, Can_StateTransitionType Transition);
-    Can_ReturnType (*CanWriteApi)(Can_HwHandleType Hth, const Can_PduType* PduInfo);
+    Std_ReturnType (*CanSetControllerModeApi)(uint8 Controller, Can_ControllerStateType Transition);
+    Std_ReturnType (*CanWriteApi)(Can_HwHandleType Hth, const Can_PduType* PduInfo);
 #if (STD_ON == CANIF_CANDRV_WAKE_UP_SUPPORT)
-    Can_ReturnType (*CanCheckWakeupApi)(uint8 Controller);
+    Std_ReturnType (*CanCheckWakeupApi)(uint8 Controller);
 #endif
 #if (STD_ON == CANIF_SET_BAUDRATE_API)
     Std_ReturnType (*CanSetBaudrateApi)(uint8 Controller, uint16 BaudRateConfigID);
 #endif
+    Std_ReturnType (*CanGetControllerErrorStateApi)(uint8 ControllerId, Can_ErrorStateType* ErrorStatePtr);
+    Std_ReturnType (*CanGetControllerRxErrorCounterApi)(uint8 ControllerId, uint8* RxErrorCounterPtr);
+    Std_ReturnType (*CanGetControllerTxErrorCounterApi)(uint8 ControllerId, uint8* TxErrorCounterPtr);
 } Can_DriverApiType;
 
 

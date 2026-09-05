@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_Cfg.c
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-05 20:35:45
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -59,6 +59,9 @@ const CanIf_DispatchConfigType CanIf_DispatchConfigData = {
 const Can_DriverApiType Can_DriverApi
 [CANIF_CANDRIVER_NUMBER] = {
     {
+        .CanGetControllerErrorStateApi = &CanGeneral_GetControllerErrorState,
+        .CanGetControllerRxErrorCounterApi = &CanGeneral_GetControllerRxErrorCounter,
+        .CanGetControllerTxErrorCounterApi = &CanGeneral_GetControllerTxErrorCounter,
         .CanSetControllerModeApi = &CanGeneral_SetControllerMode,
         .CanWriteApi = &CanGeneral_Write,
     },

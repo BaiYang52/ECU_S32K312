@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_Cfg.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-05 20:35:45
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -59,7 +59,7 @@ extern "C" {
 #define CANIF_SOFTWARE_FILTER_LINEAR 2u
 #define CANIF_SOFTWARE_FILTER_TABLE  3u
 
-#define CANIF_CAN_AUTOSAR_VERSION CANIF_CAN_AUTOSAR_R422
+#define CANIF_CAN_AUTOSAR_VERSION CANIF_CAN_AUTOSAR_R440
 
 #define CANIF_CAN_IDTYPE CANIF_CAN_IDTYPE_UINT32
 
