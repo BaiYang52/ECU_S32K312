@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-04 22:16:15
+ * @date        : 2026-09-05 09:46:58
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11

@@ -1,0 +1,62 @@
+/*******************************************************************************
+**                      RECORD_LAYOUT                                       **
+*******************************************************************************/
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_UBYTE
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_UWORD
+      FNC_VALUES 1 UWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_ULONG
+      FNC_VALUES 1 ULONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_SBYTE
+      FNC_VALUES 1 SBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_SLONG
+      FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_FLOAT32_IEEE
+      FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_FLOAT64_IEEE
+      FNC_VALUES 1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_BOOLEAN
+      FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_A_UINT64
+      FNC_VALUES 1 A_UINT64 COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+    /begin RECORD_LAYOUT RTE_LAYOUT_A_INT64
+      FNC_VALUES 1 A_INT64 COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+
+/*******************************************************************************
+**                      COMPU_METHOD                                       **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**                      CHARACTERISTIC                                       **
+*******************************************************************************/
+
+
+/*******************************************************************************
+**                      MEASUREMENT                                       **
+*******************************************************************************/
+

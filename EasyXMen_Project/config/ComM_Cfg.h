@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : ComM_Cfg.h
  * @licence     : 
- * @date        : 2026-09-04 22:16:16
+ * @date        : 2026-09-05 09:46:58
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of ComM
  * @generator   : AUTOSAR classic Platform R23-11

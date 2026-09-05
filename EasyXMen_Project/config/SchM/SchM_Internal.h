@@ -16,54 +16,41 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : EcuM_Cfg.c
+ * @file        : SchM_Internal.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-05 09:47:08
  * @customer    : iSoft
- * @description : configuration parameter of EcuM
+ * @description : SchM Internal Header
  * @generator   : AUTOSAR classic Platform R23-11
  * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
+/* PRQA S 3472 EOF */ /* VL_Rte_SimilarIdentifier */
+/* PRQA S 1513, 1512 EOF */ /* VL_QAC_MultiDeclaration */
+/* PRQA S 1709 EOF */ /* VL_Rte_Redeclaration_Diff */
+#ifndef SCHM_INTERNAL_H
+#define SCHM_INTERNAL_H
+
+#include "SchM_Type.h"
+#include "Rte_Type.h"
 
 
-/* =================================================== inclusions =================================================== */
-#include "EcuM_Internal.h"
+SchM_ServiceBufferType * SchM_GetBuffer(CoreIdType coreId);
 
-/* ===================================================== macros ===================================================== */
+void SchM_AppendBuffer(CoreIdType coreId, SchM_ServiceBufferType * buffer);
 
-/* ================================================ type definitions ================================================ */
+SchM_ServiceBufferType * SchM_TakeBuffer(CoreIdType coreId);
 
-/* ========================================== internal function declarations ======================================== */
+void SchM_UpdateBuffer(SchM_ServiceBufferType * buffer);
 
-/* ============================================ internal data definitions =========================================== */
-#define ECUM_START_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-/* PRQA S 1531 ++ */ /* VL_QAC_OneRefSymbol */
-const ResourceType EcuM_OSResource = RES_SCHEDULER_CORE0;
-/* PRQA S 1531 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
+void SchM_ReleaseBuffer(CoreIdType coreId, SchM_ServiceBufferType * buffer);
+
+void SchM_ServiceProcessWait(CoreIdType coreId, SchM_ServiceBufferType * buffer);
+
+uint32 Os_CmpSwapW(uint32* address, uint32 compareVal, uint32 exchangedVal);
+
+#define SchM_CmpSwap(addr, expected, desired)	Os_CmpSwapW(addr, expected, desired)
 
 
-#define ECUM_START_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-/* PRQA S 1533 ++ */ /* VL_QAC_OneRefSymbol */
-const Mcu_ModeType EcuM_NormalMcuModeCfg = McuConf_McuModeSettingConf_McuModeSettingConf_0; /* EcuMNormalMcuModeRef*/
-/* PRQA S 1533 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
+/* LifeCycle */
 
-#define ECUM_START_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-/*Containers:EcuMFlexUserConfig*/
-const EcuM_UserCfgType EcuM_UserCfgs[ECUM_MAX_USER_NUM] = {
-    /*EcuMFlexUserConfig_0*/
-    {
-        FALSE, /*goDownAllowed*/
-        0u,     /*usrId*/
-    },
-};
-
-#define ECUM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-
+#endif

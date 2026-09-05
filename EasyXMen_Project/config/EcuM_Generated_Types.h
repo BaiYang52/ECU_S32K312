@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : EcuM_Generated_Types.h
  * @licence     : 
- * @date        : 2026-09-04 22:16:16
+ * @date        : 2026-09-05 09:46:59
  * @customer    : iSoft
  * @description : configuration parameter of EcuM
  * @generator   : AUTOSAR classic Platform R23-11

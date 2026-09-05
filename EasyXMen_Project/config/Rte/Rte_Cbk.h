@@ -16,54 +16,49 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : EcuM_Cfg.c
+ * @file        : Rte_Cbk.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-05 09:47:08
  * @customer    : iSoft
- * @description : configuration parameter of EcuM
+ * @description : Callback header file of Rte
  * @generator   : AUTOSAR classic Platform R23-11
  * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
+#ifndef RTE_CBK_H
+#define RTE_CBK_H
+/* PRQA S 1513, 1510, 1707 EOF */ /* VL_Rte_Redeclaration */
+/* PRQA S 1712 EOF */ /* VL_Rte_SimilarIdentifier */
+/*******************************************************************************
+**                      Include Section                                       **
+*******************************************************************************/
+#include "Rte_Type.h"
+/*******************************************************************************
+**                      Global Macros                                         **
+*******************************************************************************/
+
+/*******************************************************************************
+**                      Global Data Types                                     **
+*******************************************************************************/
+
+/*******************************************************************************
+**                      Global Data Declaration                               **
+*******************************************************************************/
+
+/*******************************************************************************
+**                      Global Functions                                      **
+*******************************************************************************/
+/* COM Callbacks Function */
 
 
-/* =================================================== inclusions =================================================== */
-#include "EcuM_Internal.h"
-
-/* ===================================================== macros ===================================================== */
-
-/* ================================================ type definitions ================================================ */
-
-/* ========================================== internal function declarations ======================================== */
-
-/* ============================================ internal data definitions =========================================== */
-#define ECUM_START_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-/* PRQA S 1531 ++ */ /* VL_QAC_OneRefSymbol */
-const ResourceType EcuM_OSResource = RES_SCHEDULER_CORE0;
-/* PRQA S 1531 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
 
 
-#define ECUM_START_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-/* PRQA S 1533 ++ */ /* VL_QAC_OneRefSymbol */
-const Mcu_ModeType EcuM_NormalMcuModeCfg = McuConf_McuModeSettingConf_McuModeSettingConf_0; /* EcuMNormalMcuModeRef*/
-/* PRQA S 1533 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
 
-#define ECUM_START_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-/*Containers:EcuMFlexUserConfig*/
-const EcuM_UserCfgType EcuM_UserCfgs[ECUM_MAX_USER_NUM] = {
-    /*EcuMFlexUserConfig_0*/
-    {
-        FALSE, /*goDownAllowed*/
-        0u,     /*usrId*/
-    },
-};
+/* IOC and LdCOM Callbacks Function */
 
-#define ECUM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
+
+
+
+
+
+#endif /* RTE_CBK_H */
 

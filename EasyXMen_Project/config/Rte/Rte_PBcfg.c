@@ -16,54 +16,22 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : EcuM_Cfg.c
+ * @file        : 2.2.1
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : Rte Postbuild Cfg Data Definitions
  * @customer    : iSoft
- * @description : configuration parameter of EcuM
- * @generator   : AUTOSAR classic Platform R23-11
- * @toolVersion : for_EasyXMen_V25.10_patch
+ * @description : Rte_PBCfg.c
+ * @generator   : AUTOSAR classic Platform 2026-09-05 09:47:07
+ * @toolVersion : R23-11
  **********************************************************************************************************************/
-
-
 /* =================================================== inclusions =================================================== */
-#include "EcuM_Internal.h"
+#include "Rte_PBcfg.h"
 
-/* ===================================================== macros ===================================================== */
+/* ============================================ external data definitions =========================================== */
+#define RTE_START_SEC_CONST_UNSPECIFIED
+#include "Rte_MemMap.h" 
+const SchM_ConfigType Rte_Config = {0}; /* PRQA S 1502,1531 */ /* VL_Rte_UnLinked */
 
-/* ================================================ type definitions ================================================ */
-
-/* ========================================== internal function declarations ======================================== */
-
-/* ============================================ internal data definitions =========================================== */
-#define ECUM_START_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-/* PRQA S 1531 ++ */ /* VL_QAC_OneRefSymbol */
-const ResourceType EcuM_OSResource = RES_SCHEDULER_CORE0;
-/* PRQA S 1531 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-
-
-#define ECUM_START_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-/* PRQA S 1533 ++ */ /* VL_QAC_OneRefSymbol */
-const Mcu_ModeType EcuM_NormalMcuModeCfg = McuConf_McuModeSettingConf_McuModeSettingConf_0; /* EcuMNormalMcuModeRef*/
-/* PRQA S 1533 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-
-#define ECUM_START_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-/*Containers:EcuMFlexUserConfig*/
-const EcuM_UserCfgType EcuM_UserCfgs[ECUM_MAX_USER_NUM] = {
-    /*EcuMFlexUserConfig_0*/
-    {
-        FALSE, /*goDownAllowed*/
-        0u,     /*usrId*/
-    },
-};
-
-#define ECUM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
+#define RTE_STOP_SEC_CONST_UNSPECIFIED
+#include "Rte_MemMap.h"
 

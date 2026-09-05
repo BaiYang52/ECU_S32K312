@@ -16,54 +16,37 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : EcuM_Cfg.c
+ * @file        : Rte_DataHandleType.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-05 09:47:06
  * @customer    : iSoft
- * @description : configuration parameter of EcuM
+ * @description : Header File containing the Data Handle type declarations
+ necessary for the component data structures.                
  * @generator   : AUTOSAR classic Platform R23-11
  * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
 
+#ifndef RTE_DATA_HANDLE_TYPE_H
+#define RTE_DATA_HANDLE_TYPE_H
 
-/* =================================================== inclusions =================================================== */
-#include "EcuM_Internal.h"
+/*******************************************************************************
+**                      Include Section                                       **
+*******************************************************************************/
+#include "Rte_Type.h"
 
-/* ===================================================== macros ===================================================== */
+/*******************************************************************************
+**                      Global Macros                                         **
+*******************************************************************************/
 
-/* ================================================ type definitions ================================================ */
+/*******************************************************************************
+**                      Global Data Types                                     **
+*******************************************************************************/
+/*******************************************************************************
+**                      Global Data Declaration                               **
+*******************************************************************************/
 
-/* ========================================== internal function declarations ======================================== */
+/*******************************************************************************
+**                      Global Functions                                      **
+*******************************************************************************/
 
-/* ============================================ internal data definitions =========================================== */
-#define ECUM_START_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-/* PRQA S 1531 ++ */ /* VL_QAC_OneRefSymbol */
-const ResourceType EcuM_OSResource = RES_SCHEDULER_CORE0;
-/* PRQA S 1531 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-
-
-#define ECUM_START_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-/* PRQA S 1533 ++ */ /* VL_QAC_OneRefSymbol */
-const Mcu_ModeType EcuM_NormalMcuModeCfg = McuConf_McuModeSettingConf_McuModeSettingConf_0; /* EcuMNormalMcuModeRef*/
-/* PRQA S 1533 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-
-#define ECUM_START_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-/*Containers:EcuMFlexUserConfig*/
-const EcuM_UserCfgType EcuM_UserCfgs[ECUM_MAX_USER_NUM] = {
-    /*EcuMFlexUserConfig_0*/
-    {
-        FALSE, /*goDownAllowed*/
-        0u,     /*usrId*/
-    },
-};
-
-#define ECUM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-
+#endif /*RTE_DATA_HANDLE_TYPE_H*/

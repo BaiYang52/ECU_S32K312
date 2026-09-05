@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_CanIf.h
  * @licence     : 
- * @date        : 2026-09-04 22:16:16
+ * @date        : 2026-09-05 09:46:59
  * @customer    : iSoft
  * @description : API declaration supplied by PduR to <CanIf>
  * @generator   : AUTOSAR classic Platform R23-11

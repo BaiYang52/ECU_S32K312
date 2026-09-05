@@ -16,54 +16,50 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : EcuM_Cfg.c
+ * @file        : Rte_BswM_Type.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-05 09:47:07
  * @customer    : iSoft
- * @description : configuration parameter of EcuM
+ * @description : Application Types Header File for 
+SWC-BswM
  * @generator   : AUTOSAR classic Platform R23-11
  * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
+#ifndef RTE_BSWM_TYPE_H
+#define RTE_BSWM_TYPE_H
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif /* __cplusplus */
+/*******************************************************************************
+**                      Include Section                                       **
+*******************************************************************************/
+#include "Rte_Type.h"
+/*******************************************************************************
+**                      Global Macros                                         **
+*******************************************************************************/
+/* ActivationReason */
 
 
-/* =================================================== inclusions =================================================== */
-#include "EcuM_Internal.h"
 
-/* ===================================================== macros ===================================================== */
-
-/* ================================================ type definitions ================================================ */
-
-/* ========================================== internal function declarations ======================================== */
-
-/* ============================================ internal data definitions =========================================== */
-#define ECUM_START_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
-/* PRQA S 1531 ++ */ /* VL_QAC_OneRefSymbol */
-const ResourceType EcuM_OSResource = RES_SCHEDULER_CORE0;
-/* PRQA S 1531 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_16
-#include "EcuM_MemMap.h"
+/* Enumeration Data Types */
 
 
-#define ECUM_START_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
-/* PRQA S 1533 ++ */ /* VL_QAC_OneRefSymbol */
-const Mcu_ModeType EcuM_NormalMcuModeCfg = McuConf_McuModeSettingConf_McuModeSettingConf_0; /* EcuMNormalMcuModeRef*/
-/* PRQA S 1533 -- */
-#define ECUM_STOP_SEC_CONFIG_DATA_8
-#include "EcuM_MemMap.h"
+/* Implementation Data Type symbols */
+      
+/*******************************************************************************
+**                      Global Data Types                                     **
+*******************************************************************************/
 
-#define ECUM_START_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-/*Containers:EcuMFlexUserConfig*/
-const EcuM_UserCfgType EcuM_UserCfgs[ECUM_MAX_USER_NUM] = {
-    /*EcuMFlexUserConfig_0*/
-    {
-        FALSE, /*goDownAllowed*/
-        0u,     /*usrId*/
-    },
-};
+/*******************************************************************************
+**                      Global Data Declaration                               **
+*******************************************************************************/
 
-#define ECUM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
-#include "EcuM_MemMap.h"
-
+/*******************************************************************************
+**                      Global Functions                                      **
+*******************************************************************************/
+#ifdef __cplusplus
+} /* extern "C" */
+#endif 
+#endif /* RTE_BSWM_TYPE_H */
