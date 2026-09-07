@@ -29,7 +29,7 @@
 /* =================================================== inclusions =================================================== */
 #include "EcuM_Internal.h"
 #include "EcuM_Cbk.h"
-#include "Can.h"
+//#include "Can.h"
 #include "CanIf.h"
 
 /** DO NOT CHANGE THIS COMMENT!
@@ -135,7 +135,7 @@ void EcuM_AL_DriverInitOne(void)
 {
     const EcuM_GenBSWPbCfgType * pbCfg = EcuM_ConfigPtr->modulePBCfg;
     /* PRQA S 0317 ++ */ /* VL_QAC_0317 */
-    Can_Init();
+    //Can_Init();
     /* PRQA S 0317 -- */
     /** DO NOT CHANGE THIS COMMENT!
     * <USERBLOCK EcuM_AL_DriverInitOne Other>
@@ -158,7 +158,7 @@ void EcuM_AL_DriverInitBswM(uint8 drvInitIdx)
     if (EcuMDriverInitListBswM_0 == drvInitIdx)
     {
         /* PRQA S 0317 ++ */ /* VL_QAC_0317 */
-        CanIf_Init();
+        //CanIf_Init();
         /** DO NOT CHANGE THIS COMMENT!
     * <USERBLOCK EcuM_AL_DriverInitBswM EcuMDriverInitListBswM_0>
     */

@@ -7847,15 +7847,6 @@
                 <group>
                     
                     
-                    <name>Include</name>
-                    
-                
-                </group>
-                
-                
-                <group>
-                    
-                    
                     <name>MemMap</name>
                     
                     
@@ -8096,7 +8087,196 @@
                     <file>
                         
                         
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM_Type.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
                         <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Internal.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR.c</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR.h</name>
+                        
+                    
+                    </file>
+                    
+                    
+                    <file>
+                        
+                        
+                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR_Type.h</name>
                         
                     
                     </file>
@@ -8109,78 +8289,6 @@
                         
                     
                     </file>
-                    
-                
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_BswM_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanIf_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_CanSM_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_ComM_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_Com_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_EcuM_Type.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\BSW\Config\BSW_Config\SchM\SchM_PduR_Type.h</name>
-                    </file>
-                </group>
-                
-                
-                <group>
-                    
-                    
-                    <name>src</name>
                     
                 
                 </group>
@@ -11612,6 +11720,9 @@
                     </file>
                     
                 
+                    <file>
+                        <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\include\CanGeneral.h</name>
+                    </file>
                 </group>
                 
                 
@@ -11670,78 +11781,6 @@
                         
                         
                         <name>$PROJ_DIR$\BSW\MCAL\Can_43_FLEXCAN_TS_T40D34M40I0R0\src\FlexCAN_Ip_Irq.c</name>
-                        
-                    
-                    </file>
-                    
-                
-                </group>
-                
-            
-            </group>
-            
-            
-            <group>
-                
-                
-                <name>CanIf_TS_T40D34M40I0R0</name>
-                
-                
-                <group>
-                    
-                    
-                    <name>include</name>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\CanIf_TS_T40D34M40I0R0\include\CanIf.h</name>
-                        
-                    
-                    </file>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\CanIf_TS_T40D34M40I0R0\include\CanIf_Can.h</name>
-                        
-                    
-                    </file>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\CanIf_TS_T40D34M40I0R0\include\CanIf_CanTrcv.h</name>
-                        
-                    
-                    </file>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\CanIf_TS_T40D34M40I0R0\include\CanIf_Types.h</name>
-                        
-                    
-                    </file>
-                    
-                
-                </group>
-                
-                
-                <group>
-                    
-                    
-                    <name>src</name>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\CanIf_TS_T40D34M40I0R0\src\CanIf.c</name>
                         
                     
                     </file>
@@ -11886,60 +11925,6 @@
                         
                         
                         <name>$PROJ_DIR$\BSW\MCAL\Dio_TS_T40D34M40I0R0\src\Siul2_Dio_Ip.c</name>
-                        
-                    
-                    </file>
-                    
-                
-                </group>
-                
-            
-            </group>
-            
-            
-            <group>
-                
-                
-                <name>EcuM_TS_T40D34M40I0R0</name>
-                
-                
-                <group>
-                    
-                    
-                    <name>include</name>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\EcuM_TS_T40D34M40I0R0\include\EcuM.h</name>
-                        
-                    
-                    </file>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\EcuM_TS_T40D34M40I0R0\include\EcuM_Externals.h</name>
-                        
-                    
-                    </file>
-                    
-                
-                </group>
-                
-                
-                <group>
-                    
-                    
-                    <name>src</name>
-                    
-                    
-                    <file>
-                        
-                        
-                        <name>$PROJ_DIR$\BSW\MCAL\EcuM_TS_T40D34M40I0R0\src\EcuM.c</name>
                         
                     
                     </file>

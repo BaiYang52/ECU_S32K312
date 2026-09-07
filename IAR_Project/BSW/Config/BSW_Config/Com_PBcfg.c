@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-05 22:43:31
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -54,7 +54,7 @@ static uint8 Com_TxIPduRuntimeBuff_ComMainFunctionTx_0[8];
 #define COM_START_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
 static const uint8 Com_TxIPduInitValue_ComMainFunctionTx_0[8] = {
-    /* ComIPdu_0x110 */
+    /* ComIPdu_0x110_Tx */
     0x0u,
 	0x0u,
 	0x0u,
@@ -100,7 +100,7 @@ static uint8 Com_RxIPduRuntimeBuff_ComMainFunctionRx_0[8];
 #define COM_START_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
 static const uint8 Com_RxIPduInitValue_ComMainFunctionRx_0[8] = {
-    /* ComIPdu_0x12a */
+    /* ComIPdu_0x12a_Rx */
     0x0u,
 	0x0u,
 	0x0u,
@@ -137,8 +137,49 @@ static const Com_RxIpduBufIdType Com_RxIpduBuffSize[COM_MAX_NUMBER_OF_MAIN_FUNCT
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 
- 
+ #define COM_START_SEC_VAR_CLEARED_8
+#include "Com_MemMap.h"
+static uint8 Com_Signal8BitRuntimeBuff_NoPartition[COM_MAX_SIGNAL_8BITBUFF_SIZE];
+#define COM_STOP_SEC_VAR_CLEARED_8
+#include "Com_MemMap.h"
 
+#define COM_START_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+uint8* Com_Signal8BitRuntimeBuff[1] = {
+    Com_Signal8BitRuntimeBuff_NoPartition,
+};
+#define COM_STOP_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+static const uint8 Com_Signal8BitInitValue_NoPartition[2] = {
+    0x00u,
+	0x00u
+};
+#define COM_STOP_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+static const uint8* const Com_Signal8BitInitValue[1] = {
+    Com_Signal8BitInitValue_NoPartition,
+};
+#define COM_STOP_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+
+
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_InitValueSignalIdType Com_Signal8BitInitValueSize[1] = {
+    {
+        2u,
+        COM_UNUSED_UINT16,
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
  
 
@@ -152,7 +193,7 @@ static Com_RxIPduRunTimeStateType Com_RxIPduRunTimeState_ComMainFunctionRx_0[1];
 #include "Com_MemMap.h"
 static const Com_RxIPduRunTimeStateType Com_RxIPduInitState_ComMainFunctionRx_0[1] = {
     {
-        /* ComIPdu_0x12a */
+        /* ComIPdu_0x12a_Rx */
         8u, /* RxIpduLength */
         0u, /* RxIpduBaseDMTimeout */
         0u, /* RxOffset */
@@ -189,7 +230,7 @@ static Com_TxIPduRunTimeStateType Com_TxIPduRunTimeState_ComMainFunctionTx_0[1];
 #include "Com_MemMap.h"
 static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[1] = {
     {
-        /* ComIPdu_0x110 */
+        /* ComIPdu_0x110_Tx */
         8u, /* TxIpduLength */
         0u, /* RptNum */
         0u, /* NTimeCnt */
@@ -222,7 +263,7 @@ static const Com_TxIPduRunTimeStateType* const Com_TxIPduInitState[] = {
 #define COM_START_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
 static const Com_RxIpduGroupIdType Com_RxIPduGroupsRef[] = {
-    ComIPduGroup_Rx, /*0 ComIPdu_0x12a*/
+    ComIPduGroup_Rx, /*0 ComIPdu_0x12a_Rx*/
 };
 #define COM_STOP_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
@@ -234,8 +275,8 @@ static const Com_RxIpduGroupIdType Com_RxIPduGroupsRef[] = {
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
 static const Com_RxIPduType Com_RxIPdu[1u] = {
     {
-        /* 0 ComIPdu_0x12a */
-        &ComIPdu_0x12a_Rx, /* ComIPduCallout */
+        /* 0 ComIPdu_0x12a_Rx */
+        &ComIPdu_0x12a_Rx_Callout, /* ComIPduCallout */
         8u, /* IPduNoDynSignalLength */
         0u, /* IPduMaxDynSignalLength */
         0u,  /* RxIPduDMFirstTimeout */
@@ -243,8 +284,8 @@ static const Com_RxIPduType Com_RxIPdu[1u] = {
         0u, /* IpduPartitionId */
         0u, /* RxMainfunctionId */
         0u, /* RxIPduBufIndex */
-        COM_UNUSED_RXSIGNALID, /* IpduSignalRefStartId */
-        0u, /* IPduSignalsRefEndId */
+        0u, /* IpduSignalRefStartId */
+        1u, /* IPduSignalsRefEndId */
         0u,  /* IPduGroupsRefStartId */
         1u,  /* IPduGroupsRefEndId */
         COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
@@ -263,7 +304,7 @@ static const Com_RxIPduType Com_RxIPdu[1u] = {
 #define COM_START_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
 static const Com_TxIpduGroupIdType Com_TxIPduGroupsRef[] = {
-    ComIPduGroup_Tx, /*0 ComIPdu_0x110*/
+    ComIPduGroup_Tx, /*0 ComIPdu_0x110_Tx*/
 };
 #define COM_STOP_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
@@ -272,7 +313,7 @@ static const Com_TxIpduGroupIdType Com_TxIPduGroupsRef[] = {
 #include "Com_MemMap.h"
 static const Com_TxModePeriodType Com_TxModeTruePeriod[] = {
     {
-        /* ComIPdu_0x110 */
+        /* ComIPdu_0x110_Tx */
         1u,
         2u,
     },
@@ -285,9 +326,9 @@ static const Com_TxModePeriodType Com_TxModeTruePeriod[] = {
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
 static const Com_TxIPduType Com_TxIPdu[1u] = {
     {
-        /* 0 - ComIPdu_0x110 */
+        /* 0 - ComIPdu_0x110_Tx */
  /* ComIPduCallout */
-        &ComIPdu_0x110_Tx,
+        &ComIPdu_0x110_Tx_Callout,
         8u, /* ComIpduLength */
         0u,  /* ComMaxIpduLength */
         0u,  /*ComTimeout*/
@@ -298,8 +339,8 @@ static const Com_TxIPduType Com_TxIPdu[1u] = {
         PduRConf_PduRSrcPdu_PduRSrcPdu_0x110_Tx, /*PduId*/
         0u, /*ComTxModeTrue*/
         COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
-        COM_UNUSED_TXSIGNALID, /*ComIpduSignalRefStartId*/
-        0u, /* ComIPduSignalsRefNumber */
+        0u, /*ComIpduSignalRefStartId*/
+        1u, /* ComIPduSignalsRefNumber */
         COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
         0u, /* ComIPduSignalGroupsRefNumber */
         0u, /* ComIPduGroupsRefStartId */
@@ -317,7 +358,53 @@ static const Com_TxIPduType Com_TxIPdu[1u] = {
 #include "Com_MemMap.h"
 
 
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_RxSignalType Com_RxSignal[1u] = {
+    {
+        /* 0 ComSignal_1_Rx */
+        0u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        0u, /* SigLsbBytePos */
+        0u, /* IpduRefIndex */
+        0u, /* SignalPosInByte */
+        8u, /* ComBitSize */
+        1u, /* ComSignalByteLength */
+        COM_UINT8, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+/* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
+static const Com_TxSignalType Com_TxSignal[1u] = {
+    {
+        /* 0 ComSignal_0_Tx */
+        1u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        0u, /* SigLsbBytePos */
+        0u, /* ComIpduRefIndex */
+        0u, /*ComSignalPosInByte*/
+        8u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+};
+/* PRQA S 2895 -- */ /* VL_Com_NegtiveValueType */
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
 
 
@@ -338,6 +425,17 @@ static const PduIdType Com_MainFunctionTxRange[] = {
 #define COM_STOP_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
 
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_SignalInitValueType Com_SignalInitValue = {
+    Com_Signal8BitInitValue,
+};
+
+static const Com_SigInitValueSizePerPartitionType Com_SigInitValSize = {
+    Com_Signal8BitInitValueSize,
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
@@ -375,8 +473,8 @@ const struct Com_ConfigTypeTag Com_Config = /* PRQA S 1502, 1531 */ /* VL_QAC_On
     Com_TxIPduInitState,  /* TxIpduInitStatePtr */
     Com_TxIPduInitValue,  /* TxIpduInitValuePtr */
     Com_TxIpduBuffSize,   /* TxIpduBufferSizePerPartition */
-    NULL_PTR,   /* RxSignalPtr */
-    NULL_PTR, /* TxSignalPtr */
+    &Com_RxSignal[0], /* RxSignalPtr */
+    &Com_TxSignal[0], /* TxSignalPtr */
     NULL_PTR,   /* RxSignalGroupPtr */
     NULL_PTR,   /* TxSignalGroupPtr */
     NULL_PTR,   /* RxGroupSignalPtr */
@@ -384,9 +482,11 @@ const struct Com_ConfigTypeTag Com_Config = /* PRQA S 1502, 1531 */ /* VL_QAC_On
     &Com_MainFunctionRxRange[0],  /* MainFunctionRxRangePtr */
     &Com_MainFunctionTxRange[0],  /* MainFunctionTxRangePtr */
     &Com_IPduGroup,   /* IpduGroupRefPtr */
+    &Com_SignalInitValue, /* SignalInitValuePtr */
+    &Com_SigInitValSize,  /* SignalInitValueSizePtr */
     &Com_TxModeAndSignalFilter,   /* TxModeAndSignalFilterPtr */
-    0u, /* TxSignalNum */
-    0u, /* RxSignalNum */
+    1u, /* TxSignalNum */
+    1u, /* RxSignalNum */
     1u, /* TxPduNum */
     1u, /* RxPduNum */
     0u, /* TxGroupSignalNum */

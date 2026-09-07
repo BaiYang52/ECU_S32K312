@@ -32,7 +32,7 @@
 #include "EcuM_Cfg.h"
 #include "BswM_EcuM.h"
 #if (ECUM_USE_TIMER == ECUM_TIMER_USE_GPT)
-#include "Tm.h"
+//#include "Tm.h"
 #endif /*ECUM_USE_TIMER == ECUM_TIMER_USE_GPT*/
 #if (ECUM_DEV_ERROR_DETECT == STD_ON)
 #include "Det.h"
@@ -163,7 +163,7 @@ typedef struct
     EcuM_WakeupSourceType* Validated; /**< wake up source which is validated. @range 0x00 ~ 0xFFFFFFFF */
     EcuM_WakeupSourceType* Expired;   /**< wake up source which is expired. @range 0x00 ~ 0xFFFFFFFF */
 #if (ECUM_USE_TIMER == ECUM_TIMER_USE_GPT)
-    Tm_PredefTimer100us32bitType
+    uint32
         wkTime[ECUM_MAX_WAKE_UP_SOURCE_NUM]; /**< wake up source time. @range 0x00 ~ 0xFFFFFFFF */
 #else
     TickType wkTime[ECUM_MAX_WAKE_UP_SOURCE_NUM]; /**< wake up source time. @range 0x00 ~ 0xFFFFFFFF */
@@ -210,7 +210,7 @@ typedef struct
 
 /* =========================================== external data declarations =========================================== */
 /***********configure data generated in pre-compile*************/
-
+#include "Os_Types.h"
 /*EcuMOSResource, reference to a OS resource which is used to bring the ECU into
  * sleep mode. In case of multi core each core shall have an own OsResource.*/
 #if (1u >= ECUM_MAX_MCU_CORE_NUM)

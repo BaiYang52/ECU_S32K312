@@ -46,7 +46,7 @@ extern "C" {
  * @brief Pre-bulid configuration type definition of ECUM wake up source.
  * 
  */
-typedef struct 
+typedef struct
 {
     uint32 checkWkupTimeout;         /**> Time of the EcuM to delay shut down of the
                                        ECU if the check of the Wake up Source is done
@@ -70,7 +70,8 @@ typedef struct
  * @brief Post build configuration root type definition
  * 
  */
-typedef struct 
+#include "Os_Types.h"
+typedef struct
 {
     uint32 configConsistencyHash;                      /**> Configuration consistency hash code for
                                                        pre-compile and link time configure. @range 0~0xFFFFFFFF */

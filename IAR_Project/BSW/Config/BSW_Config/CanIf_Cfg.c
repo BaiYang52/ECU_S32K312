@@ -59,6 +59,9 @@ const CanIf_DispatchConfigType CanIf_DispatchConfigData = {
 const Can_DriverApiType Can_DriverApi
 [CANIF_CANDRIVER_NUMBER] = {
     {
+        .CanGetControllerErrorStateApi = &Can_43_FLEXCAN_GetControllerErrorState,
+        .CanGetControllerRxErrorCounterApi = &Can_43_FLEXCAN_GetControllerRxErrorCounter,
+        .CanGetControllerTxErrorCounterApi = &Can_43_FLEXCAN_GetControllerTxErrorCounter,
         .CanSetControllerModeApi = &Can_43_FLEXCAN_SetControllerMode,
         .CanWriteApi = &Can_43_FLEXCAN_Write,
     },

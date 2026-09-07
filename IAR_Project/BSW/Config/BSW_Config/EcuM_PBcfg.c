@@ -29,9 +29,9 @@
 
 #include "EcuM_PBcfg.h"
 #include "Rte_Main.h"
-#include "Can.h"
+// #include "Can.h"
 #include "CanIf.h"
-
+#include "ComM.h"
 /* ===================================================== macros ===================================================== */
 /* PRQA S 3414 ++ */ /* VL_QAC_FctLikeMacro */
 #if !defined (ECUM_LOCAL)

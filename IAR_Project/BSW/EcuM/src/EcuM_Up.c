@@ -163,7 +163,7 @@ ECUM_LOCAL void EcuM_WakeupMainFunction(EcuM_RunTimeLcType* pRt)
         )
         {
 #if (ECUM_USE_TIMER == ECUM_TIMER_USE_GPT)
-            ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
+            // ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
 #else
             spanTime = EcuM_CalculateElapsedMS(pRt->Wks.wkTime[wksIdx]);
 #endif /*ECUM_USE_TIMER == ECUM_TIMER_USE_GPT*/
@@ -197,7 +197,7 @@ ECUM_LOCAL void EcuM_WakeupMainFunction(EcuM_RunTimeLcType* pRt)
         {
             EcuM_CheckValidation(pWks->wkSource);
 #if (ECUM_USE_TIMER == ECUM_TIMER_USE_GPT)
-            ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
+            // ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
 #else
             spanTime = EcuM_CalculateElapsedMS(pRt->Wks.wkTime[wksIdx]);
 #endif /*ECUM_USE_TIMER == ECUM_TIMER_USE_GPT*/

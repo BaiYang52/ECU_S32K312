@@ -530,7 +530,8 @@ void EcuM_SetWakeupEvent(EcuM_WakeupSourceType sources)
             if ((sources & EcuM_SleepModeCfgs[sleepModeId].wkMask) != ECUM_WKSOURCE_NONE)
 #endif /*ECUM_SLEEP_MODE_ENABLED == STD_ON*/
             {
-                EcuM_SetPendingWakeupSources(pRt, sources);
+                //for compiler error, comment out the following line, because the function is not configured yet.
+                // EcuM_SetPendingWakeupSources(pRt, sources);
 
                 /*Calculate config wake up index.*/
                 uint8 wksIdx = EcuM_WkSrcMap2CfgWkIdx(sources);
@@ -539,7 +540,7 @@ void EcuM_SetWakeupEvent(EcuM_WakeupSourceType sources)
                     if (EcuM_GetWakeupSourceCfgPtr(wksIdx)->checkWkupTimeout != 0uL)
                     {
 #if (ECUM_USE_TIMER == ECUM_TIMER_USE_GPT)
-                        ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
+                        // ret = Tm_GetTimeSpan100us32bit(&(pRt->Wks.wkTime[wksIdx]), &spanTime);
 #else
                         spanTime = EcuM_CalculateElapsedMS(pRt->Wks.wkTime[wksIdx]);
 #endif /*ECUM_USE_TIMER == ECUM_TIMER_USE_GPT*/
@@ -549,11 +550,11 @@ void EcuM_SetWakeupEvent(EcuM_WakeupSourceType sources)
 #endif /*ECUM_USE_TIMER == ECUM_TIMER_USE_GPT*/
                         )
                         {
-                            EcuM_HandleExpiredWakeupSources(pRt, wksIdx, sources);
+                            // EcuM_HandleExpiredWakeupSources(pRt, wksIdx, sources);
                             break;
                         }
                     }
-                    EcuM_SetWakeupIsValid(pRt, sources, wksIdx);
+                    // EcuM_SetWakeupIsValid(pRt, sources, wksIdx);
                 }
             }
         } while (0u); /* PRQA S 2743 */ /* VL_EcuM_2743 */
@@ -626,7 +627,7 @@ void EcuM_ValidateWakeupEvent(EcuM_WakeupSourceType sources)
             if (wkIdx != (uint8)EcuM_ConfigPtr->wkSourceNum)
             {
                 pRt->Wks.timerState[wkIdx] = ECUM_TIMER_STOP;
-                EcuM_ValidateWkEvAction(wkIdx);
+                // EcuM_ValidateWkEvAction(wkIdx);
             }
             (void)pWks;
         }

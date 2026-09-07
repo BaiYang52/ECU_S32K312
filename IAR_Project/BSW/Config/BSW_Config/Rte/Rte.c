@@ -60,7 +60,7 @@
 #include "Rte_Main.h"
 #include "SchM.h"
 #include "Os.h"
-#include "Ioc.h"
+//#include "Ioc.h"
 
 
 #include "Rte_BswM.h"
@@ -221,21 +221,21 @@ Std_ReturnType Rte_SwitchAck_currentMode_currentMode_EcuM(void)
 
 
 
-#define OS_START_SEC_CODE
-#include "Os_MemMap.h"
-TASK(iSoft_Auto_DEFAULT_OsTask_Init)
-{
-    EcuM_StartupTwo();
-    if (E_OK != TerminateTask())
-    {
-        while(1)
-        {
-            /* dead loop */
-        }
-    }
-}
-#define OS_STOP_SEC_CODE
-#include "Os_MemMap.h"
+// #define OS_START_SEC_CODE
+// #include "Os_MemMap.h"
+// TASK(iSoft_Auto_DEFAULT_OsTask_Init)
+// {
+//     EcuM_StartupTwo();
+//     if (E_OK != TerminateTask())
+//     {
+//         while(1)
+//         {
+//             /* dead loop */
+//         }
+//     }
+// }
+// #define OS_STOP_SEC_CODE
+// #include "Os_MemMap.h"
 /* PRQA S 1843,3209,3335,1532  -- */
 /* PRQA S 2740,2870,3200,1258 -- */
 /* NvRE */

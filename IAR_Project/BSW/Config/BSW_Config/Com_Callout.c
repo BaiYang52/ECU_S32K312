@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Callout.c
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-05 22:43:31
  * @customer    : iSoft
  * @description : Com Callout Functions
  * @generator   : AUTOSAR classic Platform R23-11
@@ -30,21 +30,20 @@
 * <USERBLOCK Com_Callout Inclusion>
 */
 /* Header file defined by User */
-
 /** DO NOT CHANGE THIS COMMENT!
 * </USERBLOCK>
 */
 #define COM_START_SEC_CODE_FAST
 #include "Com_MemMap.h"
-boolean ComIPdu_0x110_Tx(
+boolean ComIPdu_0x110_Tx_Callout(
     PduIdType PduId,
     PduInfoType* PduInfoPtr
 )
 {
     /** DO NOT CHANGE THIS COMMENT!
-    * <USERBLOCK ComIPdu_0x110_Tx>
+    * <USERBLOCK ComIPdu_0x110_Tx_Callout>
     */
-    /* ComIPdu_0x110_Tx code defined by User */
+    /* ComIPdu_0x110_Tx_Callout code defined by User */
         boolean ret = TRUE;
         return ret;
 
@@ -56,15 +55,15 @@ boolean ComIPdu_0x110_Tx(
 #include "Com_MemMap.h"
 #define COM_START_SEC_CODE_FAST
 #include "Com_MemMap.h"
-boolean ComIPdu_0x12a_Rx(
+boolean ComIPdu_0x12a_Rx_Callout(
     PduIdType PduId,
     const PduInfoType* PduInfoPtr
 )
 {
     /** DO NOT CHANGE THIS COMMENT!
-    * <USERBLOCK ComIPdu_0x12a_Rx>
+    * <USERBLOCK ComIPdu_0x12a_Rx_Callout>
     */
-    /* ComIPdu_0x12a_Rx code defined by User */
+    /* ComIPdu_0x12a_Rx_Callout code defined by User */
         boolean ret = TRUE;
         return ret;
 
