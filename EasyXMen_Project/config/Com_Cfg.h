@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Cfg.h
  * @licence     : 
- * @date        : 2026-09-05 20:35:46
+ * @date        : 2026-09-05 22:43:30
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -50,7 +50,7 @@
 
 #define COM_MULTIPLE_PARTITION_USED             STD_OFF
 
-#define COM_SIGNAL_INITVALUE_SUPPORT            STD_OFF
+#define COM_SIGNAL_INITVALUE_SUPPORT            STD_ON
 
 #define COM_SIGNAL_INVALID_VALUE_SUPPORT        STD_OFF
 
@@ -119,9 +119,9 @@
 #define COM_MAX_TXSIGNAL_TIMEOUT_NUMBER    0u
 #define COM_MAX_TXSIGGRP_TIMEOUT_NUMBER 0u
 
-#define COM_MAX_SIGANDGRPSIG_NUMBER                  0u
-#define COM_MAX_RXSIGNAL_NUMBER                        0u
-#define COM_MAX_TXSIGNAL_NUMBER                        0u
+#define COM_MAX_SIGANDGRPSIG_NUMBER                  2u
+#define COM_MAX_RXSIGNAL_NUMBER                        1u
+#define COM_MAX_TXSIGNAL_NUMBER                        1u
 
 #define COM_MAX_TXGROUPSIGNAL_NUMBER                   0u
 #define COM_MAX_RXGROUPSIGNAL_NUMBER                   0u
@@ -189,9 +189,11 @@
 #define ComConf_ComIPduGroup_ComIPduGroup_Tx        ComIPduGroup_Tx
 #define ComConf_ComIPduGroup_ComIPduGroup_Rx        ComIPduGroup_Rx
 
-#define ComConf_ComIPdu_ComIPdu_0x110        ComIPdu_0x110
-#define ComConf_ComIPdu_ComIPdu_0x12a        ComIPdu_0x12a
+#define ComConf_ComIPdu_ComIPdu_0x110_Tx        ComIPdu_0x110_Tx
+#define ComConf_ComIPdu_ComIPdu_0x12a_Rx        ComIPdu_0x12a_Rx
 
+#define ComConf_ComSignal_ComSignal_0_Tx   ComSignal_0_Tx
+#define ComConf_ComSignal_ComSignal_1_Rx   ComSignal_1_Rx
 
 /* PRQA S 0791 -- */
 

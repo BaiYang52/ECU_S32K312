@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-05 20:35:46
+ * @date        : 2026-09-05 22:43:30
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -40,7 +40,7 @@
 #define COM_MAX_SIGNAL_BOOL_INVALID_SIZE        0u
 #define COM_MAX_SIGNAL_BOOL_SUBSTITUTE_SIZE     0u
 
-#define COM_MAX_SIGNAL_8BITBUFF_SIZE            0u
+#define COM_MAX_SIGNAL_8BITBUFF_SIZE            2u
 #define COM_MAX_RXGROUPSIGNAL_8BITBUFF_SIZE     0u
 #define COM_MAX_SIGNAL_8BIT_INVALID_SIZE        0u
 #define COM_MAX_SIGNAL_8BIT_SUBSTITUTE_SIZE     0u
@@ -193,12 +193,14 @@
 
 
 
-#define ComIPdu_0x12a    0u /* Rx-0 */
-#define ComIPdu_0x110    1u /* Tx-0 */
+#define ComIPdu_0x12a_Rx    0u /* Rx-0 */
+#define ComIPdu_0x110_Tx    1u /* Tx-0 */
 
 
 
+#define ComSignal_1_Rx    0u /* ComIPdu_0x12a_Rx */
 
+#define ComSignal_0_Tx    0u /* ComIPdu_0x110_Tx */
 
 
 

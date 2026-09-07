@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Callout.h
  * @licence     : 
- * @date        : 2026-09-05 20:35:47
+ * @date        : 2026-09-05 22:43:31
  * @customer    : iSoft
  * @description : Com Callout Functions
  * @generator   : AUTOSAR classic Platform R23-11
@@ -30,11 +30,11 @@
 
 #include "ComStack_Types.h"
 /* PRQA S 5015 ++ */ /* VL_Com_UntrustedMethod */
-boolean ComIPdu_0x110_Tx(
+boolean ComIPdu_0x110_Tx_Callout(
     PduIdType PduId,
     PduInfoType* PduInfoPtr
 );
-boolean ComIPdu_0x12a_Rx(
+boolean ComIPdu_0x12a_Rx_Callout(
     PduIdType PduId,
     const PduInfoType* PduInfoPtr
 );
