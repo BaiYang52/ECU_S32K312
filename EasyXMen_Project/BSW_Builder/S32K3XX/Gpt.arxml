@@ -229,7 +229,7 @@
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/Gpt/GptDriverConfiguration/GptClockReferencePoint/GptClockReference</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReference_AIPS_SLOW_CLK</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_AIPS_SLOW</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>

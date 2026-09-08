@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="82d5d5eb-039f-4cbf-86fc-32b0b987b26b">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="9bf76072-2d37-4c88-9016-900e0c51e7e7">
           <SHORT-NAME>EcuC</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,7 +17,7 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcuC</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="f746373f-593d-4e18-a929-b29432b9f880">
+            <ECUC-CONTAINER-VALUE UUID="b3d1045f-a202-4182-bb41-4d48281d072d">
               <SHORT-NAME>EcuCGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcuCGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -27,11 +27,11 @@
                 </ECUC-TEXTUAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="16958a2d-7323-4f35-a01d-44ab9bac2bc6">
+            <ECUC-CONTAINER-VALUE UUID="d1a9395d-8cab-42bc-b56a-b55a4c00a422">
               <SHORT-NAME>EcucHardware</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucHardware</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="4177253c-5ce1-4716-a7bc-4e7e930e3c48">
+                <ECUC-CONTAINER-VALUE UUID="7c01f77b-9d07-423e-af8e-d67467405a93">
                   <SHORT-NAME>EcucCoreDefinition</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucHardware/EcucCoreDefinition</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -43,11 +43,11 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="_vUCK0KhbEfGWp62puc052w">
+            <ECUC-CONTAINER-VALUE UUID="_mjcHcIOGEfGfmsnufcmSSA">
               <SHORT-NAME>EcucConfigSet</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="_wbxO8KhbEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_m67aYIOGEfGfmsnufcmSSA">
                   <SHORT-NAME>EcucPduCollection</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -61,8 +61,8 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="_zS07oKhbEfGWp62puc052w">
-                      <SHORT-NAME>Canif_0x110_Tx</SHORT-NAME>
+                    <ECUC-CONTAINER-VALUE UUID="_pDuS4IOGEfGfmsnufcmSSA">
+                      <SHORT-NAME>CanIf_0x110_Tx</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
@@ -71,17 +71,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_4ufTEKhbEfGWp62puc052w">
-                      <SHORT-NAME>Canif_0x12a_Rx</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DEFINITION-REF>
-                      <PARAMETER-VALUES>
-                        <ECUC-NUMERICAL-PARAM-VALUE>
-                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu/PduLength</DEFINITION-REF>
-                          <VALUE>8</VALUE>
-                        </ECUC-NUMERICAL-PARAM-VALUE>
-                      </PARAMETER-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_8Z3YoKhbEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_rx034IOGEfGfmsnufcmSSA">
                       <SHORT-NAME>Com_0x110_Tx</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -91,7 +81,17 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_AMbEQKhcEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_tzRLMIOGEfGfmsnufcmSSA">
+                      <SHORT-NAME>CanIf_0x12a_Rx</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu/PduLength</DEFINITION-REF>
+                          <VALUE>8</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_vZsWcIOGEfGfmsnufcmSSA">
                       <SHORT-NAME>Com_0x12a_Rx</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuC/EcucConfigSet/EcucPduCollection/Pdu</DEFINITION-REF>
                       <PARAMETER-VALUES>

@@ -19,7 +19,7 @@
  * @MCU         : S32K148
  * @file        : BswM_Lcfg.h
  * @licence     : 
- * @date        : 2026-09-05 20:35:45
+ * @date        : 2026-07-20 00:29:19
  * @customer    : iSoft
  * @description : Link-Time Configuration parameter of BswM
  * @generator   : AUTOSAR classic Platform R23-11

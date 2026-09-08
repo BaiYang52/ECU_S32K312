@@ -1,4 +1,3 @@
-
 /**
  * COPYRIGHT
  * ---------------------------------------------------------------------------------------------------------------------
@@ -17,34 +16,23 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : 
+ * @file        : SchM_CanIf.c
  * @licence     : 
- * @date        : 
+ * @date        : 2026-07-20 00:29:33
  * @customer    : iSoft
- * @description : ComStack_Cfg.h
- * @generator   : AUTOSAR classic Platform 2026-07-20 01:19:28
- * @toolVersion : R23-11
+ * @description : SchM CanIf Source
+ * @generator   : AUTOSAR classic Platform R23-11
+ * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
+/* PRQA S 6510, 0553, 1532 EOF */ /* VL_MTR_Rte_CONF, VL_QAC_OneFunRef, VL_Rte_Standard */
+/*******************************************************************************
+** Include Section **
+*******************************************************************************/
+#include "SchM_Internal.h"
+#include "SchM_CanIf.h"
 
-#ifndef COMSTACK_CFG_H_
-#define COMSTACK_CFG_H_
-/* =================================================== inclusions =================================================== */
-#include "Std_Types.h"
-#ifdef __cplusplus
-extern "C" {
-#endif
-/* ===================================================== macros ===================================================== */
-#define COMSTACK_PDUID_INVALID 0xFFFFu
-/* ================================================ type definitions ================================================ */
-typedef uint16 PduIdType;
-typedef uint16 PduLengthType;
- 
-/* ========================================== internal function definitions ========================================= */
- 
-/* =========================================== external data declarations =========================================== */
- 
-/* ========================================= external function declarations ========================================= */
-#ifdef __cplusplus
-}
-#endif
-#endif
+
+
+
+
+

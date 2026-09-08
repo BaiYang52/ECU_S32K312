@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="5d88293e-9342-4b1c-bfe0-705ab3db2aec">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="ca631a91-e8f4-468b-8999-1bff4446b860">
           <SHORT-NAME>PduR</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,7 +17,7 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/PduR</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="6ce4cd27-da16-4f0b-bb66-12f51a3a0d88">
+            <ECUC-CONTAINER-VALUE UUID="f408866c-ab97-473f-97bf-18b1c2f8d2af">
               <SHORT-NAME>PduRGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -43,7 +43,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="9a0b0770-c337-4283-9539-cbbf96c38aee">
+            <ECUC-CONTAINER-VALUE UUID="408de7f3-38d5-40e4-b85a-8d9e5ee3404b">
               <SHORT-NAME>PduRRoutingPaths</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -65,47 +65,47 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="_BWhDYKhdEfGWp62puc052w">
-                  <SHORT-NAME>PduRSrcPdu_0x110_Tx</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                <ECUC-CONTAINER-VALUE UUID="_SEVJgIOHEfGfmsnufcmSSA">
+                  <SHORT-NAME>PduRRoutingPath_0x110_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
-                      <VALUE>true</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Com_0x110_Tx</VALUE-REF>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_0x110_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_0x110_Tx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_BfyUIKhdEfGWp62puc052w">
-                  <SHORT-NAME>PduRSrcPdu_0x12a_Rx</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                <ECUC-CONTAINER-VALUE UUID="_SRrpAIOHEfGfmsnufcmSSA">
+                  <SHORT-NAME>PduRRoutingPath_0x12a_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
-                      <VALUE>1</VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
-                    <ECUC-NUMERICAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
-                      <VALUE>true</VALUE>
-                    </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Canif_0x12a_Rx</VALUE-REF>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_0x12a_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_0x12a_Rx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_Bo3XoKhdEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_SgKw8IOHEfGfmsnufcmSSA">
                   <SHORT-NAME>PduRDestPdu_0x110_Tx</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -125,11 +125,11 @@
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Canif_0x110_Tx</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CanIf_0x110_Tx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_BxERYKhdEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_Sm0LgIOHEfGfmsnufcmSSA">
                   <SHORT-NAME>PduRDestPdu_0x12a_Rx</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -153,49 +153,49 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_B-uS4KhdEfGWp62puc052w">
-                  <SHORT-NAME>PduRRoutingPath_0x110_Tx</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                <ECUC-CONTAINER-VALUE UUID="_Sw0cEIOHEfGfmsnufcmSSA">
+                  <SHORT-NAME>PduRSrcPdu_0x110_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
-                      <VALUE>IF</VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_0x110_Tx</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_0x110_Tx</VALUE-REF>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Com_0x110_Tx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_CIyN0KhdEfGWp62puc052w">
-                  <SHORT-NAME>PduRRoutingPath_0x12a_Rx</SHORT-NAME>
-                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                <ECUC-CONTAINER-VALUE UUID="_S5kvcIOHEfGfmsnufcmSSA">
+                  <SHORT-NAME>PduRSrcPdu_0x12a_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
-                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
-                      <VALUE>IF</VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>1</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_0x12a_Rx</VALUE-REF>
-                    </ECUC-REFERENCE-VALUE>
-                    <ECUC-REFERENCE-VALUE>
-                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_0x12a_Rx</VALUE-REF>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CanIf_0x12a_Rx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="_6EFXkKhcEfGWp62puc052w">
+            <ECUC-CONTAINER-VALUE UUID="_PVTXcIOHEfGfmsnufcmSSA">
               <SHORT-NAME>PduRBswModules_0</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRBswModules</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -275,7 +275,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="_6XQLMKhcEfGWp62puc052w">
+            <ECUC-CONTAINER-VALUE UUID="_QCjfAIOHEfGfmsnufcmSSA">
               <SHORT-NAME>PduRBswModules_1</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRBswModules</DEFINITION-REF>
               <PARAMETER-VALUES>

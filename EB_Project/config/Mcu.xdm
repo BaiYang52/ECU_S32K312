@@ -1703,7 +1703,7 @@
                       </d:ctr>
                     </d:lst>
                     <d:lst name="McuClockReferencePoint" type="MAP">
-                      <d:ctr name="McuClockReference_CORE_CLK" 
+                      <d:ctr name="McuClockReferencePoint_CORE_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="1.2E8">
@@ -1717,7 +1717,7 @@
                           <a:a name="IMPORTER_INFO" value="@DEF"/>
                         </d:var>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_FIRC_CLK" 
+                      <d:ctr name="McuClockReferencePoint_FIRC_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="4.8E7">
@@ -1729,7 +1729,7 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="FIRC_CLK"/>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_SIRC_CLK" 
+                      <d:ctr name="McuClockReferencePoint_SIRC_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="32000.0">
@@ -1741,7 +1741,7 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="SIRC_CLK"/>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_AIPS_SLOW_CLK" 
+                      <d:ctr name="McuClockReferencePoint_AIPS_SLOW" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="3.0E7">
@@ -1753,7 +1753,7 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="AIPS_SLOW_CLK"/>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_AIPS_PLAT_CLK" 
+                      <d:ctr name="McuClockReferencePoint_AIPS_PLAT_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="6.0E7">
@@ -1765,7 +1765,7 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="AIPS_PLAT_CLK"/>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_STM0_CLK" 
+                      <d:ctr name="McuClockReferencePoint_STM0_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="6.0E7">
@@ -1777,7 +1777,7 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="STM0_CLK"/>
                       </d:ctr>
-                      <d:ctr name="McuClockReference_CAN_02_CLK" 
+                      <d:ctr name="McuClockReferencePoint_CAN_02_CLK" 
                              type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
                                type="FLOAT" value="6.0E7">

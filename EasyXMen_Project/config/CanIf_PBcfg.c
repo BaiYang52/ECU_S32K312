@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-05 20:35:46
+ * @date        : 2026-07-20 01:19:27
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -176,7 +176,7 @@ const CanIfRxPduUserRxIndicationNameApiType CanIf_UpRxIndicationArray
 static const CanIf_HthConfigType CanIf_HthConfigData
 [CANIF_HTH_NUMBER] = {
     {
-        /* CanIfConf_CanIfHthCfg_CanIfHthCfg__0x110 */
+        /* CanIfConf_CanIfHthCfg_CanIfHthCfg_0x110 */
         .CanIfHthCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHthType = CANIF_BASIC_CAN,
         .CanObjectId = 2u,
@@ -194,8 +194,8 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHrhType = CANIF_BASIC_CAN,
         .CanObjectId = 0u,
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a + 1u,
+        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a,
     },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -206,12 +206,12 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
 static const CanIf_TxPduConfigType CanIf_TxPduConfigData
 [CANIF_TXPDU_NUMBER] = {
     {
-        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg__0x110 */
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0 */
         .CanIfTxPduCanId = 0x00000110u,
         .CanIfTxPduCanIdMask = 0x000007FFu,
         .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
         .CanIfTxPduDlc = 8u,
-        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg__0x110,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_0x110,
         .CanIfTxPduTruncation = TRUE,
         .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_0x110_Tx,
         .DynamicTxPduPtr = NULL_PTR,
@@ -230,7 +230,7 @@ static const CanIf_TxPduConfigType CanIf_TxPduConfigData
 static const CanIf_RxPduConfigType CanIf_RxPduConfigData
 [CANIF_RXPDU_NUMBER] = {
     {
-        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a */
+        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a */
         .CanIfRxPduCanIdMask = 0x000007FFu,
         .CanIfRxPduCanIdMasked = (0x0000012Au & 0x000007FFu),
         .CanIfRxPduCanIdType = CANIF_RX_STANDARD_CAN,
@@ -279,10 +279,10 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0 */
         .PartitionIndex = 0u,
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[0u],
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a,
-        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg__0x110 + 1u,
-        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg__0x110,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a + 1u,
+        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a,
+        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0 + 1u,
+        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0,
     },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED

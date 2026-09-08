@@ -1095,7 +1095,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_CORE_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_CORE_CLK</SHORT-NAME>
                       <INDEX>0</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1110,7 +1110,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_FIRC_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_FIRC_CLK</SHORT-NAME>
                       <INDEX>1</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1125,7 +1125,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_SIRC_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_SIRC_CLK</SHORT-NAME>
                       <INDEX>2</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1140,7 +1140,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_AIPS_SLOW_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_AIPS_SLOW</SHORT-NAME>
                       <INDEX>3</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1155,7 +1155,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_AIPS_PLAT_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_AIPS_PLAT_CLK</SHORT-NAME>
                       <INDEX>4</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1170,7 +1170,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_STM0_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_STM0_CLK</SHORT-NAME>
                       <INDEX>5</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1185,7 +1185,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReference_CAN_02_CLK</SHORT-NAME>
+                      <SHORT-NAME>McuClockReferencePoint_CAN_02_CLK</SHORT-NAME>
                       <INDEX>6</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>

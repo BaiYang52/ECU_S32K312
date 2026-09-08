@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="47554b35-f4cf-425c-a154-dd694205331f">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="7fc8066a-ba76-47fd-9da7-7fc9aadb67f5">
           <SHORT-NAME>CanSM</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,7 +17,7 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/CanSM</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="07df0813-8eec-49c7-9dde-1151efb776d0">
+            <ECUC-CONTAINER-VALUE UUID="c01d6b7c-7b6e-458d-b150-de6f24bbcb03">
               <SHORT-NAME>CanSMGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanSM/CanSMGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -27,7 +27,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTOSAR/CanSM/CanSMGeneral/CanSMMainFunctionTimePeriod</DEFINITION-REF>
-                  <VALUE>0.005</VALUE>
+                  <VALUE>0.001</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/CanSM/CanSMGeneral/CanSMPncSupport</DEFINITION-REF>
@@ -51,7 +51,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="4032dd90-175c-4f1c-883f-48847283ccc0">
+            <ECUC-CONTAINER-VALUE UUID="78fe8213-0b8c-47b3-b899-1d0d63050ed0">
               <SHORT-NAME>CanSMConfiguration</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanSM/CanSMConfiguration</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -65,7 +65,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="d862a28f-844c-4d25-8b3f-b3a76b0500a1">
+                <ECUC-CONTAINER-VALUE UUID="65749e94-fd45-4f9a-b2e1-454906f0111c">
                   <SHORT-NAME>CanSMManagerNetwork_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanSM/CanSMConfiguration/CanSMManagerNetwork</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -101,7 +101,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="fde73a4b-cbb1-4140-b672-59b8c24297d7">
+                    <ECUC-CONTAINER-VALUE UUID="89a81b6f-396d-4fce-b43a-5f2683e6e3ec">
                       <SHORT-NAME>CanSMController_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanSM/CanSMConfiguration/CanSMManagerNetwork/CanSMController</DEFINITION-REF>
                       <REFERENCE-VALUES>

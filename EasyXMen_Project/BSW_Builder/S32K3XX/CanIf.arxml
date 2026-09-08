@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="491400da-54d0-4f69-8ac9-7e50786cb91b">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="034b69a1-3090-4a06-990f-0a32d1cfd3f9">
           <SHORT-NAME>CanIf</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,7 +17,7 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/CanIf</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="56473c55-4ec7-434c-9c4e-5bd1fa199751">
+            <ECUC-CONTAINER-VALUE UUID="605431ac-0a0f-46b1-bec7-7bd63dfb30db">
               <SHORT-NAME>CanIfCtrlDrvCfg_0</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfCtrlDrvCfg</DEFINITION-REF>
               <REFERENCE-VALUES>
@@ -31,7 +31,7 @@
                 </ECUC-REFERENCE-VALUE>
               </REFERENCE-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="d9e57d96-b2c8-4a1b-925a-0fe9d75fcd0d">
+                <ECUC-CONTAINER-VALUE UUID="be116827-6a57-4eb7-acec-d1aae7685628">
                   <SHORT-NAME>CanIfCtrlCfg_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfCtrlDrvCfg/CanIfCtrlCfg</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -53,7 +53,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="e602debc-dfb5-44d8-927a-69981e27e76d">
+            <ECUC-CONTAINER-VALUE UUID="d45e861b-3fcb-410b-8662-d2b5cc06b873">
               <SHORT-NAME>CanIfDispatchCfg</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfDispatchCfg</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -95,7 +95,7 @@
                 </ECUC-TEXTUAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="b9759e8b-ebbe-44c6-8d7c-e5c0be985e98">
+            <ECUC-CONTAINER-VALUE UUID="f764df6d-19ec-45e6-b504-79c83696fca2">
               <SHORT-NAME>CanIfInitCfg</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -105,25 +105,11 @@
                 </ECUC-TEXTUAL-PARAM-VALUE>
               </PARAMETER-VALUES>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="_pQUKUKhaEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_DC8qcIOGEfGfmsnufcmSSA">
                   <SHORT-NAME>CanIfInitHohCfg_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg</DEFINITION-REF>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="_qN_TgKhaEfGWp62puc052w">
-                      <SHORT-NAME>CanIfHthCfg__0x110</SHORT-NAME>
-                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg</DEFINITION-REF>
-                      <REFERENCE-VALUES>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg/CanIfHthCanCtrlIdRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg_0/CanIfCtrlCfg_0</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                        <ECUC-REFERENCE-VALUE>
-                          <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg/CanIfHthIdSymRef</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Can/CanConfigSet/CanHardwareObject_2_Tx</VALUE-REF>
-                        </ECUC-REFERENCE-VALUE>
-                      </REFERENCE-VALUES>
-                    </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_qcrPwKhaEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_Deog4IOGEfGfmsnufcmSSA">
                       <SHORT-NAME>CanIfHrhCfg_0x12a</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHrhCfg</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -143,10 +129,24 @@
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_DugI4IOGEfGfmsnufcmSSA">
+                      <SHORT-NAME>CanIfHthCfg_0x110</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg</DEFINITION-REF>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg/CanIfHthCanCtrlIdRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg_0/CanIfCtrlCfg_0</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfInitHohCfg/CanIfHthCfg/CanIfHthIdSymRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Can/CanConfigSet/CanHardwareObject_2_Tx</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_P-7JIKhbEfGWp62puc052w">
-                  <SHORT-NAME>CanIfRxPduCfg__0x12a</SHORT-NAME>
+                <ECUC-CONTAINER-VALUE UUID="_Xm3acIOGEfGfmsnufcmSSA">
+                  <SHORT-NAME>CanIfRxPduCfg_012a</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfRxPduCfg</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-TEXTUAL-PARAM-VALUE>
@@ -163,7 +163,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduId</DEFINITION-REF>
-                      <VALUE>CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a</VALUE>
+                      <VALUE>CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduReadData</DEFINITION-REF>
@@ -197,12 +197,12 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfRxPduCfg/CanIfRxPduRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Canif_0x12a_Rx</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CanIf_0x12a_Rx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_XY-f4KhbEfGWp62puc052w">
-                  <SHORT-NAME>CanIfTxPduCfg__0x110</SHORT-NAME>
+                <ECUC-CONTAINER-VALUE UUID="_001JcIOGEfGfmsnufcmSSA">
+                  <SHORT-NAME>CanIfTxPduCfg_110</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfTxPduCfg</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -215,7 +215,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduId</DEFINITION-REF>
-                      <VALUE>CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg__0x110</VALUE>
+                      <VALUE>CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_110</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduPnFilterPdu</DEFINITION-REF>
@@ -257,11 +257,11 @@
                     </ECUC-REFERENCE-VALUE>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfTxPduCfg/CanIfTxPduRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/Canif_0x110_Tx</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CanIf_0x110_Tx</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_NEhYEKhcEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_51zwAIOGEfGfmsnufcmSSA">
                   <SHORT-NAME>CanIfBufferCfg_0x110</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfBufferCfg</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -273,13 +273,13 @@
                   <REFERENCE-VALUES>
                     <ECUC-REFERENCE-VALUE>
                       <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/CanIf/CanIfInitCfg/CanIfBufferCfg/CanIfBufferHthRef</DEFINITION-REF>
-                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfInitCfg/CanIfInitHohCfg_0/CanIfHthCfg__0x110</VALUE-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfInitCfg/CanIfInitHohCfg_0/CanIfHthCfg_0x110</VALUE-REF>
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="3d0726fd-0f26-41a5-b4cd-a7af04b215d7">
+            <ECUC-CONTAINER-VALUE UUID="915d1cf2-b49f-42f1-bf6c-89c536fc4ab9">
               <SHORT-NAME>CanIfPrivateCfg</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfPrivateCfg</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -297,7 +297,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="88737fad-452c-4ab0-a8cb-b4af5182f50a">
+            <ECUC-CONTAINER-VALUE UUID="6988fe9d-c3b3-4602-afdd-ebf25f7d1431">
               <SHORT-NAME>CanIfPublicCfg</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/CanIf/CanIfPublicCfg</DEFINITION-REF>
               <PARAMETER-VALUES>

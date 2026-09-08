@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="ce7c48d5-0735-43cf-b952-f9575ea353b5">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="6de487a5-e8d9-43c0-ac2e-a5a2e3dc3405">
           <SHORT-NAME>ComM</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,11 +17,11 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/ComM</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="07b6f192-a735-4ec2-9d2f-a2d3c42535f7">
+            <ECUC-CONTAINER-VALUE UUID="a960bbb6-5f73-4034-839b-a7e5c877aa84">
               <SHORT-NAME>ComMConfigSet</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMConfigSet</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="478eb666-614d-4bf8-aef5-c626b5382303">
+                <ECUC-CONTAINER-VALUE UUID="b0caf57b-7ad5-4c15-9767-ab28449e7ded">
                   <SHORT-NAME>ComMChannel_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMChannel</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -39,7 +39,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMChannel/ComMMainFunctionPeriod</DEFINITION-REF>
-                      <VALUE>0.02</VALUE>
+                      <VALUE>0.005</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMChannel/ComMNoCom</DEFINITION-REF>
@@ -55,7 +55,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="626b4e07-65b0-4a42-9207-384aa455ab2c">
+                    <ECUC-CONTAINER-VALUE UUID="5bfde9c3-7ee2-4ec6-b0a4-82bdb3fef4da">
                       <SHORT-NAME>ComMNetworkManagement</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMChannel/ComMNetworkManagement</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -69,7 +69,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_cTzW8KhiEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_R-O2oIOJEfGfmsnufcmSSA">
                       <SHORT-NAME>ComMUserPerChannel_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMChannel/ComMUserPerChannel</DEFINITION-REF>
                       <REFERENCE-VALUES>
@@ -81,7 +81,7 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_UUiaUKhiEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_OhMvEIOJEfGfmsnufcmSSA">
                   <SHORT-NAME>ComMUser_0</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMConfigSet/ComMUser</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -97,7 +97,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="23c8585c-41a7-4460-86e7-7153e2fa5fed">
+            <ECUC-CONTAINER-VALUE UUID="530c6c9f-3044-4cd1-be99-10ab2f6a1db5">
               <SHORT-NAME>ComMGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/ComM/ComMGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>

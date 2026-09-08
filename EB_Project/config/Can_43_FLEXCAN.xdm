@@ -207,7 +207,7 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:ref>
                     <d:ref name="CanCpuClockRef" type="REFERENCE" 
-                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReference_CAN_02_CLK"/>
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_CAN_02_CLK"/>
                     <d:ref name="CanCpuClockRefAlternate" type="REFERENCE" >
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:ref>

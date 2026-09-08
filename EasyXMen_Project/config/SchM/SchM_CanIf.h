@@ -1,4 +1,4 @@
-
+/* SchM ExclusiveArea Function Define */
 /**
  * COPYRIGHT
  * ---------------------------------------------------------------------------------------------------------------------
@@ -17,34 +17,44 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : 
+ * @file        : SchM_CanIf.h
  * @licence     : 
- * @date        : 
+ * @date        : 2026-07-20 00:29:33
  * @customer    : iSoft
- * @description : ComStack_Cfg.h
- * @generator   : AUTOSAR classic Platform 2026-07-20 01:19:28
- * @toolVersion : R23-11
+ * @description : SchM CanIf Header
+ * @generator   : AUTOSAR classic Platform R23-11
+ * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
 
-#ifndef COMSTACK_CFG_H_
-#define COMSTACK_CFG_H_
-/* =================================================== inclusions =================================================== */
-#include "Std_Types.h"
+#ifndef SCHM_CANIF_H
+#define SCHM_CANIF_H
+/* PRQA S 3472 EOF */ /* VL_Rte_SimilarIdentifier */
+/* PRQA S 1709 EOF */ /* VL_Rte_UniqueDefinition */
+/* PRQA S 1512 EOF */ /* VL_Rte_Redeclaration */
 #ifdef __cplusplus
-extern "C" {
-#endif
-/* ===================================================== macros ===================================================== */
-#define COMSTACK_PDUID_INVALID 0xFFFFu
-/* ================================================ type definitions ================================================ */
-typedef uint16 PduIdType;
-typedef uint16 PduLengthType;
- 
-/* ========================================== internal function definitions ========================================= */
- 
-/* =========================================== external data declarations =========================================== */
- 
-/* ========================================= external function declarations ========================================= */
+extern "C"
+{
+#endif /* __cplusplus */
+/*******************************************************************************
+** Include Section **
+*******************************************************************************/
+#include "Os.h"
+#include "ComStack_Types.h"
+#include "SchM_CanIf_Type.h"
+
+/* PRQA S 1753 ++ */ /* VL_Rte_NoDefination */
+/* PRQA S 1753 -- */
+
+
+
+
+/* Mode-Switch */
+
+
+
 #ifdef __cplusplus
-}
-#endif
-#endif
+} /* extern "C" */
+#endif /* __cplusplus */
+
+#endif /* SCHM_CANIF_H */
+

@@ -4,7 +4,7 @@
     <AR-PACKAGE>
       <SHORT-NAME>S32K3XX</SHORT-NAME>
       <ELEMENTS>
-        <ECUC-MODULE-CONFIGURATION-VALUES UUID="a233259e-9978-41ea-b133-a0712589fd80">
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="4c4a3c37-6343-420b-a6cc-769d491ed333">
           <SHORT-NAME>EcuM</SHORT-NAME>
           <ADMIN-DATA>
             <SDGS>
@@ -17,11 +17,11 @@
           </ADMIN-DATA>
           <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcuM</DEFINITION-REF>
           <CONTAINERS>
-            <ECUC-CONTAINER-VALUE UUID="3a0dcd82-0957-45eb-a11b-f021e1d862fe">
+            <ECUC-CONTAINER-VALUE UUID="a0d36d33-5079-4433-8ab6-3820068f05b2">
               <SHORT-NAME>EcuMConfiguration</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration</DEFINITION-REF>
               <SUB-CONTAINERS>
-                <ECUC-CONTAINER-VALUE UUID="8ceb5ba9-5eba-4997-9ac6-a4b838a14aeb">
+                <ECUC-CONTAINER-VALUE UUID="dcd0586d-fcf6-4ea0-857b-be022bf098a8">
                   <SHORT-NAME>EcuMCommonConfiguration</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -39,7 +39,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="4b4d67e8-19ac-44e6-944f-847156bb25fb">
+                    <ECUC-CONTAINER-VALUE UUID="41cead3b-d385-4659-a32e-2916247c9b5b">
                       <SHORT-NAME>EcuMDefaultShutdownTarget</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDefaultShutdownTarget</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -49,7 +49,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="865a91bb-c72c-4b8c-953c-ebec8d7f0ea5">
+                    <ECUC-CONTAINER-VALUE UUID="47816268-19ad-46d9-85ca-7e7cb08ccacd">
                       <SHORT-NAME>EcuMWakeupSource</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMWakeupSource</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -69,11 +69,11 @@
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_NNn90KhpEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_ZsFdsIOKEfGfmsnufcmSSA">
                       <SHORT-NAME>EcuMDriverInitListOne</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne</DEFINITION-REF>
                       <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="_NNn90ahpEfGWp62puc052w">
+                        <ECUC-CONTAINER-VALUE UUID="_ZsGEwIOKEfGfmsnufcmSSA">
                           <SHORT-NAME>EcuMDriverInitItem_0</SHORT-NAME>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMDriverInitListOne/EcuMDriverInitItem</DEFINITION-REF>
                           <PARAMETER-VALUES>
@@ -117,7 +117,7 @@
                     </ECUC-CONTAINER-VALUE>
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
-                <ECUC-CONTAINER-VALUE UUID="_R0FyoKhpEfGWp62puc052w">
+                <ECUC-CONTAINER-VALUE UUID="_brgXwIOKEfGfmsnufcmSSA">
                   <SHORT-NAME>EcuMFlexConfiguration</SHORT-NAME>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -133,7 +133,7 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                   <SUB-CONTAINERS>
-                    <ECUC-CONTAINER-VALUE UUID="_R0GZsKhpEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_briM8IOKEfGfmsnufcmSSA">
                       <SHORT-NAME>EcuMFlexUserConfig_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMFlexUserConfig</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -143,7 +143,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_R0Hn0KhpEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_brkCIIOKEfGfmsnufcmSSA">
                       <SHORT-NAME>EcuMResetMode_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMResetMode</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -153,7 +153,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_R0Hn0ahpEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_brkpMIOKEfGfmsnufcmSSA">
                       <SHORT-NAME>EcuMShutdownCause_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMShutdownCause</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -163,11 +163,11 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
-                    <ECUC-CONTAINER-VALUE UUID="_TkjDoKhpEfGWp62puc052w">
+                    <ECUC-CONTAINER-VALUE UUID="_cql2MIOKEfGfmsnufcmSSA">
                       <SHORT-NAME>EcuMDriverInitListBswM_0</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMDriverInitListBswM</DEFINITION-REF>
                       <SUB-CONTAINERS>
-                        <ECUC-CONTAINER-VALUE UUID="_TkjDoahpEfGWp62puc052w">
+                        <ECUC-CONTAINER-VALUE UUID="_cql2MYOKEfGfmsnufcmSSA">
                           <SHORT-NAME>EcuMDriverInitItem_0</SHORT-NAME>
                           <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMConfiguration/EcuMFlexConfiguration/EcuMDriverInitListBswM/EcuMDriverInitItem</DEFINITION-REF>
                           <PARAMETER-VALUES>
@@ -213,7 +213,7 @@
                 </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="08bea5d6-a1c8-4ee1-b5c5-0f8247d9b530">
+            <ECUC-CONTAINER-VALUE UUID="90fb471c-0c1d-4148-9b19-3b7332534e2e">
               <SHORT-NAME>EcuMFlexGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMFlexGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>
@@ -227,7 +227,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
               </PARAMETER-VALUES>
             </ECUC-CONTAINER-VALUE>
-            <ECUC-CONTAINER-VALUE UUID="fdc86d56-6735-4475-b199-9fef46f39712">
+            <ECUC-CONTAINER-VALUE UUID="8a6dcd5e-f7d1-4d4b-9716-ee2ccfb0e1e8">
               <SHORT-NAME>EcuMGeneral</SHORT-NAME>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcuM/EcuMGeneral</DEFINITION-REF>
               <PARAMETER-VALUES>

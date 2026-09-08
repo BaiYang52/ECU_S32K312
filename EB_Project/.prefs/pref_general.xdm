@@ -60,7 +60,7 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
         <d:var name="ModuleId" value="CanIf_TS_T40D34M40I0R0"/>
-        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Enabled" value="FALSE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
         <d:var name="SoftwareVersion" value="4.0.0 P24_D2405"/>
@@ -114,7 +114,7 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
         <d:var name="ModuleId" value="EcuM_TS_T40D34M40I0R0"/>
-        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Enabled" value="FALSE"/>
         <d:var name="Generate" value="TRUE"/>
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
         <d:var name="SoftwareVersion" value="4.0.0 P24_D2405"/>

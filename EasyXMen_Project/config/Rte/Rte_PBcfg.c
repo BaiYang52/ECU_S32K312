@@ -21,7 +21,7 @@
  * @date        : Rte Postbuild Cfg Data Definitions
  * @customer    : iSoft
  * @description : Rte_PBCfg.c
- * @generator   : AUTOSAR classic Platform 2026-09-05 20:35:57
+ * @generator   : AUTOSAR classic Platform 2026-07-20 00:29:32
  * @toolVersion : R23-11
  **********************************************************************************************************************/
 /* =================================================== inclusions =================================================== */

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Callout.c
  * @licence     : 
- * @date        : 2026-09-05 22:43:31
+ * @date        : 2026-07-20 01:19:28
  * @customer    : iSoft
  * @description : Com Callout Functions
  * @generator   : AUTOSAR classic Platform R23-11
@@ -46,7 +46,6 @@ boolean ComIPdu_0x110_Tx_Callout(
     /* ComIPdu_0x110_Tx_Callout code defined by User */
         boolean ret = TRUE;
         return ret;
-
     /** DO NOT CHANGE THIS COMMENT!
     * </USERBLOCK>
     */
@@ -66,7 +65,6 @@ boolean ComIPdu_0x12a_Rx_Callout(
     /* ComIPdu_0x12a_Rx_Callout code defined by User */
         boolean ret = TRUE;
         return ret;
-
     /** DO NOT CHANGE THIS COMMENT!
     * </USERBLOCK>
     */
