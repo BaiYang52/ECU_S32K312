@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_EcuM.h
  * @licence     : 
- * @date        : 2026-07-20 00:29:32
+ * @date        : 2026-09-09 23:13:53
  * @customer    : iSoft
  * @description : Application Header File for 
 SWC-EcuM

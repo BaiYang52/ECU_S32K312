@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-07-20 01:19:28
+ * @date        : 2026-09-09 23:13:44
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11

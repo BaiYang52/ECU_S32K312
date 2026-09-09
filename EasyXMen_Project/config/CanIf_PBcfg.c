@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-07-20 01:19:27
+ * @date        : 2026-09-09 23:13:43
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -206,7 +206,7 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
 static const CanIf_TxPduConfigType CanIf_TxPduConfigData
 [CANIF_TXPDU_NUMBER] = {
     {
-        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0 */
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_110 */
         .CanIfTxPduCanId = 0x00000110u,
         .CanIfTxPduCanIdMask = 0x000007FFu,
         .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
@@ -281,8 +281,8 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[0u],
         .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_012a,
-        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0 + 1u,
-        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0,
+        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_110 + 1u,
+        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_110,
     },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED

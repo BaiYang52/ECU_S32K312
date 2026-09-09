@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : SchM_CanIf_Type.h
  * @licence     : 
- * @date        : 2026-07-20 00:29:33
+ * @date        : 2026-09-09 23:13:54
  * @customer    : iSoft
  * @description : SchM CanIf Type Header
  * @generator   : AUTOSAR classic Platform R23-11

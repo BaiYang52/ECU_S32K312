@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.c
  * @licence     : 
- * @date        : 2026-07-20 01:19:28
+ * @date        : 2026-09-09 23:13:44
  * @customer    : iSoft
  * @description : Configuration parameter of PduR
  * @generator   : AUTOSAR classic Platform R23-11
@@ -49,7 +49,7 @@ static const PduR_DestPduType PduR_DestPduConfigData[PDUR_DEST_PDU_SUM] =
         PDUR_CANIF,    /* BswModuleIndex */
         TRUE,  /* TransmissionConfirmation */
         PduRConf_PduRSrcPdu_PduRSrcPdu_0x110_Tx,    /* PduRSrcPduRef */
-        CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0,  /* PduRDestModulePduIndex */
+        CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_110,  /* PduRDestModulePduIndex */
         8u,    /* ConfiguredLength */
         PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
         PDUR_DIRECT,  /* PduRDestPduDataProvision */

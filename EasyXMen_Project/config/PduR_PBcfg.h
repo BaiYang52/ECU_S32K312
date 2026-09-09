@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.h
  * @licence     : 
- * @date        : 2026-07-20 01:19:28
+ * @date        : 2026-09-09 23:13:44
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of IpduM
  * @generator   : AUTOSAR classic Platform R23-11
