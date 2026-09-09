@@ -3,6 +3,7 @@
         {
             "name": "S32K312-IAR",
             "includePath": [
+                "D:/SoftWare/Programming/IARSystems/EmbeddedWorkbench9.2/arm/inc/c/**",
                 "${workspaceFolder}/IAR_Project",
                 "${workspaceFolder}/IAR_Project/BSW",
                 "${workspaceFolder}/IAR_Project/BSW/BswM",
@@ -93,7 +94,7 @@
             "compilerPath": "",
             "cStandard": "c99",
             "cppStandard": "c++14",
-            "intelliSenseMode": "gcc-arm",
+            "intelliSenseMode": "windows-gcc-arm",
             "browse": {
                 "path": [
                     "${workspaceFolder}/IAR_Project"
