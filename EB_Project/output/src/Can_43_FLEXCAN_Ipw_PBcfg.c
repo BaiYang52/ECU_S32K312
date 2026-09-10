@@ -133,6 +133,11 @@ const Can_43_FLEXCAN_Ipw_HwChannelConfigType Can_43_FLEXCANIpwHwChannelConfig0 =
     /* Here should be included the structure from FLEXCAN_IP_CFg*/
     &Flexcan_aCtrlConfigPB[0U]
 };
+const Can_43_FLEXCAN_Ipw_HwChannelConfigType Can_43_FLEXCANIpwHwChannelConfig1 =
+{
+    /* Here should be included the structure from FLEXCAN_IP_CFg*/
+    &Flexcan_aCtrlConfigPB[1U]
+};
 
 #define CAN_43_FLEXCAN_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Can_43_FLEXCAN_MemMap.h"
