@@ -276,11 +276,11 @@ extern "C"{
 /**
 *   @brief      Symbolic Name generated for Can HardwareObject
 */
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_0_Rx    ((Can_HwHandleType)0U)
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_1_Rx    ((Can_HwHandleType)1U)
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_Controller1_Rx    ((Can_HwHandleType)2U)
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_2_Tx    ((Can_HwHandleType)3U)
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_Controller1_Tx    ((Can_HwHandleType)4U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_BASIC_Rx    ((Can_HwHandleType)0U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_FULL_Rx    ((Can_HwHandleType)1U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN1_BASIC_Rx    ((Can_HwHandleType)2U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_BASIC_Tx    ((Can_HwHandleType)3U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN1_BASIC_Tx    ((Can_HwHandleType)4U)
 
 /**
 *   @brief      Enable/Disable support  Can_CheckWakeup API

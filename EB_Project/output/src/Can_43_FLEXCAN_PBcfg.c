@@ -197,7 +197,7 @@ static const uint32 Can_au32HwBufferAddr_Ctrl1[2U]=
 
 
 /**
-*   @brief  Hardware Filter of CanHardwareObject_0_Rx
+*   @brief  Hardware Filter of CanHardwareObject_CAN0_BASIC_Rx
 */
 /* Enhance FIFO */
 static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[2U]=
@@ -214,7 +214,7 @@ static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[2U]=
     },
 };
 /**
-*   @brief  Hardware Filter of CanHardwareObject_1_Rx
+*   @brief  Hardware Filter of CanHardwareObject_CAN0_FULL_Rx
 */
 static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object1=
 {
@@ -222,7 +222,7 @@ static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object1=
     (uint32)0xdffc0000U
 };
 /**
-*   @brief  Hardware Filter of CanHardwareObject_Controller1_Rx
+*   @brief  Hardware Filter of CanHardwareObject_CAN1_BASIC_Rx
 */
 static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object2=
 {
@@ -273,7 +273,7 @@ static const uint8 Can_aHwObjIDToCtrlIDMap[CAN_43_FLEXCAN_HWOBJECT_CONFIG_COUNT]
 /* @violates @ref Can_43_FLEXCAN_PBcfg_c_REF_5 MISRA 2012 Required Rule 8.4*/
 static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCAN_HWOBJECT_CONFIG_COUNT]=
 {
-    /* CanHardwareObject_0_Rx of CanController_0*/
+    /* CanHardwareObject_CAN0_BASIC_Rx of CanController_0*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)0U,
@@ -304,7 +304,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message buffer address */
         NULL_PTR
     },
-    /* CanHardwareObject_1_Rx of CanController_0*/
+    /* CanHardwareObject_CAN0_FULL_Rx of CanController_0*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)1U,
@@ -335,7 +335,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl0[0U]
     },
-    /* CanHardwareObject_Controller1_Rx of CanController_1*/
+    /* CanHardwareObject_CAN1_BASIC_Rx of CanController_1*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)2U,
@@ -366,7 +366,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl1[0U]
     },
-    /* CanHardwareObject_2_Tx of CanController_0*/
+    /* CanHardwareObject_CAN0_BASIC_Tx of CanController_0*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)3U,
@@ -397,7 +397,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl0[1U]
     },
-    /* CanHardwareObject_Controller1_Tx of CanController_1*/
+    /* CanHardwareObject_CAN1_BASIC_Tx of CanController_1*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)4U,

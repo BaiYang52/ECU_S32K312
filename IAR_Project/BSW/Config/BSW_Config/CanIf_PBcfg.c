@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-12 17:22:22
+ * @date        : 2026-09-12 18:25:38
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -198,16 +198,16 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
     {
         /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a */
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
-        .CanIfHrhType = CANIF_BASIC_CAN,
-        .CanObjectId = 0u,
+        .CanIfHrhType = CANIF_FULL_CAN,
+        .CanObjectId = 1u,
         .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a,
     },
     {
         /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119 */
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
-        .CanIfHrhType = CANIF_FULL_CAN,
-        .CanObjectId = 1u,
+        .CanIfHrhType = CANIF_BASIC_CAN,
+        .CanObjectId = 0u,
         .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx,
     },
@@ -349,8 +349,8 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
 #include "CanIf_MemMap.h"
 static const Can_HwHandleType CanIf_CanHoh2HrhId_0
 [2u] = {
-    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a,
     CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119,
+    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a,
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_16
 #include "CanIf_MemMap.h"

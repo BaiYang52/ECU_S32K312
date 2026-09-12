@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_ComM_Type.h
  * @licence     : 
- * @date        : 2026-09-12 18:04:26
+ * @date        : 2026-09-12 18:25:46
  * @customer    : iSoft
  * @description : Application Types Header File for 
 SWC-ComM
