@@ -631,7 +631,7 @@
                 <d:lst name="GptClockReferencePoint" type="MAP">
                   <d:ctr name="GptClockReferencePoint_0" type="IDENTIFIABLE">
                     <d:ref name="GptClockReference" type="REFERENCE" 
-                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReference_AIPS_SLOW_CLK"/>
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_AIPS_SLOW"/>
                   </d:ctr>
                 </d:lst>
               </d:ctr>

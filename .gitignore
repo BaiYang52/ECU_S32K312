@@ -45,3 +45,6 @@ Backup*
 
 # IAR .dep files
 *.dep
+
+# User gitignore
+.workbuddy-ai/

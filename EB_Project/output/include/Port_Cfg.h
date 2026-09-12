@@ -1652,16 +1652,18 @@ PORT_CONFIG_PB
 #define PortConf_PortPin_PortPin_B10  0
 #define PortConf_PortPin_PortPin_A7_CANTX  1
 #define PortConf_PortPin_PortPin_A6_CANRX  2
+#define PortConf_PortPin_PortPin_C8_CANTX  3
+#define PortConf_PortPin_PortPin_C9_CANRX  4
 
 /**
 * @brief The maximum number of configured pins
 */
-#define PORT_MAX_CONFIGURED_PADS_U16   ((uint16)3)
+#define PORT_MAX_CONFIGURED_PADS_U16   ((uint16)5)
 
 /**
 * @brief Number of UnUsed pin array
 */
-#define PORT_MAX_UNUSED_PADS_U16    (129U)
+#define PORT_MAX_UNUSED_PADS_U16    (127U)
 
 /**
 * @brief Port driver Post-build configuration switch

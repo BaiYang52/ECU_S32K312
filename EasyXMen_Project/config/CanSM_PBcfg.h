@@ -1,0 +1,62 @@
+/**
+ * COPYRIGHT
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Copyright (c) iSOFT INFRASTRUCTURE SOFTWARE CO., LTD. This software is proprietary to
+ * iSOFT INFRASTRUCTURE SOFTWARE CO., LTD., and all rights are reserved by iSOFT INFRASTRUCTURE SOFTWARE CO., LTD.
+ * Without the express written permission of the company, no organization or individual may copy, install, trial,
+ * distribute, or reverse engineer this software. For terms of use and further details, please refer to the End User
+ * License Agreement (EULA) or contact us business@i-soft.com.cn for more assistance.
+ *
+ * This file contains code from iSoft, which is licensed under the LGPL-2.1. However, due to a special exception,
+ * you are not required to comply with the provisions of section 6a of LGPL-2.1. Specifically, you may distribute
+ * your software, including this file, under terms of your choice, including proprietary licenses, without needing to
+ * provide the source code or object code as specified in section 6a. For more details, please refer to the project's
+ * LICENSE and EXCEPTION files and the specific exception statement.
+ * ---------------------------------------------------------------------------------------------------------------------
+ * FILE DESCRIPTION
+ * ---------------------------------------------------------------------------------------------------------------------
+ * @MCU         : S32K148
+ * @file        : CanSM_PBcfg.h
+ * @licence     : 
+ * @date        : 2026-09-12 22:33:35
+ * @customer    : iSoft
+ * @description : Post-Build configuration parameter of CanSM
+ * @generator   : AUTOSAR classic Platform R23-11
+ * @toolVersion : for_EasyXMen_V25.10_patch
+ **********************************************************************************************************************/
+#ifndef CANSM_PBCFG_H_
+#define CANSM_PBCFG_H_
+
+/* =================================================== inclusions =================================================== */
+#include "ComStack_Types.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* ===================================================== macros ===================================================== */
+/** This macro enables or disables the DEM support in the CanSM module */
+#define CANSM_DEM_SUPPORT STD_OFF
+
+/* ================================================ type definitions ================================================ */
+/**
+ * @brief This type defines a data structure for the post build parameters of the CanSM.
+ */
+typedef struct
+{
+    uint8 CanSMModeRequestRepetitionMax; /**< Specifies the maximal amount of mode request repetitions @range 0.255 */
+    uint16 CanSMModeRequestRepetitionTime; /**< Specifies in which time duration the CanSM module shall repeat mode change requests:ms @range 0.65535 */
+    /** contains the CAN network specific parameters of each CAN network @range pointer */
+    const struct CanSM_ManagerNetworkTypeTag* CanSMManagerNetworkRef; /* PRQA S 1536 */ /* VL_CanSM_NotUsed */
+} CanSM_ConfigType;
+/* ========================================== internal function definitions ========================================= */
+
+/* =========================================== external data declarations =========================================== */
+
+extern const CanSM_ConfigType CanSM_Config;
+
+ /* ========================================= external function declarations ========================================= */
+
+#ifdef __cplusplus
+}
+#endif
+#endif
