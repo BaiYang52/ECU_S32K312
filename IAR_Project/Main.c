@@ -9,7 +9,7 @@
 #include "CanIf.h"
 #include "PduR.h"
 #include "Com.h"
-#include "CanSm.h"
+#include "CanSM.h"
 #include "ComM.h"
 
 
@@ -186,7 +186,7 @@ int main()
 	Com_IpduGroupStart(ComIPduGroup_Rx,TRUE);
 
 	ComM_RequestComMode(ComMConf_ComMUser_ComMUser_0, COMM_FULL_COMMUNICATION);
-	
+
     while(1)
     {
         Scheduler_Main();
