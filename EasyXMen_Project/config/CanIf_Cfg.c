@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_Cfg.c
  * @licence     : 
- * @date        : 2026-09-09 23:13:43
+ * @date        : 2026-09-12 10:41:07
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -81,6 +81,13 @@ const CanIf_CtrlConfigType CanIf_CtrlCfgData
         .CanIfCtrlWakeupSupport = FALSE,
         .CanIfWakeUpSource = 0x00000000u,
     },
+    {
+        /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1 */
+        .CanCtrlId = 1u,
+        .CanDriverId = CANIF_CANGENERAL,
+        .CanIfCtrlWakeupSupport = FALSE,
+        .CanIfWakeUpSource = 0x00000000u,
+    },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "CanIf_MemMap.h"
@@ -90,6 +97,7 @@ const CanIf_CtrlConfigType CanIf_CtrlCfgData
 const uint8 CanIf_CanCtrlId2Index
 [CANIF_CANCTRLID2INDEX_NUMBER] = {
     0u,
+    1u,
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_8
 #include "CanIf_MemMap.h"

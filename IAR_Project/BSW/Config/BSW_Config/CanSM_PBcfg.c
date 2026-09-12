@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-05 09:46:58
+ * @date        : 2026-09-12 10:41:07
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of CanSM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -65,9 +65,9 @@ static const CanSM_ManagerNetworkType CanSM_NetworkConfig[CANSM_NETWORK_NUM] =
 {
     {
         10u, /*CanSMBorCounterL1ToL2 */
-        20u, /*CanSMBorTimeL1 */
-        200u, /*CanSMBorTimeL2 */
-        2u, /*CanSMBorTimeTxEnsured */
+        100u, /*CanSMBorTimeL1 */
+        1000u, /*CanSMBorTimeL2 */
+        10u, /*CanSMBorTimeTxEnsured */
         FALSE, /*CanSMEnableBusOffDelay */
         ComMConf_ComMChannel_ComMChannel_0, /*CanSMComMNetworkHandleRef*/
         NULL_PTR, /* TrcvRef */
@@ -78,7 +78,7 @@ static const CanSM_ManagerNetworkType CanSM_NetworkConfig[CANSM_NETWORK_NUM] =
 const CanSM_ConfigType CanSM_Config = /* PRQA S 1531 */ /* VL_QAC_OneRefSymbol */
 {
     10u, /* CanSMModeRequestRepetitionMax */
-    2u, /* CanSMModeRequestRepetitionTime */
+    10u, /* CanSMModeRequestRepetitionTime */
     &CanSM_NetworkConfig[0u]  /* CanSMManagerNetworkRef */
 };
 

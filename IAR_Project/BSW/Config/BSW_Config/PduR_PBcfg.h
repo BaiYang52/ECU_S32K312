@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-05 09:46:59
+ * @date        : 2026-09-12 10:41:07
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of IpduM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -40,8 +40,8 @@ extern "C" {
 #define PDUR_NUMBER_OF_QUEUES               0u
 #define PDUR_NUM_OF_QUEUES_DEPTH_SUM        0u
 
-#define PDUR_SRC_PDU_SUM                    2u
-#define PDUR_DEST_PDU_SUM                   2u
+#define PDUR_SRC_PDU_SUM                    3u
+#define PDUR_DEST_PDU_SUM                   3u
 
 #define PDUR_ROUTING_PATH_GROUP_SUM         0u
 
@@ -51,9 +51,11 @@ extern "C" {
 /* PRQA S 0793, 0791 ++ */ /* VL_PduR_0793, VL_PduR_0791 */
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_0x110_Tx      0u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_0x12a_Rx      1u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_0x119_Routing_Rx      2u
 
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x110_Tx      0u
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x12a_Rx      1u
+#define PduRConf_PduRDestPdu_PduRDestPdu_0x119_Routing_Tx      2u
 
 /* PRQA S 0793, 0791 -- */ /* VL_PduR_0793, VL_PduR_0791 */
 

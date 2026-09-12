@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_Cfg.h
  * @licence     : 
- * @date        : 2026-09-09 23:13:44
+ * @date        : 2026-09-12 10:41:07
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of PduR
  * @generator   : AUTOSAR classic Platform R23-11
@@ -69,7 +69,7 @@ extern "C" {
 #define PDUR_TP_TXCONFIRMATION            STD_ON
 
 #define PDUR_COMMUNICATION_INTERFACE_FORWARDING_ENABLED     STD_ON
-#define PDUR_COMMUNICATION_INTERFACE_GATEWAYING_ENABLED     STD_OFF
+#define PDUR_COMMUNICATION_INTERFACE_GATEWAYING_ENABLED     STD_ON
 #define PDUR_TRANSPORT_PROTOCOL_FORWARDING_NOBUFFERED_ENABLED     STD_OFF
 #define PDUR_TRANSPORT_PROTOCOL_FORWARDING_BUFFERED_ENABLED     STD_OFF
 #define PDUR_TRANSPORT_PROTOCOL_GATEWAYING_ENABLED     STD_OFF

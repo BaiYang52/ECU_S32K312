@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-05 22:35:52
+ * @date        : 2026-09-12 10:41:07
  * @customer    : iSoft
  * @description : Configuration parameter of PduR
  * @generator   : AUTOSAR classic Platform R23-11
@@ -49,7 +49,7 @@ static const PduR_DestPduType PduR_DestPduConfigData[PDUR_DEST_PDU_SUM] =
         PDUR_CANIF,    /* BswModuleIndex */
         TRUE,  /* TransmissionConfirmation */
         PduRConf_PduRSrcPdu_PduRSrcPdu_0x110_Tx,    /* PduRSrcPduRef */
-        CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg__0x110,  /* PduRDestModulePduIndex */
+        CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110,  /* PduRDestModulePduIndex */
         8u,    /* ConfiguredLength */
         PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
         PDUR_DIRECT,  /* PduRDestPduDataProvision */
@@ -62,6 +62,16 @@ static const PduR_DestPduType PduR_DestPduConfigData[PDUR_DEST_PDU_SUM] =
         ComConf_ComIPdu_ComIPdu_0x12a_Rx,  /* PduRDestModulePduIndex */
         8u,    /* ConfiguredLength */
         PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 2 PduRDestPdu_0x119_Routing_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_0x119_Routing_Rx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_GW_NOBUFFERED,    /* RouteType */
         PDUR_DIRECT,  /* PduRDestPduDataProvision */
     },
 };
@@ -84,7 +94,13 @@ static const PduR_SrcPduType PduR_SrcPduConfigData[PDUR_SRC_PDU_SUM] =
         /* 1 PduRSrcPdu_0x12a_Rx */
         TRUE, /* PduRSrcPduUpTxConf */
         PDUR_CANIF,    /* BswModuleIndex */
-        CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg__0x12a,    /* PduRSrcModulePduIndex */
+        CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 2 PduRSrcPdu_0x119_Routing_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx,    /* PduRSrcModulePduIndex */
     },
 };
 
@@ -98,6 +114,7 @@ static const PduIdType PduR_PduRDestPduIdRef[] =
 {
     PduRConf_PduRDestPdu_PduRDestPdu_0x110_Tx,    /* 0 PduRSrcPdu_0x110_Tx */
     PduRConf_PduRDestPdu_PduRDestPdu_0x12a_Rx,    /* 1 PduRSrcPdu_0x12a_Rx */
+    PduRConf_PduRDestPdu_PduRDestPdu_0x119_Routing_Tx,    /* 2 PduRSrcPdu_0x119_Routing_Rx */
 };
 
 #define PDUR_STOP_SEC_CONFIG_DATA_16
@@ -120,6 +137,12 @@ static const PduR_RoutingPathType PduR_RoutingPathConfigData0[PDUR_SRC_PDU_SUM] 
         1u,    /* PduDestSum */
         FALSE,  /* TpRoute */
         &PduR_PduRDestPduIdRef[1u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 2 PduRSrcPdu_0x119_Routing_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[2u],    /* PduRDestPduIdRef */
     },
 };
 static const PduR_RoutingTableType PduR_RoutingTableConfigData[1u] =
