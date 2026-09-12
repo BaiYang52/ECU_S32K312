@@ -277,7 +277,7 @@ extern "C"{
 *   @brief      Symbolic Name generated for Can HardwareObject
 */
 #define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_BASIC_Rx    ((Can_HwHandleType)0U)
-#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_FULL_Rx    ((Can_HwHandleType)1U)
+#define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_FULL_Rx_0x119    ((Can_HwHandleType)1U)
 #define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN1_BASIC_Rx    ((Can_HwHandleType)2U)
 #define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN0_BASIC_Tx    ((Can_HwHandleType)3U)
 #define Can_43_FLEXCANConf_CanHardwareObject_CanHardwareObject_CAN1_BASIC_Tx    ((Can_HwHandleType)4U)

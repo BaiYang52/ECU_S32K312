@@ -865,7 +865,7 @@
                   </d:ctr>
                 </d:lst>
                 <d:lst name="CanHardwareObject" type="MAP">
-                  <d:ctr name="CanHardwareObject_CAN0_FULL_Rx" 
+                  <d:ctr name="CanHardwareObject_CAN0_FULL_Rx_0x119" 
                          type="IDENTIFIABLE">
                     <d:var name="CanFdPaddingValue" type="INTEGER" value="0">
                       <a:a name="ENABLE" value="false"/>
@@ -964,16 +964,45 @@
                     <d:var name="CanHwObjectCount" type="INTEGER" value="2"/>
                     <d:lst name="CanHwFilter" type="MAP">
                       <d:ctr name="CanHwFilter_0" type="IDENTIFIABLE">
-                        <d:var name="CanHwFilterCode" type="INTEGER" value="100"/>
-                        <d:var name="CanHwFilterMask" type="INTEGER" value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="298"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
                       </d:ctr>
                       <d:ctr name="CanHwFilter_1" type="IDENTIFIABLE">
-                        <d:var name="CanHwFilterCode" type="INTEGER" value="100"/>
-                        <d:var name="CanHwFilterMask" type="INTEGER" value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="512"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_2" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="513"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_3" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="514"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_4" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="515"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_5" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="528"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_6" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="592"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_7" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" 
+                               value="1280"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="1792"/>
                       </d:ctr>
                     </d:lst>
                     <d:lst name="CanTTHardwareObjectTrigger" type="MAP"/>

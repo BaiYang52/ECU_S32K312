@@ -134,7 +134,7 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB[2U]=
         (boolean)FALSE,
         #if (FLEXCAN_IP_FEATURE_HAS_ENHANCED_RX_FIFO == STD_ON)
         /* The number of standard ID filter elements */
-        2U,
+        8U,
         /* The number of extended ID filter elements */
         0U,
         /* The number of enhanced Rx FIFO watermark */
