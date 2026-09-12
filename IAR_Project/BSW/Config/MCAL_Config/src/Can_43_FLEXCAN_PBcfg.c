@@ -200,21 +200,51 @@ static const uint32 Can_au32HwBufferAddr_Ctrl1[2U]=
 *   @brief  Hardware Filter of CanHardwareObject_CAN0_BASIC_Rx
 */
 /* Enhance FIFO */
-static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[2U]=
+static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[8U]=
 {
     /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
     {
-        (uint32)0x00000064U,
-        (uint32)0x00000000U
+        (uint32)0x0000012aU,
+        (uint32)0x000007ffU
     },
     /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
     {
-        (uint32)0x00000064U,
-        (uint32)0x00000000U
+        (uint32)0x00000200U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000201U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000202U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000203U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000210U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000250U,
+        (uint32)0x000007ffU
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000500U,
+        (uint32)0x00000700U
     },
 };
 /**
-*   @brief  Hardware Filter of CanHardwareObject_CAN0_FULL_Rx
+*   @brief  Hardware Filter of CanHardwareObject_CAN0_FULL_Rx_0x119
 */
 static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object1=
 {
@@ -286,7 +316,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Object enable trigger transmit */
         (boolean)FALSE,
         /* Number of Hw Object used in one Hoh */
-        (uint8)2U,
+        (uint8)8U,
         /* MainFunction RW period reference */
         (uint8)0xFFU,
         /* Data Payload length */
@@ -294,7 +324,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Padding value */
         (uint8)0U,
         /* Hardware Filter Count */
-        (uint8)2U,
+        (uint8)8U,
         /* Hw Filter Config */
         Can_aHwFilter_Object0,
         /* Message Buffer is Enhance FIFO */
@@ -304,7 +334,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message buffer address */
         NULL_PTR
     },
-    /* CanHardwareObject_CAN0_FULL_Rx of CanController_0*/
+    /* CanHardwareObject_CAN0_FULL_Rx_0x119 of CanController_0*/
     {
         /* Hardware Object ID */
         (Can_HwHandleType)1U,
