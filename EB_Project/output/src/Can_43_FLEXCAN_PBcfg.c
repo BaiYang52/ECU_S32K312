@@ -316,7 +316,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Object enable trigger transmit */
         (boolean)FALSE,
         /* Number of Hw Object used in one Hoh */
-        (uint8)2U,
+        (uint8)8U,
         /* MainFunction RW period reference */
         (uint8)0xFFU,
         /* Data Payload length */

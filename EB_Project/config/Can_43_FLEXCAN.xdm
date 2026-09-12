@@ -961,7 +961,7 @@
                       <a:a name="ENABLE" value="false"/>
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
-                    <d:var name="CanHwObjectCount" type="INTEGER" value="2"/>
+                    <d:var name="CanHwObjectCount" type="INTEGER" value="8"/>
                     <d:lst name="CanHwFilter" type="MAP">
                       <d:ctr name="CanHwFilter_0" type="IDENTIFIABLE">
                         <d:var name="CanHwFilterCode" type="INTEGER" value="298"/>
