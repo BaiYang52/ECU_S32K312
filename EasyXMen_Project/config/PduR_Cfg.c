@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_Cfg.c
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-12 11:52:52
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of PduR
  * @generator   : AUTOSAR classic Platform R23-11

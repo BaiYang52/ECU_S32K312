@@ -70,6 +70,7 @@ void Task_1ms(void)
 	// /* Avoid unused variable warnings in case DevErrorDetect is off */
 	// (void)Ret;
 	CanSM_MainFunction_CanSMManagerNetwork_0();
+	CanSM_MainFunction_CanSMManagerNetwork_1();
 }
 
 void Task_5ms(void)

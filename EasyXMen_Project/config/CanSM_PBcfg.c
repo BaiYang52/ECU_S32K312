@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-12 11:52:51
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of CanSM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -39,6 +39,12 @@ static CanSM_NetWorkRunTimeType CanSM_NetworkRT_CanSMManagerNetwork_0;
 static Can_ControllerStateType CanSM_ControllerModeRT_CanSMManagerNetwork_0[1u];
 #define CANSM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
 #include "CanSM_MemMap.h"
+#define CANSM_START_SEC_VAR_CLEARED_UNSPECIFIED
+#include "CanSM_MemMap.h"
+static CanSM_NetWorkRunTimeType CanSM_NetworkRT_CanSMManagerNetwork_1;
+static Can_ControllerStateType CanSM_ControllerModeRT_CanSMManagerNetwork_1[1u];
+#define CANSM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
+#include "CanSM_MemMap.h"
 
 #define CANSM_START_SEC_CONFIG_DATA_8
 #include "CanSM_MemMap.h"
@@ -46,6 +52,10 @@ static Can_ControllerStateType CanSM_ControllerModeRT_CanSMManagerNetwork_0[1u];
 static const uint8 CanSM_MN_0ControllerId[1u] =
 {
     CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,   /*CanSMControllerId*/
+};
+static const uint8 CanSM_MN_1ControllerId[1u] =
+{
+    CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1,   /*CanSMControllerId*/
 };
 
 #define CANSM_STOP_SEC_CONFIG_DATA_8
@@ -58,6 +68,7 @@ static const uint8 CanSM_MN_0ControllerId[1u] =
 static const CanSM_ControllerRefType CanSM_ControllerConfig[CANSM_NETWORK_NUM] =
 {
     { 1u, &CanSM_MN_0ControllerId[0u], &CanSM_ControllerModeRT_CanSMManagerNetwork_0[0u]},
+    { 1u, &CanSM_MN_1ControllerId[0u], &CanSM_ControllerModeRT_CanSMManagerNetwork_1[0u]},
 };
 
 
@@ -73,6 +84,17 @@ static const CanSM_ManagerNetworkType CanSM_NetworkConfig[CANSM_NETWORK_NUM] =
         NULL_PTR, /* TrcvRef */
         &CanSM_ControllerConfig[0u], /*ControllerRef*/
         &CanSM_NetworkRT_CanSMManagerNetwork_0,    /*RuntimeNetPtr*/
+    },
+    {
+        10u, /*CanSMBorCounterL1ToL2 */
+        100u, /*CanSMBorTimeL1 */
+        1000u, /*CanSMBorTimeL2 */
+        10u, /*CanSMBorTimeTxEnsured */
+        FALSE, /*CanSMEnableBusOffDelay */
+        ComMConf_ComMChannel_ComMChannel_0, /*CanSMComMNetworkHandleRef*/
+        NULL_PTR, /* TrcvRef */
+        &CanSM_ControllerConfig[1u], /*ControllerRef*/
+        &CanSM_NetworkRT_CanSMManagerNetwork_1,    /*RuntimeNetPtr*/
     },
 };
 const CanSM_ConfigType CanSM_Config = /* PRQA S 1531 */ /* VL_QAC_OneRefSymbol */
