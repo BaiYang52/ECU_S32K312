@@ -974,7 +974,7 @@
                     </d:var>
                     <d:lst name="CanHwFilter" type="MAP">
                       <d:ctr name="CanHwFilter_0" type="IDENTIFIABLE">
-                        <d:var name="CanHwFilterCode" type="INTEGER" value="291"/>
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="281"/>
                         <d:var name="CanHwFilterMask" type="INTEGER" 
                                value="2047"/>
                       </d:ctr>
