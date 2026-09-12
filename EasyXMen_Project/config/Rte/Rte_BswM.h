@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_BswM.h
  * @licence     : 
- * @date        : 2026-09-12 18:25:45
+ * @date        : 2026-09-12 19:02:40
  * @customer    : iSoft
  * @description : Application Header File for 
 SWC-BswM
