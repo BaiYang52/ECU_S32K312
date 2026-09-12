@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_Cfg.h
  * @licence     : 
- * @date        : 2026-09-12 11:52:51
+ * @date        : 2026-09-12 18:04:18
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of CanSM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -60,7 +60,7 @@ extern "C" {
 #define CANSM_BOR_TIME_TX_ENSURED_ENABLED           STD_ON
 
 /** CanSM network handle number */
-#define CANSM_NETWORK_NUM       2u
+#define CANSM_NETWORK_NUM       1u
 /** Enables or disables CanTransceiver */
 #define CANSM_TRCV_ENABLED          STD_OFF
 

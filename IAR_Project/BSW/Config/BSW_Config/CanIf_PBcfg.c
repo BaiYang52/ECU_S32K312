@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-12 17:22:22
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -205,7 +205,7 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
     },
     {
         /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119 */
-        .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1,
+        .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHrhType = CANIF_FULL_CAN,
         .CanObjectId = 1u,
         .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
@@ -325,7 +325,7 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0 */
         .PartitionIndex = 0u,
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[0u],
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a + 1u,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a,
         .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110 + 1u,
         .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110,
@@ -334,8 +334,8 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1 */
         .PartitionIndex = 0u,
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[1u],
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx,
+        .RxPduIndexMaxExcluded = CANIF_PDUID_INVALID,
+        .RxPduIndexMin = CANIF_PDUID_INVALID,
         .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx + 1u,
         .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx,
     },

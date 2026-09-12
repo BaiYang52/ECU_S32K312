@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_Main.h
  * @licence     : 
- * @date        : 2026-09-09 23:13:51
+ * @date        : 2026-09-12 18:04:25
  * @customer    : iSoft
  * @description : Lifecycle Header File.
  * @generator   : AUTOSAR classic Platform R23-11

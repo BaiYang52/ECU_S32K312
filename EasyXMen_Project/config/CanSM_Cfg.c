@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_Cfg.c
  * @licence     : 
- * @date        : 2026-09-12 11:52:51
+ * @date        : 2026-09-12 18:04:18
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of CanSM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -46,16 +46,6 @@
 void CanSM_MainFunction_CanSMManagerNetwork_0(void)
 {
     CanSM_MainFunction(0u);
-}
-/**
- * @brief       Periodic function for the  network.
- * @reentrant   TRUE
- * @synchronous TRUE
- * @trace       CPD-73378
- */
-void CanSM_MainFunction_CanSMManagerNetwork_1(void)
-{
-    CanSM_MainFunction(1u);
 }
 /* PRQA S 1532 -- */ /* VL_QAC_OneFunRef */
 #define CANSM_STOP_SEC_CODE

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte.h
  * @licence     : 
- * @date        : 2026-09-09 23:13:52
+ * @date        : 2026-09-12 18:04:26
  * @customer    : iSoft
  * @description : Header file containing RTE types
  * @generator   : AUTOSAR classic Platform R23-11
