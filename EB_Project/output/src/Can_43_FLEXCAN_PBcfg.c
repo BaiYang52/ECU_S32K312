@@ -240,7 +240,7 @@ static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[8U]=
     /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
     {
         (uint32)0x00000500U,
-        (uint32)0x00000700U
+        (uint32)0x00000780U
     },
 };
 /**
