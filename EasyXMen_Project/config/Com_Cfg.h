@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Cfg.h
  * @licence     : 
- * @date        : 2026-09-12 22:33:35
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -64,16 +64,16 @@
 
 #define COM_MULITIVARIANT_SUPPORT               STD_OFF
 
-#define COM_MAX_IPDU_NUMBER                      2u
+#define COM_MAX_IPDU_NUMBER                      5u
 
-#define COM_MAX_RXIPDUGROUP_NUMBER                 1u
-#define COM_MAX_TXIPDUGROUP_NUMBER                 1u
+#define COM_MAX_RXIPDUGROUP_NUMBER                 2u
+#define COM_MAX_TXIPDUGROUP_NUMBER                 3u
 #define COM_MAX_IPDUGROUP_NUMBER                   2u
 
 #define COM_MAX_RXIPDU_CALLOUT_NUMBER   1u
 
-#define COM_MAX_RXIPDU_NUMBER                          1u
-#define COM_MAX_TXIPDU_NUMBER                          1u
+#define COM_MAX_RXIPDU_NUMBER                          2u
+#define COM_MAX_TXIPDU_NUMBER                          3u
 
 #define COM_MAX_SIGNALGROUPARRY_NUMBER  0u
 
@@ -119,9 +119,9 @@
 #define COM_MAX_TXSIGNAL_TIMEOUT_NUMBER    0u
 #define COM_MAX_TXSIGGRP_TIMEOUT_NUMBER 0u
 
-#define COM_MAX_SIGANDGRPSIG_NUMBER                  2u
-#define COM_MAX_RXSIGNAL_NUMBER                        1u
-#define COM_MAX_TXSIGNAL_NUMBER                        1u
+#define COM_MAX_SIGANDGRPSIG_NUMBER                  14u
+#define COM_MAX_RXSIGNAL_NUMBER                        7u
+#define COM_MAX_TXSIGNAL_NUMBER                        7u
 
 #define COM_MAX_TXGROUPSIGNAL_NUMBER                   0u
 #define COM_MAX_RXGROUPSIGNAL_NUMBER                   0u
@@ -132,13 +132,13 @@
 
 #define COM_MAX_RXGRPSIG_SUBSTITUTE_NUMBER     0u
 
-#define COM_MAX_GWMAPPING_NUMBER                       0u
-#define COM_MAX_GW_DESTINATION_NUM                     0u
+#define COM_MAX_GWMAPPING_NUMBER                       6u
+#define COM_MAX_GW_DESTINATION_NUM                     6u
 #define COM_MAX_GW_SOURCE_DESCRIPTION_NUMBER           0u
 #define COM_MAX_GW_DESTINATION_DESCRIPTION_NUMBER      0u
 
 /* Maximum number of Destination signals of GwMappings for all variants */
-#define COM_MAX_GW_DESTINATION_SIGNAL_NUMBER      0u
+#define COM_MAX_GW_DESTINATION_SIGNAL_NUMBER      6u
 
 /* Maximum number of Destination GroupSignals of GwMappings for all variants */
 #define COM_MAX_GW_DESTINATION_GROUP_SIGNAL_NUMBER      0u
@@ -161,11 +161,11 @@
 /* Maximum number of GW Destination Descriptions with Type of UNIT8_N or UNIN8_DYN for all variants */
 #define COM_MAX_GW_DESTINATION_NDYN_DESCRIPTION_NUMBER      0u
 
-#define COM_MAX_NUMBER_OF_MAIN_FUNCTION_ROUTE_SIGNALS 0u
+#define COM_MAX_NUMBER_OF_MAIN_FUNCTION_ROUTE_SIGNALS 1u
 #define COM_MAX_NUMBER_OF_MAIN_FUNCTION_RX            1u
 #define COM_MAX_NUMBER_OF_MAIN_FUNCTION_TX            1u
 
-#define COM_MAX_TX_MODE_TRUE_PERIOD_NUMBER   1u
+#define COM_MAX_TX_MODE_TRUE_PERIOD_NUMBER   3u
 
 #define COM_MAX_TX_MODE_FALSE_PERIOD_NUMBER    0u
 
@@ -191,9 +191,24 @@
 
 #define ComConf_ComIPdu_ComIPdu_0x110_Tx        ComIPdu_0x110_Tx
 #define ComConf_ComIPdu_ComIPdu_0x12a_Rx        ComIPdu_0x12a_Rx
+#define ComConf_ComIPdu_ComIPdu_0x114_Rx        ComIPdu_0x114_Rx
+#define ComConf_ComIPdu_ComIPdu_0x114_Tx        ComIPdu_0x114_Tx
+#define ComConf_ComIPdu_ComIPdu_0x115_Tx        ComIPdu_0x115_Tx
 
 #define ComConf_ComSignal_ComSignal_0_Tx   ComSignal_0_Tx
 #define ComConf_ComSignal_ComSignal_1_Rx   ComSignal_1_Rx
+#define ComConf_ComSignal_ComSignal_Signal_1_Led_Sts_Rx   ComSignal_Signal_1_Led_Sts_Rx
+#define ComConf_ComSignal_ComSignal_Signal_2_Led_LiangDu_Rx   ComSignal_Signal_2_Led_LiangDu_Rx
+#define ComConf_ComSignal_ComSignal_Signal_3_Led_Red_Rx   ComSignal_Signal_3_Led_Red_Rx
+#define ComConf_ComSignal_ComSignal_Signal_4_Led_Sts_Rx   ComSignal_Signal_4_Led_Sts_Rx
+#define ComConf_ComSignal_ComSignal_Signal_5_Led_LiangDu_Rx   ComSignal_Signal_5_Led_LiangDu_Rx
+#define ComConf_ComSignal_ComSignal_Signal_6_Led_Red_Rx   ComSignal_Signal_6_Led_Red_Rx
+#define ComConf_ComSignal_ComSignal_Signal_1_Led_Sts_Tx   ComSignal_Signal_1_Led_Sts_Tx
+#define ComConf_ComSignal_ComSignal_Signal_2_Led_LiangDu_Tx   ComSignal_Signal_2_Led_LiangDu_Tx
+#define ComConf_ComSignal_ComSignal_Signal_3_Led_Red_Tx   ComSignal_Signal_3_Led_Red_Tx
+#define ComConf_ComSignal_ComSignal_Signal_4_Led_Sts_Tx   ComSignal_Signal_4_Led_Sts_Tx
+#define ComConf_ComSignal_ComSignal_Signal_5_Led_LiangDu_Tx   ComSignal_Signal_5_Led_LiangDu_Tx
+#define ComConf_ComSignal_ComSignal_Signal_6_Led_Red_Tx   ComSignal_Signal_6_Led_Red_Tx
 
 /* PRQA S 0791 -- */
 

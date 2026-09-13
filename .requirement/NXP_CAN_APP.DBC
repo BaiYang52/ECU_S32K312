@@ -1,0 +1,201 @@
+VERSION "1.0"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: S32K312 VCU BCM S32K344
+
+
+BO_ 768 CAN0_Tx_0x300_Cyclic: 8 S32K312
+ SG_ Sig_Tx_UB : 7|1@0+ (1,0) [0|1] ""  VCU,BCM,S32K344
+ SG_ Sig_Tx_Data : 15|16@0+ (1,0) [0|65535] ""  VCU,BCM,S32K344
+
+BO_ 769 CAN0_Tx_0x301_Event: 8 S32K312
+ SG_ Sig_Tx_EventStatus : 7|8@0+ (1,0) [0|255] ""  VCU,BCM,S32K344
+
+BO_ 770 CAN0_Tx_0x302_Mixed: 8 S32K312
+ SG_ Sig_Tx_MixedData : 7|16@0+ (1,0) [0|65535] ""  VCU,BCM,S32K344
+
+BO_ 771 CAN0_Tx_0x303_Cyclic_Counter: 8 S32K312
+ SG_ Sig_Tx_RollingCounter : 7|4@0+ (1,0) [0|15] ""  VCU,BCM,S32K344
+ SG_ Sig_Tx_CounterData : 15|16@0+ (1,0) [0|65535] ""  VCU,BCM,S32K344
+
+BO_ 848 CAN0_Tx_0x350_Cyclic_PN17: 8 S32K312
+ SG_ Sig_Tx_PN17_Data : 7|16@0+ (1,0) [0|65535] ""  VCU,BCM,S32K344
+
+BO_ 849 CAN0_Tx_0x351_Cyclic_PN29: 8 S32K312
+ SG_ Sig_Tx_PN29_Data : 7|16@0+ (1,0) [0|65535] ""  VCU,BCM,S32K344
+
+BO_ 864 CAN0_Tx_0x360_E2E_P01: 8 S32K312
+ SG_ Sig_Tx_E2E_CRC : 7|8@0+ (1,0) [0|255] ""  VCU,BCM,S32K344
+ SG_ Sig_Tx_E2E_Counter : 15|4@0+ (1,0) [0|15] ""  VCU,BCM,S32K344
+ SG_ Sig_Tx_E2E_Data : 23|32@0+ (1,0) [0|4294967295] ""  VCU,BCM,S32K344
+
+BO_ 512 CAN0_Rx_0x200_Cyclic: 8 VCU
+ SG_ Sig_Rx_UB : 7|1@0+ (1,0) [0|1] ""  S32K312
+ SG_ Sig_Rx_Data : 15|16@0+ (1,0) [0|65535] ""  S32K312
+
+BO_ 513 CAN0_Rx_0x201_Event: 8 BCM
+ SG_ Sig_Rx_EventStatus : 7|8@0+ (1,0) [0|255] ""  S32K312
+
+BO_ 514 CAN0_Rx_0x202_Mixed: 8 S32K344
+ SG_ Sig_Rx_MixedData : 7|16@0+ (1,0) [0|65535] ""  S32K312
+
+BO_ 515 CAN0_Rx_0x203_Cyclic_Counter: 8 VCU
+ SG_ Sig_Rx_RollingCounter : 7|4@0+ (1,0) [0|15] ""  S32K312
+ SG_ Sig_Rx_CounterData : 15|16@0+ (1,0) [0|65535] ""  S32K312
+
+BO_ 592 CAN0_Rx_0x250_Cyclic_PN17: 8 BCM
+ SG_ Sig_Rx_PN17_Data : 7|16@0+ (1,0) [0|65535] ""  S32K312
+
+
+
+CM_ BO_ 768 "Cyclic message, cycle time: 500ms. The signals under this message are all provided with UB bit";
+CM_ BO_ 769 "Event message";
+CM_ BO_ 770 "Mixed message, normal cycle: 500ms, triggered to send 3 consecutive frames, cycle: 50ms";
+CM_ BO_ 771 "Cyclic message, cycle time: 500ms, with RollingCounter";
+CM_ BO_ 848 "Cyclic message, cycle time: 100ms. Controlled by PN17";
+CM_ BO_ 849 "Cyclic message, cycle time: 100ms. Controlled by PN29";
+CM_ BO_ 864 "Cyclic message, cycle time: 100ms. E2E message, DATAID: 0x1234";
+CM_ BO_ 512 "Cyclic message, cycle time: 500ms. The signals under this message are all provided with UB bit";
+CM_ BO_ 513 "Event message";
+CM_ BO_ 514 "Mixed message, normal cycle: 500ms, triggered to send 3 consecutive frames, cycle: 50ms, including 2500ms of signal timeout";
+CM_ BO_ 515 "Cyclic message, cycle time: 500ms, with RollingCounter";
+CM_ BO_ 592 "Cyclic message, cycle time: 100ms. Controlled by PN17";
+
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","not-used","not-used","not-used","cyclicAndSpontaneous","not-used","cyclicIfActive","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDataID" HEX 0 65535;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ILUsed" ENUM  "Yes","No";
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrMessageCount" INT 0 255;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "Baudrate" INT 1000 1000000;
+
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgDataID" 0;
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrNode" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "ProtocolType" "CAN";
+BA_DEF_DEF_  "Baudrate" 500000;
+
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "CAN";
+BA_ "Baudrate" 500000;
+
+BA_ "GenMsgSendType" BO_ 768 0;
+BA_ "GenMsgCycleTime" BO_ 768 500;
+
+BA_ "GenMsgSendType" BO_ 769 1;
+BA_ "GenMsgCycleTime" BO_ 769 0;
+
+BA_ "GenMsgSendType" BO_ 770 5;
+BA_ "GenMsgCycleTime" BO_ 770 500;
+BA_ "GenMsgCycleTimeFast" BO_ 770 50;
+BA_ "GenMsgNrOfRepetition" BO_ 770 3;
+
+BA_ "GenMsgSendType" BO_ 771 0;
+BA_ "GenMsgCycleTime" BO_ 771 500;
+
+BA_ "GenMsgSendType" BO_ 848 0;
+BA_ "GenMsgCycleTime" BO_ 848 100;
+
+BA_ "GenMsgSendType" BO_ 849 0;
+BA_ "GenMsgCycleTime" BO_ 849 100;
+
+BA_ "GenMsgSendType" BO_ 864 0;
+BA_ "GenMsgCycleTime" BO_ 864 100;
+BA_ "GenMsgDataID" BO_ 864 4660;
+
+BA_ "GenMsgSendType" BO_ 512 0;
+BA_ "GenMsgCycleTime" BO_ 512 500;
+
+BA_ "GenMsgSendType" BO_ 513 1;
+BA_ "GenMsgCycleTime" BO_ 513 0;
+
+BA_ "GenMsgSendType" BO_ 514 5;
+BA_ "GenMsgCycleTime" BO_ 514 500;
+BA_ "GenMsgCycleTimeFast" BO_ 514 50;
+BA_ "GenMsgNrOfRepetition" BO_ 514 3;
+
+BA_ "GenMsgSendType" BO_ 515 0;
+BA_ "GenMsgCycleTime" BO_ 515 500;
+
+BA_ "GenMsgSendType" BO_ 592 0;
+BA_ "GenMsgCycleTime" BO_ 592 100;

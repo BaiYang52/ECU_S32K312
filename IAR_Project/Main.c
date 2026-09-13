@@ -77,8 +77,9 @@ void Task_5ms(void)
 {
 	/* TODO: 5ms task content */
 	ComM_MainFunction_ComMChannel_0();
-	Com_MainFunctionTx_ComMainFunctionTx_0();
 	Com_MainFunctionRx_ComMainFunctionRx_0();
+	Com_MainFunctionRouteSignals_ComMainFunctionRouteSignals_0();
+	Com_MainFunctionTx_ComMainFunctionTx_0();
 }
 
 void Task_10ms(void)

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : SchM_Com_Type.h
  * @licence     : 
- * @date        : 2026-09-12 22:33:43
+ * @date        : 2026-09-13 17:07:01
  * @customer    : iSoft
  * @description : SchM Com Type Header
  * @generator   : AUTOSAR classic Platform R23-11

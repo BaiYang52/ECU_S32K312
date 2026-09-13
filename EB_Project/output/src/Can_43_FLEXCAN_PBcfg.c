@@ -200,8 +200,13 @@ static const uint32 Can_au32HwBufferAddr_Ctrl1[2U]=
 *   @brief  Hardware Filter of CanHardwareObject_CAN0_BASIC_Rx
 */
 /* Enhance FIFO */
-static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[8U]=
+static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[10U]=
 {
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x00000114U,
+        (uint32)0x000007ffU
+    },
     /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
     {
         (uint32)0x0000012aU,
@@ -241,6 +246,11 @@ static const Can_43_FLEXCAN_HwFilterType Can_aHwFilter_Object0[8U]=
     {
         (uint32)0x00000500U,
         (uint32)0x00000780U
+    },
+    /* CanHardwareObject: STANDARD filter for FLEXCAN_0 with scheme type MASK_FILTER_SCHEME*/
+    {
+        (uint32)0x000007dfU,
+        (uint32)0x000007ffU
     },
 };
 /**
@@ -324,7 +334,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Padding value */
         (uint8)0U,
         /* Hardware Filter Count */
-        (uint8)8U,
+        (uint8)10U,
         /* Hw Filter Config */
         Can_aHwFilter_Object0,
         /* Message Buffer is Enhance FIFO */

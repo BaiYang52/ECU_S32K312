@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -95,13 +95,13 @@ extern "C" {
 
 
 #define CANIF_HTH_NUMBER 2u
-#define CanIfConf_CanIfHthCfg_CanIfHthCfg_0x110 0u
-#define CanIfConf_CanIfHthCfg_CanIfHthCfg_Controller1_0x119_Tx 1u
+#define CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC 0u
+#define CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN1_BASIC 1u
 
 
 #define CANIF_HRH_NUMBER 2u
-#define CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a 0u
-#define CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119 1u
+#define CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC 0u
+#define CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_FULL_0x119 1u
 
 #define CANIF_TXBUFFER_CONFIG_MAX_NUMBER 2u
 #define CANIF_TXBUFFER_CONFIG_NUMBER_PARTITION0 2u

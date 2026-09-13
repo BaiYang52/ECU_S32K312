@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-12 19:02:32
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -176,13 +176,13 @@ const CanIfRxPduUserRxIndicationNameApiType CanIf_UpRxIndicationArray
 static const CanIf_HthConfigType CanIf_HthConfigData
 [CANIF_HTH_NUMBER] = {
     {
-        /* CanIfConf_CanIfHthCfg_CanIfHthCfg_0x110 */
+        /* CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC */
         .CanIfHthCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHthType = CANIF_BASIC_CAN,
         .CanObjectId = 3u,
     },
     {
-        /* CanIfConf_CanIfHthCfg_CanIfHthCfg_Controller1_0x119_Tx */
+        /* CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN1_BASIC */
         .CanIfHthCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1,
         .CanIfHthType = CANIF_BASIC_CAN,
         .CanObjectId = 4u,
@@ -196,20 +196,20 @@ static const CanIf_HthConfigType CanIf_HthConfigData
 static const CanIf_HrhConfigType CanIf_HrhConfigData
 [CANIF_HRH_NUMBER] = {
     {
-        /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a */
+        /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC */
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHrhType = CANIF_BASIC_CAN,
         .CanObjectId = 0u,
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x12a + 1u,
+        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting,
     },
     {
-        /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119 */
+        /* CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_FULL_0x119 */
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHrhType = CANIF_FULL_CAN,
         .CanObjectId = 1u,
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing + 1u,
+        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing,
     },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -220,12 +220,12 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
 static const CanIf_TxPduConfigType CanIf_TxPduConfigData
 [CANIF_TXPDU_NUMBER] = {
     {
-        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110 */
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110 */
         .CanIfTxPduCanId = 0x00000110u,
         .CanIfTxPduCanIdMask = 0x000007FFu,
         .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
         .CanIfTxPduDlc = 8u,
-        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_0x110,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
         .CanIfTxPduTruncation = TRUE,
         .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_0x110_Tx,
         .DynamicTxPduPtr = NULL_PTR,
@@ -236,12 +236,12 @@ static const CanIf_TxPduConfigType CanIf_TxPduConfigData
         .UpTxConfirmationApiIndex = 0u,
     },
     {
-        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx */
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x119_Routing */
         .CanIfTxPduCanId = 0x00000119u,
         .CanIfTxPduCanIdMask = 0x000007FFu,
         .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
         .CanIfTxPduDlc = 8u,
-        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_Controller1_0x119_Tx,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN1_BASIC,
         .CanIfTxPduTruncation = TRUE,
         .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_0x119_Routing_Tx,
         .DynamicTxPduPtr = NULL_PTR,
@@ -249,6 +249,38 @@ static const CanIf_TxPduConfigType CanIf_TxPduConfigData
         .TxMetaDataEnable = FALSE,
         .UpConfirmTxPduMask = ((uint8)1u << (8u & 7u)),
         .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(8u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x114_SignalRouting */
+        .CanIfTxPduCanId = 0x00000114u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 4u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN1_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_0x114_SignalRouting_Tx,
+        .DynamicTxPduPtr = NULL_PTR,
+        .TxBufferIndex = 1u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (9u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(9u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x115_SignalRouting */
+        .CanIfTxPduCanId = 0x00000115u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 4u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN1_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_0x115_SignalRouting_Tx,
+        .DynamicTxPduPtr = NULL_PTR,
+        .TxBufferIndex = 1u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (10u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(10u >> 3u)],
         .UpTxConfirmationApiIndex = 0u,
     },
 };
@@ -260,25 +292,37 @@ static const CanIf_TxPduConfigType CanIf_TxPduConfigData
 static const CanIf_RxPduConfigType CanIf_RxPduConfigData
 [CANIF_RXPDU_NUMBER] = {
     {
-        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a */
+        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000114u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_0x114_SignalRouting_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x12a */
         .CanIfRxPduCanIdMask = 0x000007FFu,
         .CanIfRxPduCanIdMasked = (0x0000012Au & 0x000007FFu),
         .CanIfRxPduCanIdType = CANIF_RX_STANDARD_CAN,
         .CanIfRxPduDlc = 8u,
         .CanIfRxPduForNM = FALSE,
-        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
         .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_0x12a_Rx,
         .RxMetaDataEnable = FALSE,
         .UpRxIndicationApiIndex = 0u,
     },
     {
-        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx */
+        /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing */
         .CanIfRxPduCanIdMask = 0x000007FFu,
         .CanIfRxPduCanIdMasked = (0x00000119u & 0x000007FFu),
         .CanIfRxPduCanIdType = CANIF_RX_STANDARD_CAN,
         .CanIfRxPduDlc = 8u,
         .CanIfRxPduForNM = FALSE,
-        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_FULL_0x119,
         .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_0x119_Routing_Rx,
         .RxMetaDataEnable = FALSE,
         .UpRxIndicationApiIndex = 0u,
@@ -325,10 +369,10 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0 */
         .PartitionIndex = 0u,
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[0u],
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx + 1u,
-        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a,
-        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110 + 1u,
-        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing + 1u,
+        .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting,
+        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110 + 1u,
+        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110,
     },
     {
         /* CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_1 */
@@ -336,8 +380,8 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[1u],
         .RxPduIndexMaxExcluded = CANIF_PDUID_INVALID,
         .RxPduIndexMin = CANIF_PDUID_INVALID,
-        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx + 1u,
-        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx,
+        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x115_SignalRouting + 1u,
+        .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x119_Routing,
     },
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -349,8 +393,8 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
 #include "CanIf_MemMap.h"
 static const Can_HwHandleType CanIf_CanHoh2HrhId_0
 [2u] = {
-    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x12a,
-    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_0x119,
+    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+    CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_FULL_0x119,
 };
 #define CANIF_STOP_SEC_CONFIG_DATA_16
 #include "CanIf_MemMap.h"
