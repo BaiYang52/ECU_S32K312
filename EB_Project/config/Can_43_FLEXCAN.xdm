@@ -963,6 +963,11 @@
                     </d:var>
                     <d:var name="CanHwObjectCount" type="INTEGER" value="8"/>
                     <d:lst name="CanHwFilter" type="MAP">
+                      <d:ctr name="CanHwFilter_8" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" value="276"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
+                      </d:ctr>
                       <d:ctr name="CanHwFilter_0" type="IDENTIFIABLE">
                         <d:var name="CanHwFilterCode" type="INTEGER" value="298"/>
                         <d:var name="CanHwFilterMask" type="INTEGER" 
@@ -1003,6 +1008,12 @@
                                value="1280"/>
                         <d:var name="CanHwFilterMask" type="INTEGER" 
                                value="1920"/>
+                      </d:ctr>
+                      <d:ctr name="CanHwFilter_9" type="IDENTIFIABLE">
+                        <d:var name="CanHwFilterCode" type="INTEGER" 
+                               value="2015"/>
+                        <d:var name="CanHwFilterMask" type="INTEGER" 
+                               value="2047"/>
                       </d:ctr>
                     </d:lst>
                     <d:lst name="CanTTHardwareObjectTrigger" type="MAP"/>
