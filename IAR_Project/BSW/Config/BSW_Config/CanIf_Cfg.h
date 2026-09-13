@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_Cfg.h
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -177,13 +177,16 @@ extern "C" {
 
 #define CANIF_CANTRCVID2INDEX_NUMBER 0u
 
-#define CANIF_TXPDU_NUMBER 2u
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_0x110 0u
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_Controller1_0x119_Tx 1u
+#define CANIF_TXPDU_NUMBER 4u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110 0u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x119_Routing 1u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x114_SignalRouting 2u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x115_SignalRouting 3u
 
-#define CANIF_RXPDU_NUMBER 2u
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x12a 0u
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_0x119_Routing_Rx 1u
+#define CANIF_RXPDU_NUMBER 3u
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting 0u
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x12a 1u
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing 2u
 
 /* ================================================ type definitions ================================================ */
 

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-12 22:33:35
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of CanSM
  * @generator   : AUTOSAR classic Platform R23-11

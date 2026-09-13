@@ -1141,6 +1141,244 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_wn-kwK9HEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_1_Led_Sts</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_wn_L0K9HEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_4njN8K9IEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_1_Led_Sts_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_wn_L0a9HEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_4PrggK9IEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_1_Led_Sts_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_CXdo0K9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_2_Led_LiangDu</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_CXalgK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_CXalga9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_2_Led_LiangDu_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_CXcasK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_CXcasa9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_2_Led_LiangDu_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_C9QdgK9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_3_Led_Red</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_C9PPYa9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_C9PPYq9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_3_Led_Red_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_C9P2cK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_C9P2ca9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_3_Led_Red_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_SvYScK9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_4_Led_Sts</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_SvXEUa9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_SvXEUq9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_4_Led_Sts_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_SvXrYK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_SvXrYa9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_4_Led_Sts_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_SvaHoK9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_5_Led_LiangDu</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_SvY5ga9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_SvY5gq9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_5_Led_LiangDu_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_SvZgkK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_SvZgka9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_5_Led_LiangDu_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_SvbVwK9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComGwMapping_Signal_6_Led_Red</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE UUID="_SvaHoq9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwDestination_0</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_SvaHo69JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwDestination/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_6_Led_Red_Tx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE UUID="_SvausK9JEfGuh4G41eajCQ">
+                      <SHORT-NAME>ComGwSource</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-CHOICE-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE UUID="_Svausa9JEfGuh4G41eajCQ">
+                          <SHORT-NAME>ComGwSignal</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-CHOICE-REFERENCE-DEF">/AUTOSAR/Com/ComConfig/ComGwMapping/ComGwSource/ComGwSignal/ComGwSignalRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/Com/ComConfig/ComSignal_Signal_6_Led_Red_Rx</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="_1J9QQK9JEfGuh4G41eajCQ">
+                  <SHORT-NAME>ComMainFunctionRouteSignals_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/Com/ComConfig/ComMainFunctionRouteSignals</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComMainFunctionRouteSignals/ComMainRouteSignalsTimeBase</DEFINITION-REF>
+                      <VALUE>0.05</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
           </CONTAINERS>

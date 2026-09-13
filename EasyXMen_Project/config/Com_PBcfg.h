@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-12 22:33:35
+ * @date        : 2026-09-13 17:06:52
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -29,18 +29,19 @@
 /*******************************************************************************
 **                      Include Section                                       **
 *******************************************************************************/
+#include "Std_Types.h"
 /*******************************************************************************
 **                      Macros                                                **
 *******************************************************************************/
-#define COM_MAX_RXIPDUBUFF_SIZE  8u
-#define COM_MAX_TXIPDUBUFF_SIZE  8u
+#define COM_MAX_RXIPDUBUFF_SIZE  16u
+#define COM_MAX_TXIPDUBUFF_SIZE  16u
 
 #define COM_MAX_SIGNAL_BOOLBUFF_SIZE            0u
 #define COM_MAX_RXGROUPSIGNAL_BOOLBUFF_SIZE     0u
 #define COM_MAX_SIGNAL_BOOL_INVALID_SIZE        0u
 #define COM_MAX_SIGNAL_BOOL_SUBSTITUTE_SIZE     0u
 
-#define COM_MAX_SIGNAL_8BITBUFF_SIZE            2u
+#define COM_MAX_SIGNAL_8BITBUFF_SIZE            14u
 #define COM_MAX_RXGROUPSIGNAL_8BITBUFF_SIZE     0u
 #define COM_MAX_SIGNAL_8BIT_INVALID_SIZE        0u
 #define COM_MAX_SIGNAL_8BIT_SUBSTITUTE_SIZE     0u
@@ -61,7 +62,7 @@
 #define COM_MAX_SIGNAL_64BIT_SUBSTITUTE_SIZE    0u
 
 #define COM_MAX_GWSIGNAL_BOOLBUFF_SIZE                 0u
-#define COM_MAX_GWSIGNAL_8BITBUFF_SIZE                 0u
+#define COM_MAX_GWSIGNAL_8BITBUFF_SIZE                 6u
 #define COM_MAX_GWSIGNAL_16BITBUFF_SIZE                0u
 #define COM_MAX_GWSIGNAL_32BITBUFF_SIZE                0u
 #define COM_MAX_GWSIGNAL_64BITBUFF_SIZE                0u
@@ -186,6 +187,8 @@
 
 #define COM_TXIPDU_TIGGERTRANSMIT_CALLOUT_ENABLE   STD_OFF
 
+#define COM_NOT_USED_GW_MAPPING_ID 0xFFu
+typedef uint8 Com_GwMappingIdType;
 
 
  #define ComIPduGroup_Tx    0u
@@ -194,13 +197,28 @@
 
 
 #define ComIPdu_0x12a_Rx    0u /* Rx-0 */
-#define ComIPdu_0x110_Tx    1u /* Tx-0 */
+#define ComIPdu_0x114_Rx    1u /* Rx-1 */
+#define ComIPdu_0x110_Tx    2u /* Tx-0 */
+#define ComIPdu_0x114_Tx    3u /* Tx-1 */
+#define ComIPdu_0x115_Tx    4u /* Tx-2 */
 
 
 
 #define ComSignal_1_Rx    0u /* ComIPdu_0x12a_Rx */
+#define ComSignal_Signal_1_Led_Sts_Rx    1u /* ComIPdu_0x114_Rx */
+#define ComSignal_Signal_2_Led_LiangDu_Rx    2u /* ComIPdu_0x114_Rx */
+#define ComSignal_Signal_3_Led_Red_Rx    3u /* ComIPdu_0x114_Rx */
+#define ComSignal_Signal_4_Led_Sts_Rx    4u /* ComIPdu_0x114_Rx */
+#define ComSignal_Signal_5_Led_LiangDu_Rx    5u /* ComIPdu_0x114_Rx */
+#define ComSignal_Signal_6_Led_Red_Rx    6u /* ComIPdu_0x114_Rx */
 
 #define ComSignal_0_Tx    0u /* ComIPdu_0x110_Tx */
+#define ComSignal_Signal_1_Led_Sts_Tx    1u /* ComIPdu_0x114_Tx */
+#define ComSignal_Signal_2_Led_LiangDu_Tx    2u /* ComIPdu_0x114_Tx */
+#define ComSignal_Signal_3_Led_Red_Tx    3u /* ComIPdu_0x114_Tx */
+#define ComSignal_Signal_4_Led_Sts_Tx    4u /* ComIPdu_0x115_Tx */
+#define ComSignal_Signal_5_Led_LiangDu_Tx    5u /* ComIPdu_0x115_Tx */
+#define ComSignal_Signal_6_Led_Red_Tx    6u /* ComIPdu_0x115_Tx */
 
 
 

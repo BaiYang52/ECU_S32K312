@@ -19,7 +19,7 @@
  * @MCU         : S32K148
  * @file        : BswM_Cfg.c
  * @licence     : 
- * @date        : 2026-09-12 22:33:34
+ * @date        : 2026-09-13 17:06:51
  * @customer    : iSoft
  * @description : configuration parameter of BswM
  * @generator   : AUTOSAR classic Platform R23-11
