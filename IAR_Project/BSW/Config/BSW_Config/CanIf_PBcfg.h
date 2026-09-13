@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-13 22:58:04
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -46,8 +46,8 @@ extern "C" {
 /* ===================================================== macros ===================================================== */
 #define CANIF_VARIANT_NUMBER 1u
 
-#define CANIF_DYNAMICTXPDU_MAX_NUMBER 0u
-#define CANIF_DYNAMICTXPDU_NUMBER_PARTITION0 0u
+#define CANIF_DYNAMICTXPDU_MAX_NUMBER 7u
+#define CANIF_DYNAMICTXPDU_NUMBER_PARTITION0 7u
 
 #define CANIF_TXNOTIFSTATUS_MAX_NUMBER 0u
 #define CANIF_TXNOTIFSTATUS_NUMBER_PARTITION0 0u

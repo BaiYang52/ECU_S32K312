@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Rte_DataHandleType.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:59
+ * @date        : 2026-09-13 22:58:14
  * @customer    : iSoft
  * @description : Header File containing the Data Handle type declarations
  necessary for the component data structures.                

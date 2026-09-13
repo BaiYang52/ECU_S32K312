@@ -449,6 +449,774 @@
                     </ECUC-REFERENCE-VALUE>
                   </REFERENCE-VALUES>
                 </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="618c7bb4-f8b8-4522-894f-14c518d04de5">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="8e26fc38-f4b3-47de-a3fd-b4509162b12d">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>6</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d812cd3e-6aae-45ed-a6f2-7eefa06eb9a6">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>6</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="594a5790-9f36-4cba-8e91-950dc7bb3748">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e81aaf18-c85f-4dde-abbe-7e1a3b5caf8f">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>7</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="787035a8-fc38-466a-a1ab-ba63db796a69">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>7</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b4f1260e-7a35-47fc-92b4-a8230306f6a6">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5c73482a-9208-4abd-a845-c12a6130e9a4">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>8</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="65e87da7-90b5-4bf0-805e-8521af9ed4cb">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>8</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ca094cb9-7817-4eab-ab6b-d0ce24ee7248">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5bd9914c-30d3-4f38-99f0-a8727b6297b1">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>9</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7b3b21ec-d459-4c1d-88ef-1e82145fd0b3">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>9</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="06eec39e-3b4d-416b-b436-57050cbb5acf">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3e513b76-e656-4742-9a49-454fcf72e4ae">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>10</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7108123c-0767-42f3-82b6-c65ba57e5a5b">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>10</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="932bfecb-de31-4bee-86bf-37705653d282">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b87cddd7-34be-41a5-9489-17e47ea36c23">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>11</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e70cac23-94ef-443c-b6e3-ff3cedfeb215">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>11</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a413d2a7-6b3f-48e1-ad3d-7bcc0c586ec0">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="13573d8a-3727-4345-a2ea-816a0f228dbb">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>12</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3b05c5ca-ffe9-44e0-a070-6bf9faa2b163">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>12</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="729d1597-8424-4529-b75c-90bc6650f43a">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ee7b51e2-3ce3-4f8d-9568-46d17c44f154">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>13</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="370925a5-b09e-4994-b574-56349a1c1f00">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>13</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="568ecf34-26dc-4e0b-8b25-c9087d98b395">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="72a7a46e-f7d4-4a60-9cbf-763843f48c68">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>14</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="80a957ab-f261-4a67-b55a-4070d97793e8">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>14</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1aacc4a7-50e1-482e-8ec0-04e2a33c98aa">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b37d8454-ff5f-4c7c-885c-8f805bdde36f">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>15</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e1d5316c-3f5c-4bbe-b7b5-47b2203ed866">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>15</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ca72eef3-56d9-40e3-9f24-0aabc13b859f">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="9a4f926f-0312-409b-ae4a-3f5b78f26dbd">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="44e7e7cd-5d7f-4c3f-9e91-4feb0ccbd6db">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c1b6368b-7c84-4548-a2cc-951771aa9ca8">
+                  <SHORT-NAME>PDUR_ROUTING_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRRouteType</DEFINITION-REF>
+                      <VALUE>IF</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRDestPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRDestPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRRoutingPath/PduRSrcPduRRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/PduR/PduRRoutingPaths/PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="6573f122-0ca5-441f-b001-b686a41824b7">
+                  <SHORT-NAME>PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSourcePduHandleId</DEFINITION-REF>
+                      <VALUE>17</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduUpTxConf</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRSrcPdu/PduRSrcPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/CANIF_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="ba2734f3-b638-46f6-ab4c-11f05feca275">
+                  <SHORT-NAME>PduRDestPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduDataProvision</DEFINITION-REF>
+                      <VALUE>PDUR_DIRECT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduHandleId</DEFINITION-REF>
+                      <VALUE>17</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRTransmissionConfirmation</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR/PduR/PduRRoutingPaths/PduRDestPdu/PduRDestPduRef</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/EcuC/EcucConfigSet/EcucPduCollection/COM_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
               </SUB-CONTAINERS>
             </ECUC-CONTAINER-VALUE>
             <ECUC-CONTAINER-VALUE UUID="_PVTXcIOHEfGfmsnufcmSSA">

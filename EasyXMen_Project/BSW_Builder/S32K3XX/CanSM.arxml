@@ -107,7 +107,7 @@
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/AUTOSAR/CanSM/CanSMConfiguration/CanSMManagerNetwork/CanSMController/CanSMControllerId</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg_0/CanIfCtrlCfg_0</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg/CanIfCtrlCfg_0</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -117,7 +117,7 @@
                       <REFERENCE-VALUES>
                         <ECUC-REFERENCE-VALUE>
                           <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/AUTOSAR/CanSM/CanSMConfiguration/CanSMManagerNetwork/CanSMController/CanSMControllerId</DEFINITION-REF>
-                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg_0/CanIfCtrlCfg_1</VALUE-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/S32K3XX/CanIf/CanIfCtrlDrvCfg/CanIfCtrlCfg_1</VALUE-REF>
                         </ECUC-REFERENCE-VALUE>
                       </REFERENCE-VALUES>
                     </ECUC-CONTAINER-VALUE>

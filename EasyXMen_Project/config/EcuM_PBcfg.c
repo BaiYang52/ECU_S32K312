@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : EcuM_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-13 17:06:53
+ * @date        : 2026-09-13 22:58:05
  * @customer    : iSoft
  * @description : Post-Build Configuration parameter of EcuM
  * @generator   : AUTOSAR classic Platform R23-11

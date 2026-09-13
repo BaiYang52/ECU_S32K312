@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-13 22:58:05
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -47,13 +47,13 @@
 /* PRQA S 3120,3132,1503,1533 ++ */ /* VL_QAC_MagicNum,VL_QAC_MagicNum,VL_QAC_NoUsedApi,VL_QAC_OneRefSymbol */
 #define COM_START_SEC_VAR_CLEARED_8
 #include "Com_MemMap.h"
-static uint8 Com_TxIPduRuntimeBuff_ComMainFunctionTx_0[16];
+static uint8 Com_TxIPduRuntimeBuff_ComMainFunctionTx_0[72];
 #define COM_STOP_SEC_VAR_CLEARED_8
 #include "Com_MemMap.h"
 
 #define COM_START_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
-static const uint8 Com_TxIPduInitValue_ComMainFunctionTx_0[16] = {
+static const uint8 Com_TxIPduInitValue_ComMainFunctionTx_0[72] = {
     /* ComIPdu_0x110_Tx */
     0x0u,
 	0x0u,
@@ -70,6 +70,69 @@ static const uint8 Com_TxIPduInitValue_ComMainFunctionTx_0[16] = {
 	0x0u,
     /* ComIPdu_0x115_Tx */
     0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
 	0x0u,
 	0x0u,
 	0x0u,
@@ -96,20 +159,20 @@ static const uint8* const Com_TxIPduInitValue[COM_MAX_NUMBER_OF_MAIN_FUNCTION_TX
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 static const Com_TxIpduBufIdType Com_TxIpduBuffSize[COM_MAX_NUMBER_OF_MAIN_FUNCTION_TX] = {
-    16u,
+    72u,
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 
 #define COM_START_SEC_VAR_CLEARED_8
 #include "Com_MemMap.h"
-static uint8 Com_RxIPduRuntimeBuff_ComMainFunctionRx_0[16];
+static uint8 Com_RxIPduRuntimeBuff_ComMainFunctionRx_0[56];
 #define COM_STOP_SEC_VAR_CLEARED_8
 #include "Com_MemMap.h"
 
 #define COM_START_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
-static const uint8 Com_RxIPduInitValue_ComMainFunctionRx_0[16] = {
+static const uint8 Com_RxIPduInitValue_ComMainFunctionRx_0[56] = {
     /* ComIPdu_0x12a_Rx */
     0x0u,
 	0x0u,
@@ -120,6 +183,51 @@ static const uint8 Com_RxIPduInitValue_ComMainFunctionRx_0[16] = {
 	0x0u,
 	0x0u,
     /* ComIPdu_0x114_Rx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+    /* CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
     0x0u,
 	0x0u,
 	0x0u,
@@ -151,12 +259,43 @@ static const uint8* const Com_RxIPduInitValue[COM_MAX_NUMBER_OF_MAIN_FUNCTION_RX
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 static const Com_RxIpduBufIdType Com_RxIpduBuffSize[COM_MAX_NUMBER_OF_MAIN_FUNCTION_RX] = {
-    16u,
+    56u,
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 
- #define COM_START_SEC_VAR_CLEARED_8
+ #define COM_START_SEC_VAR_CLEARED_BOOLEAN
+#include "Com_MemMap.h"
+static boolean Com_SignalBoolRuntimeBuff_NoPartition[COM_MAX_SIGNAL_BOOLBUFF_SIZE];
+#define COM_STOP_SEC_VAR_CLEARED_BOOLEAN
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+boolean* Com_SignalBoolRuntimeBuff[1] = {
+    Com_SignalBoolRuntimeBuff_NoPartition,
+};
+#define COM_STOP_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_BOOLEAN
+#include "Com_MemMap.h"
+static const boolean Com_SignalBoolInitValue_NoPartition[2] = {
+    FALSE,
+	FALSE
+};
+#define COM_STOP_SEC_CONFIG_DATA_BOOLEAN
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+static const boolean* const Com_SignalBoolInitValue[1] = {
+    Com_SignalBoolInitValue_NoPartition,
+};
+#define COM_STOP_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_VAR_CLEARED_8
 #include "Com_MemMap.h"
 static uint8 Com_Signal8BitRuntimeBuff_NoPartition[COM_MAX_SIGNAL_8BITBUFF_SIZE];
 #define COM_STOP_SEC_VAR_CLEARED_8
@@ -172,7 +311,7 @@ uint8* Com_Signal8BitRuntimeBuff[1] = {
 
 #define COM_START_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
-static const uint8 Com_Signal8BitInitValue_NoPartition[14] = {
+static const uint8 Com_Signal8BitInitValue_NoPartition[20] = {
     0x00u,
 	0x00u,
 	0x00u,
@@ -180,13 +319,19 @@ static const uint8 Com_Signal8BitInitValue_NoPartition[14] = {
 	0x00u,
 	0x00u,
 	0x00u,
+	0x0u,
+	0x0u,
 	0x00u,
 	0x00u,
 	0x00u,
 	0x00u,
 	0x00u,
 	0x00u,
-	0x00u
+	0x00u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u
 };
 #define COM_STOP_SEC_CONFIG_DATA_8
 #include "Com_MemMap.h"
@@ -199,13 +344,113 @@ static const uint8* const Com_Signal8BitInitValue[1] = {
 #define COM_STOP_SEC_CONFIG_DATA_PTR
 #include "Com_MemMap.h"
 
+#define COM_START_SEC_VAR_CLEARED_16
+#include "Com_MemMap.h"
+static uint16 Com_SignalBit16RuntimeBuff_NoPartition[COM_MAX_SIGNAL_16BITBUFF_SIZE];
+#define COM_STOP_SEC_VAR_CLEARED_16
+#include "Com_MemMap.h"
 
+#define COM_START_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+uint16* Com_SignalBit16RuntimeBuff[1] = {
+    Com_SignalBit16RuntimeBuff_NoPartition,
+};
+#define COM_STOP_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+static const uint16 Com_SignalBit16InitValue_NoPartition[9] = {
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u
+};
+#define COM_STOP_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+static const uint16* const Com_SignalBit16InitValue[1] = {
+    Com_SignalBit16InitValue_NoPartition,
+};
+#define COM_STOP_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_VAR_CLEARED_32
+#include "Com_MemMap.h"
+static uint32 Com_Signal32BitRuntimeBuff_NoPartition[COM_MAX_SIGNAL_32BITBUFF_SIZE];
+#define COM_STOP_SEC_VAR_CLEARED_32
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+uint32* Com_Signal32BitRuntimeBuff[1] = {
+    Com_Signal32BitRuntimeBuff_NoPartition,
+};
+#define COM_STOP_SEC_VAR_INIT_PTR
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_32
+#include "Com_MemMap.h"
+static const uint32 Com_Signal32BitInitValue_NoPartition[1] = {
+    0x0u
+};
+#define COM_STOP_SEC_CONFIG_DATA_32
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+static const uint32* const Com_Signal32BitInitValue[1] = {
+    Com_Signal32BitInitValue_NoPartition,
+};
+#define COM_STOP_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_InitValueSignalIdType Com_SignalBoolInitValueSize[1] = {
+    {
+        2u,
+        COM_UNUSED_UINT16,
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 static const Com_InitValueSignalIdType Com_Signal8BitInitValueSize[1] = {
     {
-        14u,
+        20u,
+        COM_UNUSED_UINT16,
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_InitValueSignalIdType Com_SignalBit16InitValueSize[1] = {
+    {
+        9u,
+        COM_UNUSED_UINT16,
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_InitValueSignalIdType Com_Signal32BitInitValueSize[1] = {
+    {
+        1u,
         COM_UNUSED_UINT16,
     },
 };
@@ -220,15 +465,61 @@ uint8 Com_GWSignal8BitBuff[COM_MAX_GWSIGNAL_8BITBUFF_SIZE];
 
 
 
+#define COM_START_SEC_CONFIG_DATA_BOOLEAN
+#include "Com_MemMap.h"
+static const boolean Com_SignalBoolInvalidValue[2] = {
+    FALSE,
+	FALSE
+};
+#define COM_STOP_SEC_CONFIG_DATA_BOOLEAN
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+static const uint8 Com_Signal8BitInvalidValue[6] = {
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u
+};
+#define COM_STOP_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+static const uint16 Com_SignalBit16InvalidValue[9] = {
+    0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u,
+	0x0u
+};
+#define COM_STOP_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_32
+#include "Com_MemMap.h"
+static const uint32 Com_Signal32BitInvalidValue[1] = {
+    0x0u
+};
+#define COM_STOP_SEC_CONFIG_DATA_32
+#include "Com_MemMap.h"
+
 #define COM_START_SEC_VAR_CLEARED_UNSPECIFIED
 #include "Com_MemMap.h"
-static Com_RxIPduRunTimeStateType Com_RxIPduRunTimeState_ComMainFunctionRx_0[2];
+static Com_RxIPduRunTimeStateType Com_RxIPduRunTimeState_ComMainFunctionRx_0[7];
 #define COM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
 #include "Com_MemMap.h"
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
-static const Com_RxIPduRunTimeStateType Com_RxIPduInitState_ComMainFunctionRx_0[2] = {
+static const Com_RxIPduRunTimeStateType Com_RxIPduInitState_ComMainFunctionRx_0[7] = {
     {
         /* ComIPdu_0x12a_Rx */
         8u, /* RxIpduLength */
@@ -239,6 +530,46 @@ static const Com_RxIPduRunTimeStateType Com_RxIPduInitState_ComMainFunctionRx_0[
     },
     {
         /* ComIPdu_0x114_Rx */
+        8u, /* RxIpduLength */
+        0u, /* RxIpduBaseDMTimeout */
+        0u, /* RxOffset */
+        0u, /* RxIpduRTStFlag */
+        0u, /* RxIpduDMFlag */
+    },
+    {
+        /* CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        8u, /* RxIpduLength */
+        0u, /* RxIpduBaseDMTimeout */
+        0u, /* RxOffset */
+        0u, /* RxIpduRTStFlag */
+        0u, /* RxIpduDMFlag */
+    },
+    {
+        /* CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        8u, /* RxIpduLength */
+        0u, /* RxIpduBaseDMTimeout */
+        0u, /* RxOffset */
+        0u, /* RxIpduRTStFlag */
+        0u, /* RxIpduDMFlag */
+    },
+    {
+        /* CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        8u, /* RxIpduLength */
+        0u, /* RxIpduBaseDMTimeout */
+        0u, /* RxOffset */
+        0u, /* RxIpduRTStFlag */
+        0u, /* RxIpduDMFlag */
+    },
+    {
+        /* CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        8u, /* RxIpduLength */
+        0u, /* RxIpduBaseDMTimeout */
+        0u, /* RxOffset */
+        0u, /* RxIpduRTStFlag */
+        0u, /* RxIpduDMFlag */
+    },
+    {
+        /* CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
         8u, /* RxIpduLength */
         0u, /* RxIpduBaseDMTimeout */
         0u, /* RxOffset */
@@ -267,13 +598,13 @@ static const Com_RxIPduRunTimeStateType* const Com_RxIPduInitState[] = {
 
 #define COM_START_SEC_VAR_CLEARED_UNSPECIFIED
 #include "Com_MemMap.h"
-static Com_TxIPduRunTimeStateType Com_TxIPduRunTimeState_ComMainFunctionTx_0[3];
+static Com_TxIPduRunTimeStateType Com_TxIPduRunTimeState_ComMainFunctionTx_0[10];
 #define COM_STOP_SEC_VAR_CLEARED_UNSPECIFIED
 #include "Com_MemMap.h"
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
-static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[3] = {
+static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[10] = {
     {
         /* ComIPdu_0x110_Tx */
         8u, /* TxIpduLength */
@@ -307,6 +638,83 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
         4u, /* TxIpduRTStFlag */
         COM_TX_MODE_PERIODIC, /* ipduTxMode */
     },
+    {
+        /* CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_PERIODIC, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_NONE, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_NONE, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_PERIODIC, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_PERIODIC, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_PERIODIC, /* ipduTxMode */
+    },
+    {
+        /* CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        8u, /* TxIpduLength */
+        0u, /* RptNum */
+        0u, /* NTimeCnt */
+        0u, /* DMCnt */
+        0u, /* PeriodCnt */
+        0u, /* TxOffset */
+        4u, /* TxIpduRTStFlag */
+        COM_TX_MODE_PERIODIC, /* ipduTxMode */
+    },
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
@@ -332,6 +740,11 @@ static const Com_TxIPduRunTimeStateType* const Com_TxIPduInitState[] = {
 static const Com_RxIpduGroupIdType Com_RxIPduGroupsRef[] = {
     ComIPduGroup_Rx, /*0 ComIPdu_0x12a_Rx*/
     ComIPduGroup_Rx, /*1 ComIPdu_0x114_Rx*/
+    ComIPduGroup_Rx, /*2 CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx*/
+    ComIPduGroup_Rx, /*3 CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx*/
+    ComIPduGroup_Rx, /*4 CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx*/
+    ComIPduGroup_Rx, /*5 CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx*/
+    ComIPduGroup_Rx, /*6 CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx*/
 };
 #define COM_STOP_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
@@ -341,7 +754,7 @@ static const Com_RxIpduGroupIdType Com_RxIPduGroupsRef[] = {
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
-static const Com_RxIPduType Com_RxIPdu[2u] = {
+static const Com_RxIPduType Com_RxIPdu[7u] = {
     {
         /* 0 ComIPdu_0x12a_Rx */
         &ComIPdu_0x12a_Rx_Callout, /* ComIPduCallout */
@@ -384,6 +797,111 @@ static const Com_RxIPduType Com_RxIPdu[2u] = {
         COM_DEFERRED,    /* ComIPduSignalProcessing */
         COM_PDU_NORMAL,    /* ComIPduType */
     },
+    {
+        /* 2 CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* IPduNoDynSignalLength */
+        0u, /* IPduMaxDynSignalLength */
+        0u,  /* RxIPduDMFirstTimeout */
+        0u, /* RxIPduDMTimeout */
+        0u, /* IpduPartitionId */
+        0u, /* RxMainfunctionId */
+        16u, /* RxIPduBufIndex */
+        7u, /* IpduSignalRefStartId */
+        9u, /* IPduSignalsRefEndId */
+        2u,  /* IPduGroupsRefStartId */
+        3u,  /* IPduGroupsRefEndId */
+        COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
+        0u,  /* IPduSignalGroupsRefEndId */
+        0u, /* MetaDataLength */
+        FALSE,  /* ComIPduCancellationSupport */
+        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL,    /* ComIPduType */
+    },
+    {
+        /* 3 CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* IPduNoDynSignalLength */
+        0u, /* IPduMaxDynSignalLength */
+        0u,  /* RxIPduDMFirstTimeout */
+        0u, /* RxIPduDMTimeout */
+        0u, /* IpduPartitionId */
+        0u, /* RxMainfunctionId */
+        24u, /* RxIPduBufIndex */
+        9u, /* IpduSignalRefStartId */
+        11u, /* IPduSignalsRefEndId */
+        3u,  /* IPduGroupsRefStartId */
+        4u,  /* IPduGroupsRefEndId */
+        COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
+        0u,  /* IPduSignalGroupsRefEndId */
+        0u, /* MetaDataLength */
+        FALSE,  /* ComIPduCancellationSupport */
+        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL,    /* ComIPduType */
+    },
+    {
+        /* 4 CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* IPduNoDynSignalLength */
+        0u, /* IPduMaxDynSignalLength */
+        0u,  /* RxIPduDMFirstTimeout */
+        0u, /* RxIPduDMTimeout */
+        0u, /* IpduPartitionId */
+        0u, /* RxMainfunctionId */
+        32u, /* RxIPduBufIndex */
+        11u, /* IpduSignalRefStartId */
+        12u, /* IPduSignalsRefEndId */
+        4u,  /* IPduGroupsRefStartId */
+        5u,  /* IPduGroupsRefEndId */
+        COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
+        0u,  /* IPduSignalGroupsRefEndId */
+        0u, /* MetaDataLength */
+        FALSE,  /* ComIPduCancellationSupport */
+        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL,    /* ComIPduType */
+    },
+    {
+        /* 5 CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* IPduNoDynSignalLength */
+        0u, /* IPduMaxDynSignalLength */
+        0u,  /* RxIPduDMFirstTimeout */
+        0u, /* RxIPduDMTimeout */
+        0u, /* IpduPartitionId */
+        0u, /* RxMainfunctionId */
+        40u, /* RxIPduBufIndex */
+        12u, /* IpduSignalRefStartId */
+        13u, /* IPduSignalsRefEndId */
+        5u,  /* IPduGroupsRefStartId */
+        6u,  /* IPduGroupsRefEndId */
+        COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
+        0u,  /* IPduSignalGroupsRefEndId */
+        0u, /* MetaDataLength */
+        FALSE,  /* ComIPduCancellationSupport */
+        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL,    /* ComIPduType */
+    },
+    {
+        /* 6 CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* IPduNoDynSignalLength */
+        0u, /* IPduMaxDynSignalLength */
+        0u,  /* RxIPduDMFirstTimeout */
+        0u, /* RxIPduDMTimeout */
+        0u, /* IpduPartitionId */
+        0u, /* RxMainfunctionId */
+        48u, /* RxIPduBufIndex */
+        13u, /* IpduSignalRefStartId */
+        14u, /* IPduSignalsRefEndId */
+        6u,  /* IPduGroupsRefStartId */
+        7u,  /* IPduGroupsRefEndId */
+        COM_UNUSED_RXSIGNALGROUPID,  /* IPduSignalGroupsRefStartId */
+        0u,  /* IPduSignalGroupsRefEndId */
+        0u, /* MetaDataLength */
+        FALSE,  /* ComIPduCancellationSupport */
+        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL,    /* ComIPduType */
+    },
 };
 /* PRQA S 2895 -- */ /* VL_Com_NegtiveValueType */
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -396,6 +914,13 @@ static const Com_TxIpduGroupIdType Com_TxIPduGroupsRef[] = {
     ComIPduGroup_Tx, /*0 ComIPdu_0x110_Tx*/
     ComIPduGroup_Tx, /*1 ComIPdu_0x114_Tx*/
     ComIPduGroup_Tx, /*2 ComIPdu_0x115_Tx*/
+    ComIPduGroup_Tx, /*3 CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*4 CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*5 CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*6 CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*7 CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*8 CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx*/
+    ComIPduGroup_Tx, /*9 CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx*/
 };
 #define COM_STOP_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
@@ -406,17 +931,42 @@ static const Com_TxModePeriodType Com_TxModeTruePeriod[] = {
     {
         /* ComIPdu_0x110_Tx */
         1u,
-        2u,
+        20u,
     },
     {
         /* ComIPdu_0x114_Tx */
         1u,
-        2u,
+        20u,
     },
     {
         /* ComIPdu_0x115_Tx */
         1u,
-        2u,
+        20u,
+    },
+    {
+        /* CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        1u,
+        100u,
+    },
+    {
+        /* CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        1u,
+        100u,
+    },
+    {
+        /* CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        1u,
+        20u,
+    },
+    {
+        /* CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        1u,
+        20u,
+    },
+    {
+        /* CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        1u,
+        20u,
     },
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -425,7 +975,7 @@ static const Com_TxModePeriodType Com_TxModeTruePeriod[] = {
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
-static const Com_TxIPduType Com_TxIPdu[3u] = {
+static const Com_TxIPduType Com_TxIPdu[10u] = {
     {
         /* 0 - ComIPdu_0x110_Tx */
  /* ComIPduCallout */
@@ -505,15 +1055,260 @@ static const Com_TxIPduType Com_TxIPdu[3u] = {
         COM_DEFERRED, /* ComIPduSignalProcessing */
         COM_PDU_NORMAL, /* ComIPduType */
     },
+    {
+        /* 3 - CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        16u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        3u, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        7u, /*ComIpduSignalRefStartId*/
+        9u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        3u, /* ComIPduGroupsRefStartId */
+        4u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_PERIODIC, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 4 - CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        24u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        9u, /*ComIpduSignalRefStartId*/
+        10u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        4u, /* ComIPduGroupsRefStartId */
+        5u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_NONE, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 5 - CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        32u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        10u, /*ComIpduSignalRefStartId*/
+        11u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        5u, /* ComIPduGroupsRefStartId */
+        6u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_NONE, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 6 - CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        40u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        4u, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        11u, /*ComIpduSignalRefStartId*/
+        13u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        6u, /* ComIPduGroupsRefStartId */
+        7u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_PERIODIC, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 7 - CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        48u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        5u, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        13u, /*ComIpduSignalRefStartId*/
+        14u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        7u, /* ComIPduGroupsRefStartId */
+        8u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_PERIODIC, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 8 - CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        56u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        6u, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        14u, /*ComIpduSignalRefStartId*/
+        15u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        8u, /* ComIPduGroupsRefStartId */
+        9u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_PERIODIC, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
+    {
+        /* 9 - CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        NULL_PTR, /* ComIPduCallout */
+        8u, /* ComIpduLength */
+        0u,  /* ComMaxIpduLength */
+        0u,  /*ComTimeout*/
+        0u,  /*ComMinimumDelayTime*/
+        0u, /* PartitionId */
+        0u, /* txMainfunctionId */
+        64u, /* PduBufferId */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx, /*PduId*/
+        7u, /*ComTxModeTrue*/
+        COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
+        15u, /*ComIpduSignalRefStartId*/
+        18u, /* ComIPduSignalsRefNumber */
+        COM_UNUSED_TXSIGNALGROUPID, /* ComIPduSignalGroupsRefStartId */
+        0u, /* ComIPduSignalGroupsRefNumber */
+        9u, /* ComIPduGroupsRefStartId */
+        10u, /* ComIPduGroupsRefNumber */
+        COM_TX_MODE_PERIODIC, /* ComTxTrueModeMode */
+        COM_TX_MODE_NULL, /* ComTxFalseModeMode */
+        0u, /* MetaDataLength */
+        FALSE, /* ComIPduCancellationSupport */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_PDU_NORMAL, /* ComIPduType */
+    },
 };
 /* PRQA S 2895 -- */ /* VL_Com_NegtiveValueType */
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 
+#define COM_START_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+static const uint16 Com_RxSignalDataInvalidValueIdRef[] = {
+    /* Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    0u,
+    /* Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    0u,
+    /* Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    0u,
+    /* Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    1u,
+    /* Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+    1u,
+    /* Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+    2u,
+    /* Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+    3u,
+};
+
+#define COM_STOP_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+#define COM_START_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+static const Com_DataInvalidActionType Com_RxSignalDataInvalidActionRef[] ={
+    /* Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+    /* Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+    COM_INVALID_ACTION_NOTIFY,
+};
+#define COM_STOP_SEC_CONFIG_DATA_8
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+static const Com_RxInvalidNotificationType Com_RxInvalidNotificationCfg[] = {
+    /* Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+    /* Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+    NULL_PTR,
+};
+#define COM_STOP_SEC_CONFIG_DATA_PTR
+#include "Com_MemMap.h"
+
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
-static const Com_RxSignalType Com_RxSignal[7u] = {
+static const Com_RxSignalType Com_RxSignal[14u] = {
     {
         /* 0 ComSignal_1_Rx */
         0u, /* SignalInitValueId */
@@ -523,6 +1318,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         0u, /* SigLsbBytePos */
         0u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -539,6 +1335,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         0u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -555,6 +1352,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         1u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -571,6 +1369,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         2u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -587,6 +1386,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         3u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -603,6 +1403,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         4u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -619,6 +1420,7 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         0u, /* RxMainfunctionId */
         5u, /* SigLsbBytePos */
         1u, /* IpduRefIndex */
+        COM_UNUSED_RXSIGNALINVALIDID, /* SignalInvalidRefId */
         0u, /* SignalPosInByte */
         8u, /* ComBitSize */
         1u, /* ComSignalByteLength */
@@ -626,23 +1428,173 @@ static const Com_RxSignalType Com_RxSignal[7u] = {
         COM_BIG_ENDIAN, /* ComSignalEndianness */
         5u, /* GwMappingId */
     },
+    {
+        /* 7 Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        0u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        0u, /* SigLsbBytePos */
+        2u, /* IpduRefIndex */
+        0u, /* SignalInvalidRefId */
+        7u, /* SignalPosInByte */
+        1u, /* ComBitSize */
+        1u, /* ComSignalByteLength */
+        COM_BOOLEAN, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 8 Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        0u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        2u, /* SigLsbBytePos */
+        2u, /* IpduRefIndex */
+        1u, /* SignalInvalidRefId */
+        0u, /* SignalPosInByte */
+        16u, /* ComBitSize */
+        2u, /* ComSignalByteLength */
+        COM_UINT16, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 9 Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        7u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        0u, /* SigLsbBytePos */
+        3u, /* IpduRefIndex */
+        2u, /* SignalInvalidRefId */
+        4u, /* SignalPosInByte */
+        4u, /* ComBitSize */
+        1u, /* ComSignalByteLength */
+        COM_UINT8, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 10 Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        1u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        2u, /* SigLsbBytePos */
+        3u, /* IpduRefIndex */
+        3u, /* SignalInvalidRefId */
+        0u, /* SignalPosInByte */
+        16u, /* ComBitSize */
+        2u, /* ComSignalByteLength */
+        COM_UINT16, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 11 Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        8u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        0u, /* SigLsbBytePos */
+        4u, /* IpduRefIndex */
+        4u, /* SignalInvalidRefId */
+        0u, /* SignalPosInByte */
+        8u, /* ComBitSize */
+        1u, /* ComSignalByteLength */
+        COM_UINT8, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 12 Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        2u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        1u, /* SigLsbBytePos */
+        5u, /* IpduRefIndex */
+        5u, /* SignalInvalidRefId */
+        0u, /* SignalPosInByte */
+        16u, /* ComBitSize */
+        2u, /* ComSignalByteLength */
+        COM_UINT16, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
+    {
+        /* 13 Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+        3u, /* SignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* SignalDataInitValueLength */
+        COM_UNUSED_UINT16, /* GWSignalBufferId */
+        0u, /* RxMainfunctionId */
+        1u, /* SigLsbBytePos */
+        6u, /* IpduRefIndex */
+        6u, /* SignalInvalidRefId */
+        0u, /* SignalPosInByte */
+        16u, /* ComBitSize */
+        2u, /* ComSignalByteLength */
+        COM_UINT16, /* ComSignalType */
+        COM_BIG_ENDIAN, /* ComSignalEndianness */
+        COM_NOT_USED_GW_MAPPING_ID, /* GwMappingId */
+    },
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+static const uint16 Com_TxSignalDataInvalidValueIdRef[] = {
+    /* Sig_Tx_UB_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+    1u,
+    /* Sig_Tx_Data_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+    4u,
+    /* Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+    2u,
+    /* Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+    5u,
+    /* Sig_Tx_RollingCounter_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+    3u,
+    /* Sig_Tx_CounterData_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+    6u,
+    /* Sig_Tx_PN17_Data_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+    7u,
+    /* Sig_Tx_PN29_Data_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+    8u,
+    /* Sig_Tx_E2E_CRC_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+    4u,
+    /* Sig_Tx_E2E_Counter_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+    5u,
+    /* Sig_Tx_E2E_Data_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+    0u,
+};
+#define COM_STOP_SEC_CONFIG_DATA_16
+#include "Com_MemMap.h"
+
 
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
-static const Com_TxSignalType Com_TxSignal[7u] = {
+static const Com_TxSignalType Com_TxSignal[18u] = {
     {
         /* 0 ComSignal_0_Tx */
-        7u, /* ComSignalInitValueId */
+        9u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         0u, /* SigLsbBytePos */
         0u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -653,12 +1605,13 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 1 ComSignal_Signal_1_Led_Sts_Tx */
-        8u, /* ComSignalInitValueId */
+        10u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         0u, /* SigLsbBytePos */
         1u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -669,12 +1622,13 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 2 ComSignal_Signal_2_Led_LiangDu_Tx */
-        9u, /* ComSignalInitValueId */
+        11u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         1u, /* SigLsbBytePos */
         1u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -685,12 +1639,13 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 3 ComSignal_Signal_3_Led_Red_Tx */
-        10u, /* ComSignalInitValueId */
+        12u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         2u, /* SigLsbBytePos */
         1u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -701,12 +1656,13 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 4 ComSignal_Signal_4_Led_Sts_Tx */
-        11u, /* ComSignalInitValueId */
+        13u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         0u, /* SigLsbBytePos */
         2u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -717,12 +1673,13 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 5 ComSignal_Signal_5_Led_LiangDu_Tx */
-        12u, /* ComSignalInitValueId */
+        14u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         1u, /* SigLsbBytePos */
         2u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
@@ -733,18 +1690,206 @@ static const Com_TxSignalType Com_TxSignal[7u] = {
     },
     {
         /* 6 ComSignal_Signal_6_Led_Red_Tx */
-        13u, /* ComSignalInitValueId */
+        15u, /* ComSignalInitValueId */
         0u, /* ComSignalLength */
         0u, /* ComSignalDataInitValueLength */
         0u, /* txMainfunctionId */
         2u, /* SigLsbBytePos */
         2u, /* ComIpduRefIndex */
+        COM_UNUSED_TXSIGNALINVALIDID, /* ComSignalInvalidRefId */
         0u, /*ComSignalPosInByte*/
         8u, /*ComBitSize*/
         1u, /*ComSignalByteLength*/
         FALSE, /*ComInitialValueOnly*/
         COM_BIG_ENDIAN, /*ComSignalEndianness*/
         COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 7 Sig_Tx_UB_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        1u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        0u, /* SigLsbBytePos */
+        3u, /* ComIpduRefIndex */
+        0u, /* ComSignalInvalidRefId */
+        7u, /*ComSignalPosInByte*/
+        1u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_BOOLEAN, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 8 Sig_Tx_Data_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        4u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        2u, /* SigLsbBytePos */
+        3u, /* ComIpduRefIndex */
+        1u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        16u, /*ComBitSize*/
+        2u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT16, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 9 Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        16u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        0u, /* SigLsbBytePos */
+        4u, /* ComIpduRefIndex */
+        2u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        8u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 10 Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        5u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        1u, /* SigLsbBytePos */
+        5u, /* ComIpduRefIndex */
+        3u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        16u, /*ComBitSize*/
+        2u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT16, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 11 Sig_Tx_RollingCounter_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        17u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        0u, /* SigLsbBytePos */
+        6u, /* ComIpduRefIndex */
+        4u, /* ComSignalInvalidRefId */
+        4u, /*ComSignalPosInByte*/
+        4u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 12 Sig_Tx_CounterData_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        6u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        2u, /* SigLsbBytePos */
+        6u, /* ComIpduRefIndex */
+        5u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        16u, /*ComBitSize*/
+        2u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT16, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 13 Sig_Tx_PN17_Data_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        7u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        1u, /* SigLsbBytePos */
+        7u, /* ComIpduRefIndex */
+        6u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        16u, /*ComBitSize*/
+        2u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT16, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 14 Sig_Tx_PN29_Data_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        8u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        1u, /* SigLsbBytePos */
+        8u, /* ComIpduRefIndex */
+        7u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        16u, /*ComBitSize*/
+        2u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT16, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 15 Sig_Tx_E2E_CRC_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        18u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        0u, /* SigLsbBytePos */
+        9u, /* ComIpduRefIndex */
+        8u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        8u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 16 Sig_Tx_E2E_Counter_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        19u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        1u, /* SigLsbBytePos */
+        9u, /* ComIpduRefIndex */
+        9u, /* ComSignalInvalidRefId */
+        4u, /*ComSignalPosInByte*/
+        4u, /*ComBitSize*/
+        1u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT8, /*ComSignalType*/
+        COM_PENDING, /*ComTransferProperty*/
+    },
+    {
+        /* 17 Sig_Tx_E2E_Data_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        0u, /* ComSignalInitValueId */
+        0u, /* ComSignalLength */
+        0u, /* ComSignalDataInitValueLength */
+        0u, /* txMainfunctionId */
+        5u, /* SigLsbBytePos */
+        9u, /* ComIpduRefIndex */
+        10u, /* ComSignalInvalidRefId */
+        0u, /*ComSignalPosInByte*/
+        32u, /*ComBitSize*/
+        4u, /*ComSignalByteLength*/
+        FALSE, /*ComInitialValueOnly*/
+        COM_BIG_ENDIAN, /*ComSignalEndianness*/
+        COM_UINT32, /*ComSignalType*/
         COM_PENDING, /*ComTransferProperty*/
     },
 };
@@ -853,12 +1998,12 @@ static const Com_GwMappingType Com_GwMapping[] = {
 #define COM_START_SEC_CONFIG_DATA_16
 #include "Com_MemMap.h"
 static const PduIdType Com_MainFunctionRxRange[] ={
-    2u,     /* ComMainFunctionRx_0 */
+    7u,     /* ComMainFunctionRx_0 */
 };
 
 
 static const PduIdType Com_MainFunctionTxRange[] = {
-    3u,     /* ComMainFunctionTx_0 */
+    10u,     /* ComMainFunctionTx_0 */
 };
 
 #define COM_STOP_SEC_CONFIG_DATA_16
@@ -867,11 +2012,17 @@ static const PduIdType Com_MainFunctionTxRange[] = {
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 static const Com_SignalInitValueType Com_SignalInitValue = {
+    Com_SignalBoolInitValue,
     Com_Signal8BitInitValue,
+    Com_SignalBit16InitValue,
+    Com_Signal32BitInitValue,
 };
 
 static const Com_SigInitValueSizePerPartitionType Com_SigInitValSize = {
+    Com_SignalBoolInitValueSize,
     Com_Signal8BitInitValueSize,
+    Com_SignalBit16InitValueSize,
+    Com_Signal32BitInitValueSize,
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
@@ -894,6 +2045,21 @@ static const Com_IpduGroupRefType Com_IPduGroup = {
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
 
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+static const Com_SignalInvalidValueType Com_SignalInvalidValue = {
+    Com_RxSignalDataInvalidValueIdRef,    /* RxSignalDataInvalidValueId */
+    Com_RxSignalDataInvalidActionRef, /* RxSignalDataInvalidAction */
+    Com_RxInvalidNotificationCfg, /* RxInvalidNotificationCfg */
+    Com_TxSignalDataInvalidValueIdRef,    /* TxSignalDataInvalidValueId */
+    Com_SignalBoolInvalidValue,   /* SignalBoolInvalidValue */
+    Com_Signal8BitInvalidValue,   /* Signal8BitInvalidValue */
+    Com_SignalBit16InvalidValue,  /* SignalBit16InvalidValue */
+    Com_Signal32BitInvalidValue,  /* Signal32BitInvalidValue */
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 
 
 
@@ -932,11 +2098,12 @@ const struct Com_ConfigTypeTag Com_Config = /* PRQA S 1502, 1531 */ /* VL_QAC_On
     &Com_GwMappingConfig, /* GwMappingConfigPtr */
     &Com_SignalInitValue, /* SignalInitValuePtr */
     &Com_SigInitValSize,  /* SignalInitValueSizePtr */
+    &Com_SignalInvalidValue,  /* SignalInvalidValuePtr */
     &Com_TxModeAndSignalFilter,   /* TxModeAndSignalFilterPtr */
-    7u, /* TxSignalNum */
-    7u, /* RxSignalNum */
-    3u, /* TxPduNum */
-    2u, /* RxPduNum */
+    18u, /* TxSignalNum */
+    14u, /* RxSignalNum */
+    10u, /* TxPduNum */
+    7u, /* RxPduNum */
     0u, /* TxGroupSignalNum */
     0u, /* RxGroupSignalNum */
     0u, /* TxSignalGroupNum */
