@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-13 22:58:05
+ * @date        : 2026-09-14 23:29:34
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -658,7 +658,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
         0u, /* PeriodCnt */
         0u, /* TxOffset */
         4u, /* TxIpduRTStFlag */
-        COM_TX_MODE_NONE, /* ipduTxMode */
+        COM_TX_MODE_DIRECT_WITHOUT_REPETITION, /* ipduTxMode */
     },
     {
         /* CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
@@ -669,7 +669,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
         0u, /* PeriodCnt */
         0u, /* TxOffset */
         4u, /* TxIpduRTStFlag */
-        COM_TX_MODE_NONE, /* ipduTxMode */
+        COM_TX_MODE_MIXED, /* ipduTxMode */
     },
     {
         /* CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
@@ -794,7 +794,7 @@ static const Com_RxIPduType Com_RxIPdu[7u] = {
         0u,  /* IPduSignalGroupsRefEndId */
         0u, /* MetaDataLength */
         FALSE,  /* ComIPduCancellationSupport */
-        COM_DEFERRED,    /* ComIPduSignalProcessing */
+        COM_IMMEDIATE,    /* ComIPduSignalProcessing */
         COM_PDU_NORMAL,    /* ComIPduType */
     },
     {
@@ -974,6 +974,21 @@ static const Com_TxModePeriodType Com_TxModeTruePeriod[] = {
 
 #define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"
+static const Com_TxModeMixedRepetitionsType Com_TxModeTrueMixedRepetitions[] = {
+    /* ComTxModeTimeOffset */ /* ComTxModeTimePeriod */ /* ComTxModeRepetitionPeriod */ /* ComTxModeNumberOfRepetitions */
+    {
+        /* CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        3u,
+        100u,
+        10u,
+        3u,
+    },
+};
+#define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
+
+#define COM_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "Com_MemMap.h"
 /* PRQA S 2895 ++ */ /* VL_Com_NegtiveValueType */
 static const Com_TxIPduType Com_TxIPdu[10u] = {
     {
@@ -1100,7 +1115,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         0u, /* ComIPduSignalGroupsRefNumber */
         4u, /* ComIPduGroupsRefStartId */
         5u, /* ComIPduGroupsRefNumber */
-        COM_TX_MODE_NONE, /* ComTxTrueModeMode */
+        COM_TX_MODE_DIRECT_WITHOUT_REPETITION, /* ComTxTrueModeMode */
         COM_TX_MODE_NULL, /* ComTxFalseModeMode */
         0u, /* MetaDataLength */
         FALSE, /* ComIPduCancellationSupport */
@@ -1118,7 +1133,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         0u, /* txMainfunctionId */
         32u, /* PduBufferId */
         PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx, /*PduId*/
-        COMSTACK_PDUID_INVALID, /*ComTxModeTrue*/
+        0u, /*ComTxModeTrue*/
         COMSTACK_PDUID_INVALID, /*ComTxModeFalse*/
         10u, /*ComIpduSignalRefStartId*/
         11u, /* ComIPduSignalsRefNumber */
@@ -1126,7 +1141,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         0u, /* ComIPduSignalGroupsRefNumber */
         5u, /* ComIPduGroupsRefStartId */
         6u, /* ComIPduGroupsRefNumber */
-        COM_TX_MODE_NONE, /* ComTxTrueModeMode */
+        COM_TX_MODE_MIXED, /* ComTxTrueModeMode */
         COM_TX_MODE_NULL, /* ComTxFalseModeMode */
         0u, /* MetaDataLength */
         FALSE, /* ComIPduCancellationSupport */
@@ -2068,6 +2083,7 @@ static const Com_SignalInvalidValueType Com_SignalInvalidValue = {
 #include "Com_MemMap.h"
 static const Com_TxModeAndSignalFilterPtrType Com_TxModeAndSignalFilter = {
     Com_TxModeTruePeriod,
+    Com_TxModeTrueMixedRepetitions,
 };
 #define COM_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Com_MemMap.h"

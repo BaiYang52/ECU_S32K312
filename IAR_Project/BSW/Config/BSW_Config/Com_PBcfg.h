@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-13 22:58:05
+ * @date        : 2026-09-14 23:29:33
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -167,7 +167,7 @@
 
 #define COM_TX_SIG_INITIAL_VALUE_ONLY_ENABLE  STD_OFF
 
-#define COM_RX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_OFF
+#define COM_RX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_ON
 
 #define COM_TX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_OFF
 

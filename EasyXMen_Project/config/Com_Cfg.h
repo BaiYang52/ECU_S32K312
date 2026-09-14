@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Cfg.h
  * @licence     : 
- * @date        : 2026-09-13 22:58:05
+ * @date        : 2026-09-14 23:29:33
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -173,11 +173,11 @@
 
 #define COM_MAX_TX_MODE_FALSE_DIRECT_NUMBER   0u
 
-#define COM_MAX_TX_MODE_TRUE_MIXED_NUMBER    0u
+#define COM_MAX_TX_MODE_TRUE_MIXED_NUMBER    1u
 
 #define COM_MAX_TX_MODE_FALSE_MIXED_NUMBER    0u
 
-#define COM_MAX_TX_MODE_TRUE_DIRECT_NOREPETITION_NUMBER   0u
+#define COM_MAX_TX_MODE_TRUE_DIRECT_NOREPETITION_NUMBER   1u
 
 #define COM_MAX_TX_MODE_FALSE_DIRECT_NOREPETITION_NUMBER   0u
 
