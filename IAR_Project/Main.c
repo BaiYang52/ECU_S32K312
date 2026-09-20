@@ -88,6 +88,14 @@ void Task_5ms(void)
 void Task_10ms(void)
 {
 	/* TODO: 10ms task content */
+	static uint16_t i = 0;
+	static uint8_t u80x302_Mixed = 2;
+	i++;
+
+	if(i==1720)
+	{
+		Com_SendSignal(Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,&u80x302_Mixed);
+	}
 }
 
 void Task_20ms(void)

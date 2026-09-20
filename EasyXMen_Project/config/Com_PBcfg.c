@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-20 23:21:31
+ * @date        : 2026-09-21 00:36:23
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -608,6 +608,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* ComIPdu_0x110_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -619,6 +620,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* ComIPdu_0x114_Tx */
         4u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -630,6 +632,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* ComIPdu_0x115_Tx */
         4u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -641,6 +644,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -652,6 +656,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -663,6 +668,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -674,6 +680,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -685,6 +692,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -696,6 +704,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -707,6 +716,7 @@ static const Com_TxIPduRunTimeStateType Com_TxIPduInitState_ComMainFunctionTx_0[
     {
         /* CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
         8u, /* TxIpduLength */
+        0u, /* MDTCnt */
         0u, /* RptNum */
         0u, /* NTimeCnt */
         0u, /* DMCnt */
@@ -1128,7 +1138,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         8u, /* ComIpduLength */
         0u,  /* ComMaxIpduLength */
         0u,  /*ComTimeout*/
-        0u,  /*ComMinimumDelayTime*/
+        10u,  /*ComMinimumDelayTime*/
         0u, /* PartitionId */
         0u, /* txMainfunctionId */
         32u, /* PduBufferId */
@@ -1145,7 +1155,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         COM_TX_MODE_NULL, /* ComTxFalseModeMode */
         0u, /* MetaDataLength */
         FALSE, /* ComIPduCancellationSupport */
-        COM_IMMEDIATE, /* ComIPduSignalProcessing */
+        COM_DEFERRED, /* ComIPduSignalProcessing */
         COM_PDU_NORMAL, /* ComIPduType */
     },
     {

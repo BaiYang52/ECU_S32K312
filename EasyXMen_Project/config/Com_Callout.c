@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Callout.c
  * @licence     : 
- * @date        : 2026-09-20 23:21:31
+ * @date        : 2026-09-21 00:36:23
  * @customer    : iSoft
  * @description : Com Callout Functions
  * @generator   : AUTOSAR classic Platform R23-11
