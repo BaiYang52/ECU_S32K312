@@ -1599,7 +1599,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComIPdu/ComIPduSignalProcessing</DEFINITION-REF>
-                      <VALUE>DEFERRED</VALUE>
+                      <VALUE>IMMEDIATE</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComIPdu/ComIPduType</DEFINITION-REF>
@@ -1713,7 +1713,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComSignal/ComTransferProperty</DEFINITION-REF>
-                      <VALUE>PENDING</VALUE>
+                      <VALUE>TRIGGERED_ON_CHANGE_WITHOUT_REPETITION</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComSignal/ComSignalDataInvalidValue</DEFINITION-REF>
@@ -1743,7 +1743,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComIPdu/ComIPduSignalProcessing</DEFINITION-REF>
-                      <VALUE>DEFERRED</VALUE>
+                      <VALUE>IMMEDIATE</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComIPdu/ComIPduType</DEFINITION-REF>
@@ -1857,7 +1857,7 @@
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComSignal/ComTransferProperty</DEFINITION-REF>
-                      <VALUE>PENDING</VALUE>
+                      <VALUE>TRIGGERED</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR/Com/ComConfig/ComSignal/ComSignalDataInvalidValue</DEFINITION-REF>

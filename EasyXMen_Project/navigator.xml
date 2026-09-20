@@ -18,6 +18,7 @@
     </moduleKindModels>
     <moduleKindModels kindName="SYS">
       <moduleModels moduleName="BswM" projectName="S32K312_BSW_Project" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
+      <moduleModels moduleName="Crc" projectName="S32K312_BSW_Project" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="EcuM" projectName="S32K312_BSW_Project" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
       <moduleModels moduleName="iRte" projectName="S32K312_BSW_Project" pathValue="BSW_Builder\S32K3XX\ecuconfig.arxml"/>
     </moduleKindModels>
