@@ -24,6 +24,7 @@ volatile uint8_t Flag_20ms   = 0;
 volatile uint8_t Flag_50ms   = 0;
 volatile uint8_t Flag_100ms  = 0;
 volatile uint8_t Flag_1000ms = 0;
+volatile uint8_t Flag_5000ms = 0;
 
 /* GPT notification callback: triggers every 1ms */
 void GptNotification_Pit0Ch0()
@@ -37,6 +38,7 @@ void GptNotification_Pit0Ch0()
 	if ((Gpt0Ch0_Cnt % 50U)   == 0U) { Flag_50ms   = 1; }
 	if ((Gpt0Ch0_Cnt % 100U)  == 0U) { Flag_100ms  = 1; }
 	if ((Gpt0Ch0_Cnt % 1000U) == 0U) { Flag_1000ms = 1; }
+	if ((Gpt0Ch0_Cnt % 5000U) == 0U) { Flag_5000ms = 1; }
 }
 
 void Task_1ms(void)
@@ -113,6 +115,12 @@ void Task_1000ms(void)
 	static uint8_t led_state = 0;
 	led_state = !led_state;
 	Dio_WriteChannel(DioConf_DioChannel_DioChannel_PB10, led_state);
+}
+
+void Task_5000ms(void)
+{
+	/* Example: Toggle PB10 level, observable 200ms square wave (100ms half-period) */
+
 }
 
 /* ============================ Main Scheduler ============================ */
