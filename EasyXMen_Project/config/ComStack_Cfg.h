@@ -22,7 +22,7 @@
  * @date        : 
  * @customer    : iSoft
  * @description : ComStack_Cfg.h
- * @generator   : AUTOSAR classic Platform 2026-09-13 22:58:05
+ * @generator   : AUTOSAR classic Platform 2026-09-20 23:21:31
  * @toolVersion : R23-11
  **********************************************************************************************************************/
 

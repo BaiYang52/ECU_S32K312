@@ -112,15 +112,23 @@ void Task_100ms(void)
 void Task_1000ms(void)
 {
 	/* Example: Toggle PB10 level, observable 200ms square wave (100ms half-period) */
+	static uint8_t u80x301_Event = 0;
 	static uint8_t led_state = 0;
 	led_state = !led_state;
 	Dio_WriteChannel(DioConf_DioChannel_DioChannel_PB10, led_state);
+	// u80x301_Event++;
+	// if(u80x301_Event>=10)
+	// {
+	// 	u80x301_Event = 10;
+	// }
+	u80x301_Event = (u80x301_Event>=10u)?10u:(u80x301_Event+1u);
+	Com_SendSignal(Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,&u80x301_Event);
 }
 
 void Task_5000ms(void)
 {
-	/* Example: Toggle PB10 level, observable 200ms square wave (100ms half-period) */
-
+	static uint8_t u80x302_Mixed = 1;
+	Com_SendSignal(Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,&u80x302_Mixed);
 }
 
 /* ============================ Main Scheduler ============================ */
@@ -160,6 +168,11 @@ void Scheduler_Main(void)
 	{
 		Flag_1000ms = 0;
 		Task_1000ms();
+	}
+	if (Flag_5000ms)
+	{
+		Flag_5000ms = 0;
+		Task_5000ms();
 	}
 }
 

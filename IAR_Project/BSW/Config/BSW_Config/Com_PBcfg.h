@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-14 23:29:33
+ * @date        : 2026-09-20 23:21:30
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -97,11 +97,11 @@
 
 #define COM_RX_SIGNAL_INVALID_DATA_ACTION_NOTIFY_ENABLE     STD_ON
 
-#define COM_TX_SIG_PROP_TRIGGERED_ENABLE    STD_OFF
+#define COM_TX_SIG_PROP_TRIGGERED_ENABLE    STD_ON
 
 #define COM_TX_SIG_PROP_TRIGGERED_ON_CHANGE_ENABLE  STD_OFF
 
-#define COM_TX_SIG_PROP_TRIG_ON_CH_NO_REPETITION_ENABLE     STD_OFF
+#define COM_TX_SIG_PROP_TRIG_ON_CH_NO_REPETITION_ENABLE     STD_ON
 
 #define COM_TX_SIG_PROP_TRIG_NO_REPETITION_ENABLE   STD_OFF
 
@@ -169,7 +169,7 @@
 
 #define COM_RX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_ON
 
-#define COM_TX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_OFF
+#define COM_TX_IPDU_SIGNAL_PROCESS_IMMEDIATE_ENABLE     STD_ON
 
 #define COM_RX_SIGNAL_TIMEOUT_ACTION_REPLACE_ENABLE     STD_OFF
 

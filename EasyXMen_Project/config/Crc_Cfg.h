@@ -16,39 +16,63 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : PduR_Com.h
+ * @file        : Crc_Cfg.h
  * @licence     : 
  * @date        : 2026-09-20 23:21:31
  * @customer    : iSoft
- * @description : API declaration supplied by PduR to <Com>
+ * @description : configuration parameter of Crc
  * @generator   : AUTOSAR classic Platform R23-11
  * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
-#ifndef  PDUR_COM_H_
-#define  PDUR_COM_H_
 
+#ifndef CRC_CFG_H_
+#define CRC_CFG_H_
 /* =================================================== inclusions =================================================== */
-#include "PduR.h"
-
+#include "Std_Types.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
-/* =============================================== version information ============================================== */
-
 /* ===================================================== macros ===================================================== */
-#define PduR_ComTransmit    PduR_Transmit
-#define PduR_ComCancelTransmit  PduR_CancelTransmit
-#define PduR_ComCancelReceive      PduR_CancelReceive
+/* req<sws_crc_00040></sws_crc_00040> */
+/* calculation method of Crc mode */
+#define CRC_HARDWARE  0
+#define CRC_RUNTIME   1
+#define CRC_TABLE     2
 
-/* ================================================ type definitions ================================================ */
+/* CRC8 (SAE J1850) algorithm calculation switch */
+#define CRC8_ALGORITHM              STD_ON
 
-/* ========================================== internal function definitions ========================================= */
+/* CRC8 (2Fh polynomial) algorithm calculation switch */
+#define CRC8H2F_ALGORITHM           STD_OFF
 
-/* =========================================== external data declarations =========================================== */
+/* CRC16 (CCITT) algorithm calculation switch */
+#define CRC16_ALGORITHM             STD_OFF
+
+/* CRC16 (ARC) algorithm calculation switch */
+#define CRC16ARC_ALGORITHM             STD_OFF
+
+/* CRC32 (Ethernet) algorithm calculation switch */
+#define CRC32_ALGORITHM             STD_OFF
+
+/* CRC32 (0xF4ACFB13 polynomial) algorithm calculation switch */
+#define CRC32P4_ALGORITHM            STD_OFF
+
+/* CRC64 algorithm calculation switch */
+#define CRC64_ALGORITHM             STD_OFF
+
+
+/* Switch to select one of the available CRC 8-bit (SAE J1850) calculation methods
+ * req<ecuc_crc_00030>*/
+#define CRC8_MODE CRC_TABLE
+
+
+
+
+
+
 
 /* ========================================= external function declarations ========================================= */
 #ifdef __cplusplus
 }
 #endif
 #endif
-

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-14 23:29:34
+ * @date        : 2026-09-20 23:21:31
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -1119,7 +1119,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         COM_TX_MODE_NULL, /* ComTxFalseModeMode */
         0u, /* MetaDataLength */
         FALSE, /* ComIPduCancellationSupport */
-        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_IMMEDIATE, /* ComIPduSignalProcessing */
         COM_PDU_NORMAL, /* ComIPduType */
     },
     {
@@ -1145,7 +1145,7 @@ static const Com_TxIPduType Com_TxIPdu[10u] = {
         COM_TX_MODE_NULL, /* ComTxFalseModeMode */
         0u, /* MetaDataLength */
         FALSE, /* ComIPduCancellationSupport */
-        COM_DEFERRED, /* ComIPduSignalProcessing */
+        COM_IMMEDIATE, /* ComIPduSignalProcessing */
         COM_PDU_NORMAL, /* ComIPduType */
     },
     {
@@ -1769,7 +1769,7 @@ static const Com_TxSignalType Com_TxSignal[18u] = {
         FALSE, /*ComInitialValueOnly*/
         COM_BIG_ENDIAN, /*ComSignalEndianness*/
         COM_UINT8, /*ComSignalType*/
-        COM_PENDING, /*ComTransferProperty*/
+        COM_TRIGGERED_ON_CHANGE_WITHOUT_REPETITION, /*ComTransferProperty*/
     },
     {
         /* 10 Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
@@ -1786,7 +1786,7 @@ static const Com_TxSignalType Com_TxSignal[18u] = {
         FALSE, /*ComInitialValueOnly*/
         COM_BIG_ENDIAN, /*ComSignalEndianness*/
         COM_UINT16, /*ComSignalType*/
-        COM_PENDING, /*ComTransferProperty*/
+        COM_TRIGGERED, /*ComTransferProperty*/
     },
     {
         /* 11 Sig_Tx_RollingCounter_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
