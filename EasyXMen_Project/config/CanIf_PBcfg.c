@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-20 23:21:30
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -64,6 +64,25 @@ CanIf_RuntimeType* const CanIf_Runtime
 #define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 #include "CanIf_MemMap.h"
 
+#define CANIF_START_SEC_VAR_CLEARED_UNSPECIFIED
+#include "CanIf_MemMap.h"
+static CanIf_DynamicTxPduType CanIf_DynamicTxPdu_Partition0
+[CANIF_DYNAMICTXPDU_NUMBER_PARTITION0];
+#define CANIF_STOP_SEC_VAR_CLEARED_UNSPECIFIED
+#include "CanIf_MemMap.h"
+
+
+#define CANIF_START_SEC_CONFIG_DATA_UNSPECIFIED
+#include "CanIf_MemMap.h"
+const CanIf_DynamicTxPduPartitionType CanIf_DynamicTxPdu
+[CANIF_PARTITION_NUMBER] = {
+    {
+        .DynamicTxPduNumber = CANIF_DYNAMICTXPDU_NUMBER_PARTITION0,
+        .DynamicTxPduRef = CanIf_DynamicTxPdu_Partition0,
+    },
+};
+#define CANIF_STOP_SEC_CONFIG_DATA_UNSPECIFIED
+#include "CanIf_MemMap.h"
 
 
 #define CANIF_START_SEC_VAR_CLEARED_UNSPECIFIED
@@ -200,7 +219,7 @@ static const CanIf_HrhConfigType CanIf_HrhConfigData
         .CanIfHrhCanCtrlId = CanIfConf_CanIfCtrlCfg_CanIfCtrlCfg_0,
         .CanIfHrhType = CANIF_BASIC_CAN,
         .CanObjectId = 0u,
-        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x12a + 1u,
+        .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312 + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting,
     },
     {
@@ -233,6 +252,118 @@ static const CanIf_TxPduConfigType CanIf_TxPduConfigData
         .TxMetaDataEnable = FALSE,
         .UpConfirmTxPduMask = ((uint8)1u << (0u & 7u)),
         .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(0u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000300u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[0u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (1u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(1u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000301u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[1u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (2u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(2u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000302u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[2u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (3u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(3u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000303u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[3u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (4u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(4u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000350u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[4u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (5u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(5u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000351u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[5u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (6u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(6u >> 3u)],
+        .UpTxConfirmationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312 */
+        .CanIfTxPduCanId = 0x00000360u,
+        .CanIfTxPduCanIdMask = 0x000007FFu,
+        .CanIfTxPduCanIdType = CANIF_TX_STANDARD_CAN,
+        .CanIfTxPduDlc = 8u,
+        .CanIfTxPduHthId = CanIfConf_CanIfHthCfg_CanIfHthCfg_CAN0_BASIC,
+        .CanIfTxPduTruncation = TRUE,
+        .CanIfUpPduId = PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx,
+        .DynamicTxPduPtr = &CanIf_DynamicTxPdu_Partition0[6u],
+        .TxBufferIndex = 0u,
+        .TxMetaDataEnable = FALSE,
+        .UpConfirmTxPduMask = ((uint8)1u << (7u & 7u)),
+        .UpConfirmTxPduPtr = &CanIf_UpConfirmTxPdu_Partition0[(7u >> 3u)],
         .UpTxConfirmationApiIndex = 0u,
     },
     {
@@ -316,6 +447,66 @@ static const CanIf_RxPduConfigType CanIf_RxPduConfigData
         .UpRxIndicationApiIndex = 0u,
     },
     {
+        /* CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312 */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000200u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_NO_FD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312 */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000201u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_NO_FD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312 */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000202u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_NO_FD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312 */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000203u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_NO_FD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
+        /* CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312 */
+        .CanIfRxPduCanIdMask = 0x000007FFu,
+        .CanIfRxPduCanIdMasked = (0x00000250u & 0x000007FFu),
+        .CanIfRxPduCanIdType = CANIF_RX_STANDARD_NO_FD_CAN,
+        .CanIfRxPduDlc = 8u,
+        .CanIfRxPduForNM = FALSE,
+        .CanIfRxPduHrhId = CanIfConf_CanIfHrhCfg_CanIfHrhCfg_CAN0_BASIC,
+        .CanIfUpPduId = PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx,
+        .RxMetaDataEnable = FALSE,
+        .UpRxIndicationApiIndex = 0u,
+    },
+    {
         /* CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing */
         .CanIfRxPduCanIdMask = 0x000007FFu,
         .CanIfRxPduCanIdMasked = (0x00000119u & 0x000007FFu),
@@ -371,7 +562,7 @@ static const CanIf_CtrlPbConfigType CanIf_CtrlPbConfigData
         .RuntimePtr = &CanIf_CtrlRuntime_Partition0[0u],
         .RxPduIndexMaxExcluded = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing + 1u,
         .RxPduIndexMin = CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting,
-        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110 + 1u,
+        .TxPduIndexMaxExcluded = CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312 + 1u,
         .TxPduIndexMin = CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110,
     },
     {

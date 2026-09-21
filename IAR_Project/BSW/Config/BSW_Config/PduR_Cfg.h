@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_Cfg.h
  * @licence     : 
- * @date        : 2026-09-12 10:41:07
+ * @date        : 2026-09-13 22:58:05
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of PduR
  * @generator   : AUTOSAR classic Platform R23-11
@@ -86,7 +86,7 @@ extern "C" {
 
 #define PDUR_PDU_LENGTH_INVALID 0xffffu
 
-#define PDUR_PDU_ID_INVALID 0xffffu
+#define PDUR_PDU_ID_INVALID 0xffu
 
 /* ================================================ type definitions ================================================ */
 

@@ -22,7 +22,7 @@
  * @date        : 
  * @customer    : iSoft
  * @description : ComStack_Cfg.h
- * @generator   : AUTOSAR classic Platform 2026-09-13 17:06:53
+ * @generator   : AUTOSAR classic Platform 2026-09-20 23:21:31
  * @toolVersion : R23-11
  **********************************************************************************************************************/
 
@@ -34,9 +34,9 @@
 extern "C" {
 #endif
 /* ===================================================== macros ===================================================== */
-#define COMSTACK_PDUID_INVALID 0xFFFFu
+#define COMSTACK_PDUID_INVALID 0xFFu
 /* ================================================ type definitions ================================================ */
-typedef uint16 PduIdType;
+typedef uint8 PduIdType;
 typedef uint16 PduLengthType;
  
 /* ========================================== internal function definitions ========================================= */

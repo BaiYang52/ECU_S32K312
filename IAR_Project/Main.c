@@ -17,25 +17,28 @@
 volatile uint64_t Gpt0Ch0_Cnt = 0;
 
 /* Periodic task flags */
-volatile uint8_t Flag_1ms   = 0;
-volatile uint8_t Flag_5ms   = 0;
-volatile uint8_t Flag_10ms  = 0;
-volatile uint8_t Flag_20ms  = 0;
-volatile uint8_t Flag_50ms  = 0;
-volatile uint8_t Flag_100ms = 0;
+volatile uint8_t Flag_1ms    = 0;
+volatile uint8_t Flag_5ms    = 0;
+volatile uint8_t Flag_10ms   = 0;
+volatile uint8_t Flag_20ms   = 0;
+volatile uint8_t Flag_50ms   = 0;
+volatile uint8_t Flag_100ms  = 0;
+volatile uint8_t Flag_1000ms = 0;
+volatile uint8_t Flag_5000ms = 0;
 
 /* GPT notification callback: triggers every 1ms */
 void GptNotification_Pit0Ch0()
 {
 	Gpt0Ch0_Cnt++;
-
 	Flag_1ms = 1;
 
-	if ((Gpt0Ch0_Cnt % 5U)   == 0U) { Flag_5ms   = 1; }
-	if ((Gpt0Ch0_Cnt % 10U)  == 0U) { Flag_10ms  = 1; }
-	if ((Gpt0Ch0_Cnt % 20U)  == 0U) { Flag_20ms  = 1; }
-	if ((Gpt0Ch0_Cnt % 50U)  == 0U) { Flag_50ms  = 1; }
-	if ((Gpt0Ch0_Cnt % 100U) == 0U) { Flag_100ms = 1; }
+	if ((Gpt0Ch0_Cnt % 5U)    == 0U) { Flag_5ms    = 1; }
+	if ((Gpt0Ch0_Cnt % 10U)   == 0U) { Flag_10ms   = 1; }
+	if ((Gpt0Ch0_Cnt % 20U)   == 0U) { Flag_20ms   = 1; }
+	if ((Gpt0Ch0_Cnt % 50U)   == 0U) { Flag_50ms   = 1; }
+	if ((Gpt0Ch0_Cnt % 100U)  == 0U) { Flag_100ms  = 1; }
+	if ((Gpt0Ch0_Cnt % 1000U) == 0U) { Flag_1000ms = 1; }
+	if ((Gpt0Ch0_Cnt % 5000U) == 0U) { Flag_5000ms = 1; }
 }
 
 void Task_1ms(void)
@@ -85,6 +88,14 @@ void Task_5ms(void)
 void Task_10ms(void)
 {
 	/* TODO: 10ms task content */
+	static uint16_t i = 0;
+	static uint8_t u80x302_Mixed = 2;
+	i++;
+
+	if(i==1720)
+	{
+		Com_SendSignal(Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,&u80x302_Mixed);
+	}
 }
 
 void Task_20ms(void)
@@ -101,15 +112,31 @@ void Task_50ms(void)
 // uint8_t RxCounter = 0U;
 void Task_100ms(void)
 {
+	// TxCounter++;
+	// Com_SendSignal(ComConf_ComSignal_ComSignal_0_Tx,&TxCounter);
+	// Com_ReceiveSignal(ComConf_ComSignal_ComSignal_1_Rx,&RxCounter);
+}
+
+void Task_1000ms(void)
+{
 	/* Example: Toggle PB10 level, observable 200ms square wave (100ms half-period) */
+	static uint8_t u80x301_Event = 0;
 	static uint8_t led_state = 0;
 	led_state = !led_state;
 	Dio_WriteChannel(DioConf_DioChannel_DioChannel_PB10, led_state);
+	// u80x301_Event++;
+	// if(u80x301_Event>=10)
+	// {
+	// 	u80x301_Event = 10;
+	// }
+	u80x301_Event = (u80x301_Event>=10u)?10u:(u80x301_Event+1u);
+	Com_SendSignal(Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,&u80x301_Event);
+}
 
-	// TxCounter++;
-	// Com_SendSignal(ComConf_ComSignal_ComSignal_0_Tx,&TxCounter);
-
-	// Com_ReceiveSignal(ComConf_ComSignal_ComSignal_1_Rx,&RxCounter);
+void Task_5000ms(void)
+{
+	static uint8_t u80x302_Mixed = 1;
+	Com_SendSignal(Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,&u80x302_Mixed);
 }
 
 /* ============================ Main Scheduler ============================ */
@@ -145,6 +172,16 @@ void Scheduler_Main(void)
 		Flag_100ms = 0;
 		Task_100ms();
 	}
+	if (Flag_1000ms)
+	{
+		Flag_1000ms = 0;
+		Task_1000ms();
+	}
+	if (Flag_5000ms)
+	{
+		Flag_5000ms = 0;
+		Task_5000ms();
+	}
 }
 
 int main()
@@ -169,7 +206,6 @@ int main()
     Gpt_StartTimer(GptConf_GptChannelConfiguration_GptChannelConfiguration_0, 3.0E4);
     
     Dio_WriteChannel(DioConf_DioChannel_DioChannel_PB10, 0);
-    Gpt0Ch0_Cnt = 0U;
     
     Can_43_FLEXCAN_Init(&Can_43_FLEXCAN_Config);
 	// Can_43_FLEXCAN_SetControllerMode(Can_43_FLEXCANConf_CanController_CanController_0, CAN_CS_STOPPED);
@@ -182,13 +218,13 @@ int main()
 	Com_Init(&Com_Config);
 	ComM_Init(&ComM_Config);
 
-	ComM_CommunicationAllowed(ComMConf_ComMUser_ComMUser_0, TRUE);
-
 	Com_IpduGroupStart(ComIPduGroup_Tx,TRUE);
 	Com_IpduGroupStart(ComIPduGroup_Rx,TRUE);
 
 	ComM_RequestComMode(ComMConf_ComMUser_ComMUser_0, COMM_FULL_COMMUNICATION);
+	ComM_CommunicationAllowed(ComMConf_ComMUser_ComMUser_0, TRUE);
 
+	Gpt0Ch0_Cnt = 0U;
     while(1)
     {
         Scheduler_Main();

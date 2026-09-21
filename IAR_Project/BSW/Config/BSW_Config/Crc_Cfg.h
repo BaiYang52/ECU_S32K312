@@ -1,4 +1,3 @@
-
 /**
  * COPYRIGHT
  * ---------------------------------------------------------------------------------------------------------------------
@@ -17,32 +16,61 @@
  * FILE DESCRIPTION
  * ---------------------------------------------------------------------------------------------------------------------
  * @MCU         : S32K148
- * @file        : 
+ * @file        : Crc_Cfg.h
  * @licence     : 
- * @date        : 
+ * @date        : 2026-09-20 23:21:31
  * @customer    : iSoft
- * @description : ComStack_Cfg.h
- * @generator   : AUTOSAR classic Platform 2026-09-13 22:58:05
- * @toolVersion : R23-11
+ * @description : configuration parameter of Crc
+ * @generator   : AUTOSAR classic Platform R23-11
+ * @toolVersion : for_EasyXMen_V25.10_patch
  **********************************************************************************************************************/
 
-#ifndef COMSTACK_CFG_H_
-#define COMSTACK_CFG_H_
+#ifndef CRC_CFG_H_
+#define CRC_CFG_H_
 /* =================================================== inclusions =================================================== */
 #include "Std_Types.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
 /* ===================================================== macros ===================================================== */
-#define COMSTACK_PDUID_INVALID 0xFFu
-/* ================================================ type definitions ================================================ */
-typedef uint8 PduIdType;
-typedef uint16 PduLengthType;
- 
-/* ========================================== internal function definitions ========================================= */
- 
-/* =========================================== external data declarations =========================================== */
- 
+/* req<sws_crc_00040></sws_crc_00040> */
+/* calculation method of Crc mode */
+#define CRC_HARDWARE  0
+#define CRC_RUNTIME   1
+#define CRC_TABLE     2
+
+/* CRC8 (SAE J1850) algorithm calculation switch */
+#define CRC8_ALGORITHM              STD_ON
+
+/* CRC8 (2Fh polynomial) algorithm calculation switch */
+#define CRC8H2F_ALGORITHM           STD_OFF
+
+/* CRC16 (CCITT) algorithm calculation switch */
+#define CRC16_ALGORITHM             STD_OFF
+
+/* CRC16 (ARC) algorithm calculation switch */
+#define CRC16ARC_ALGORITHM             STD_OFF
+
+/* CRC32 (Ethernet) algorithm calculation switch */
+#define CRC32_ALGORITHM             STD_OFF
+
+/* CRC32 (0xF4ACFB13 polynomial) algorithm calculation switch */
+#define CRC32P4_ALGORITHM            STD_OFF
+
+/* CRC64 algorithm calculation switch */
+#define CRC64_ALGORITHM             STD_OFF
+
+
+/* Switch to select one of the available CRC 8-bit (SAE J1850) calculation methods
+ * req<ecuc_crc_00030>*/
+#define CRC8_MODE CRC_TABLE
+
+
+
+
+
+
+
 /* ========================================= external function declarations ========================================= */
 #ifdef __cplusplus
 }

@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanSM_Cfg.c
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-20 23:21:30
  * @customer    : iSoft
  * @description : Pre-compile parameter definition of CanSM
  * @generator   : AUTOSAR classic Platform R23-11

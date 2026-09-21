@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : Com_Cfg.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-14 21:31:25
  * @customer    : iSoft
  * @description : Pre-compile configuration parameter of Com
  * @generator   : AUTOSAR classic Platform R23-11
@@ -52,7 +52,7 @@
 
 #define COM_SIGNAL_INITVALUE_SUPPORT            STD_ON
 
-#define COM_SIGNAL_INVALID_VALUE_SUPPORT        STD_OFF
+#define COM_SIGNAL_INVALID_VALUE_SUPPORT        STD_ON
 
 #define COM_SIGNAL_SUBSTITUE_VALUE_SUPPORT      STD_OFF
 
@@ -64,16 +64,16 @@
 
 #define COM_MULITIVARIANT_SUPPORT               STD_OFF
 
-#define COM_MAX_IPDU_NUMBER                      5u
+#define COM_MAX_IPDU_NUMBER                      17u
 
-#define COM_MAX_RXIPDUGROUP_NUMBER                 2u
-#define COM_MAX_TXIPDUGROUP_NUMBER                 3u
+#define COM_MAX_RXIPDUGROUP_NUMBER                 7u
+#define COM_MAX_TXIPDUGROUP_NUMBER                 10u
 #define COM_MAX_IPDUGROUP_NUMBER                   2u
 
 #define COM_MAX_RXIPDU_CALLOUT_NUMBER   1u
 
-#define COM_MAX_RXIPDU_NUMBER                          2u
-#define COM_MAX_TXIPDU_NUMBER                          3u
+#define COM_MAX_RXIPDU_NUMBER                          7u
+#define COM_MAX_TXIPDU_NUMBER                          10u
 
 #define COM_MAX_SIGNALGROUPARRY_NUMBER  0u
 
@@ -83,9 +83,9 @@
 
 #define COM_MAX_TX_SIGNAL_8BIT_INVALIDVALUE_NUMBER   0u
 
-#define COM_MAX_RXSIGNAL_INVALID_NUMBER        0u
+#define COM_MAX_RXSIGNAL_INVALID_NUMBER        7u
 
-#define COM_MAX_TXSIGNAL_INVALID_NUMBER        0u
+#define COM_MAX_TXSIGNAL_INVALID_NUMBER        11u
 
 #define COM_MAX_RXGRPSIG_INVALID_NUMBER        0u
 
@@ -119,9 +119,9 @@
 #define COM_MAX_TXSIGNAL_TIMEOUT_NUMBER    0u
 #define COM_MAX_TXSIGGRP_TIMEOUT_NUMBER 0u
 
-#define COM_MAX_SIGANDGRPSIG_NUMBER                  14u
-#define COM_MAX_RXSIGNAL_NUMBER                        7u
-#define COM_MAX_TXSIGNAL_NUMBER                        7u
+#define COM_MAX_SIGANDGRPSIG_NUMBER                  32u
+#define COM_MAX_RXSIGNAL_NUMBER                        14u
+#define COM_MAX_TXSIGNAL_NUMBER                        18u
 
 #define COM_MAX_TXGROUPSIGNAL_NUMBER                   0u
 #define COM_MAX_RXGROUPSIGNAL_NUMBER                   0u
@@ -165,7 +165,7 @@
 #define COM_MAX_NUMBER_OF_MAIN_FUNCTION_RX            1u
 #define COM_MAX_NUMBER_OF_MAIN_FUNCTION_TX            1u
 
-#define COM_MAX_TX_MODE_TRUE_PERIOD_NUMBER   3u
+#define COM_MAX_TX_MODE_TRUE_PERIOD_NUMBER   8u
 
 #define COM_MAX_TX_MODE_FALSE_PERIOD_NUMBER    0u
 
@@ -173,11 +173,11 @@
 
 #define COM_MAX_TX_MODE_FALSE_DIRECT_NUMBER   0u
 
-#define COM_MAX_TX_MODE_TRUE_MIXED_NUMBER    0u
+#define COM_MAX_TX_MODE_TRUE_MIXED_NUMBER    1u
 
 #define COM_MAX_TX_MODE_FALSE_MIXED_NUMBER    0u
 
-#define COM_MAX_TX_MODE_TRUE_DIRECT_NOREPETITION_NUMBER   0u
+#define COM_MAX_TX_MODE_TRUE_DIRECT_NOREPETITION_NUMBER   1u
 
 #define COM_MAX_TX_MODE_FALSE_DIRECT_NOREPETITION_NUMBER   0u
 
@@ -194,6 +194,18 @@
 #define ComConf_ComIPdu_ComIPdu_0x114_Rx        ComIPdu_0x114_Rx
 #define ComConf_ComIPdu_ComIPdu_0x114_Tx        ComIPdu_0x114_Tx
 #define ComConf_ComIPdu_ComIPdu_0x115_Tx        ComIPdu_0x115_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx        CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComIPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx        CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComIPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx        CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComIPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx        CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComIPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx        CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComIPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx        CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx
 
 #define ComConf_ComSignal_ComSignal_0_Tx   ComSignal_0_Tx
 #define ComConf_ComSignal_ComSignal_1_Rx   ComSignal_1_Rx
@@ -209,6 +221,24 @@
 #define ComConf_ComSignal_ComSignal_Signal_4_Led_Sts_Tx   ComSignal_Signal_4_Led_Sts_Tx
 #define ComConf_ComSignal_ComSignal_Signal_5_Led_LiangDu_Tx   ComSignal_Signal_5_Led_LiangDu_Tx
 #define ComConf_ComSignal_ComSignal_Signal_6_Led_Red_Tx   ComSignal_Signal_6_Led_Red_Tx
+#define ComConf_ComSignal_Sig_Tx_UB_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx   Sig_Tx_UB_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_Data_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx   Sig_Tx_Data_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx   Sig_Tx_EventStatus_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx   Sig_Tx_MixedData_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_RollingCounter_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx   Sig_Tx_RollingCounter_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_CounterData_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx   Sig_Tx_CounterData_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_PN17_Data_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx   Sig_Tx_PN17_Data_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_PN29_Data_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx   Sig_Tx_PN29_Data_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_E2E_CRC_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx   Sig_Tx_E2E_CRC_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_E2E_Counter_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx   Sig_Tx_E2E_Counter_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Tx_E2E_Data_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx   Sig_Tx_E2E_Data_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx
+#define ComConf_ComSignal_Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx   Sig_Rx_UB_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx   Sig_Rx_Data_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx   Sig_Rx_RollingCounter_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx   Sig_Rx_CounterData_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx   Sig_Rx_EventStatus_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx   Sig_Rx_PN17_Data_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx
+#define ComConf_ComSignal_Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx   Sig_Rx_MixedData_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx
 
 /* PRQA S 0791 -- */
 

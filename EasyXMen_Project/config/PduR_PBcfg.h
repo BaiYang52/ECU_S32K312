@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:53
+ * @date        : 2026-09-20 23:21:31
  * @customer    : iSoft
  * @description : Post-Build configuration parameter of IpduM
  * @generator   : AUTOSAR classic Platform R23-11
@@ -40,8 +40,8 @@ extern "C" {
 #define PDUR_NUMBER_OF_QUEUES               0u
 #define PDUR_NUM_OF_QUEUES_DEPTH_SUM        0u
 
-#define PDUR_SRC_PDU_SUM                    6u
-#define PDUR_DEST_PDU_SUM                   6u
+#define PDUR_SRC_PDU_SUM                    18u
+#define PDUR_DEST_PDU_SUM                   18u
 
 #define PDUR_ROUTING_PATH_GROUP_SUM         0u
 
@@ -55,6 +55,18 @@ extern "C" {
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_0x114_SignalRouting_Rx      3u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_0x114_SignalRouting_Tx      4u
 #define PduRConf_PduRSrcPdu_PduRSrcPdu_0x115_SignalRouting_Tx      5u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx      6u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx      7u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx      8u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx      9u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx      10u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx      11u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx      12u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx      13u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx      14u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx      15u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx      16u
+#define PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx      17u
 
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x110_Tx      0u
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x12a_Rx      1u
@@ -62,6 +74,18 @@ extern "C" {
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x114_SignalRouting_Rx      3u
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x114_SignalRouting_Tx      4u
 #define PduRConf_PduRDestPdu_PduRDestPdu_0x115_SignalRouting_Tx      5u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx      6u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx      7u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx      8u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx      9u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx      10u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx      11u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx      12u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx      13u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx      14u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx      15u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx      16u
+#define PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx      17u
 
 /* PRQA S 0793, 0791 -- */ /* VL_PduR_0793, VL_PduR_0791 */
 

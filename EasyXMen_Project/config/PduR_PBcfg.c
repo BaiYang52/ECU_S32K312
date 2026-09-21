@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : PduR_PBcfg.c
  * @licence     : 
- * @date        : 2026-09-13 17:06:53
+ * @date        : 2026-09-20 23:21:31
  * @customer    : iSoft
  * @description : Configuration parameter of PduR
  * @generator   : AUTOSAR classic Platform R23-11
@@ -104,6 +104,126 @@ static const PduR_DestPduType PduR_DestPduConfigData[PDUR_DEST_PDU_SUM] =
         PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
         PDUR_DIRECT,  /* PduRDestPduDataProvision */
     },
+    {
+        /* 6 PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 7 PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 8 PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 9 PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 10 PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 11 PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 12 PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        PDUR_CANIF,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx,    /* PduRSrcPduRef */
+        CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_TX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 13 PduRDestPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        PDUR_COM,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx,    /* PduRSrcPduRef */
+        ComConf_ComIPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 14 PduRDestPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        PDUR_COM,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx,    /* PduRSrcPduRef */
+        ComConf_ComIPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 15 PduRDestPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        PDUR_COM,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx,    /* PduRSrcPduRef */
+        ComConf_ComIPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 16 PduRDestPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        PDUR_COM,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx,    /* PduRSrcPduRef */
+        ComConf_ComIPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
+    {
+        /* 17 PduRDestPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+        PDUR_COM,    /* BswModuleIndex */
+        TRUE,  /* TransmissionConfirmation */
+        PduRConf_PduRSrcPdu_PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx,    /* PduRSrcPduRef */
+        ComConf_ComIPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx,  /* PduRDestModulePduIndex */
+        8u,    /* ConfiguredLength */
+        PDUR_ROUTE_IF_RX_NOBUFFERED,    /* RouteType */
+        PDUR_DIRECT,  /* PduRDestPduDataProvision */
+    },
 };
 
 #define PDUR_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -150,6 +270,78 @@ static const PduR_SrcPduType PduR_SrcPduConfigData[PDUR_SRC_PDU_SUM] =
         PDUR_COM,    /* BswModuleIndex */
         ComConf_ComIPdu_ComIPdu_0x115_Tx,    /* PduRSrcModulePduIndex */
     },
+    {
+        /* 6 PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 7 PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 8 PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 9 PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 10 PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 11 PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 12 PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_COM,    /* BswModuleIndex */
+        ComConf_ComIPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 13 PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 14 PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 15 PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 16 PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312,    /* PduRSrcModulePduIndex */
+    },
+    {
+        /* 17 PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+        TRUE, /* PduRSrcPduUpTxConf */
+        PDUR_CANIF,    /* BswModuleIndex */
+        CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312,    /* PduRSrcModulePduIndex */
+    },
 };
 
 #define PDUR_STOP_SEC_CONFIG_DATA_UNSPECIFIED
@@ -166,6 +358,18 @@ static const PduIdType PduR_PduRDestPduIdRef[] =
     PduRConf_PduRDestPdu_PduRDestPdu_0x114_SignalRouting_Rx,    /* 3 PduRSrcPdu_0x114_SignalRouting_Rx */
     PduRConf_PduRDestPdu_PduRDestPdu_0x114_SignalRouting_Tx,    /* 4 PduRSrcPdu_0x114_SignalRouting_Tx */
     PduRConf_PduRDestPdu_PduRDestPdu_0x115_SignalRouting_Tx,    /* 5 PduRSrcPdu_0x115_SignalRouting_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx,    /* 6 PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx,    /* 7 PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx,    /* 8 PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx,    /* 9 PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx,    /* 10 PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx,    /* 11 PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx,    /* 12 PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx,    /* 13 PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx,    /* 14 PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx,    /* 15 PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx,    /* 16 PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+    PduRConf_PduRDestPdu_PduRDestPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx,    /* 17 PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
 };
 
 #define PDUR_STOP_SEC_CONFIG_DATA_16
@@ -212,6 +416,78 @@ static const PduR_RoutingPathType PduR_RoutingPathConfigData0[PDUR_SRC_PDU_SUM] 
         1u,    /* PduDestSum */
         FALSE,  /* TpRoute */
         &PduR_PduRDestPduIdRef[5u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 6 PduRSrcPdu_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[6u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 7 PduRSrcPdu_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[7u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 8 PduRSrcPdu_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[8u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 9 PduRSrcPdu_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[9u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 10 PduRSrcPdu_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[10u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 11 PduRSrcPdu_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[11u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 12 PduRSrcPdu_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312_Tx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[12u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 13 PduRSrcPdu_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[13u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 14 PduRSrcPdu_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[14u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 15 PduRSrcPdu_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[15u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 16 PduRSrcPdu_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[16u],    /* PduRDestPduIdRef */
+    },
+    {
+        /* 17 PduRSrcPdu_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312_Rx */
+        1u,    /* PduDestSum */
+        FALSE,  /* TpRoute */
+        &PduR_PduRDestPduIdRef[17u],    /* PduRDestPduIdRef */
     },
 };
 static const PduR_RoutingTableType PduR_RoutingTableConfigData[1u] =

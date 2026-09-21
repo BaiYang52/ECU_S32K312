@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_CfgTypes.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-20 23:21:30
  * @customer    : iSoft
  * @description : Configuration type for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -44,6 +44,7 @@ extern "C" {
 /* ===================================================== macros ===================================================== */
 #define CANIF_CONTROLLER_DRV_ID(ctrlIndex) CanIf_CtrlCfgData[(ctrlIndex)].CanDriverId
 
+#define CANIF_DYNAMICTXPDU_NUMBER(partitionIndex) CanIf_DynamicTxPdu[(partitionIndex)].DynamicTxPduNumber
 
 
 #define CANIF_UPCONFIRMTXPDU_NUMBER(partitionIndex) CanIf_UpConfirmTxPdu[(partitionIndex)].UpConfirmTxPduNumber
@@ -294,6 +295,7 @@ extern const ApplicationType CanIf_PartitionId2Index[CANIF_PARTITION_ID2INDEX_NU
 
 extern CanIf_RuntimeType* const CanIf_Runtime[CANIF_PARTITION_NUMBER];
 
+extern const CanIf_DynamicTxPduPartitionType CanIf_DynamicTxPdu[CANIF_PARTITION_NUMBER];
 
 
 extern const CanIf_UpConfirmTxPduPartitionType CanIf_UpConfirmTxPdu[CANIF_PARTITION_NUMBER];

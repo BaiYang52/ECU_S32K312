@@ -18,7 +18,7 @@
  * @MCU         : S32K148
  * @file        : CanIf_Cfg.h
  * @licence     : 
- * @date        : 2026-09-13 17:06:52
+ * @date        : 2026-09-20 23:21:30
  * @customer    : iSoft
  * @description : Configuration data for CanIf
  * @generator   : AUTOSAR classic Platform R23-11
@@ -126,7 +126,7 @@ extern "C" {
 
 #define CANIF_PARTITION_USED STD_OFF
 
-#define CANIF_PDUID_INVALID ((PduIdType)CANIF_UNUSED_UINT16)
+#define CANIF_PDUID_INVALID ((PduIdType)CANIF_UNUSED_UINT8)
 
 #define CANIF_PRIVATE_DLC_CHECK STD_ON
 
@@ -142,7 +142,7 @@ extern "C" {
 
 #define CANIF_RX_STANDARD_FD_CAN_SUPPORT STD_OFF
 
-#define CANIF_RX_STANDARD_NO_FD_CAN_SUPPORT STD_OFF
+#define CANIF_RX_STANDARD_NO_FD_CAN_SUPPORT STD_ON
 
 #define CANIF_SOFTWARE_FILTER_TYPE CANIF_SOFTWARE_FILTER_LINEAR
 
@@ -177,16 +177,28 @@ extern "C" {
 
 #define CANIF_CANTRCVID2INDEX_NUMBER 0u
 
-#define CANIF_TXPDU_NUMBER 4u
+#define CANIF_TXPDU_NUMBER 11u
 #define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN0_0x110 0u
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x119_Routing 1u
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x114_SignalRouting 2u
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x115_SignalRouting 3u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x300_Cyclic_CONTROLLER_0_S32K312 1u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x301_Event_CONTROLLER_0_S32K312 2u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x302_Mixed_CONTROLLER_0_S32K312 3u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x303_Cyclic_Counter_CONTROLLER_0_S32K312 4u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x350_Cyclic_PN17_CONTROLLER_0_S32K312 5u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x351_Cyclic_PN29_CONTROLLER_0_S32K312 6u
+#define CanIfConf_CanIfTxPduCfg_TX_PDU_CAN0_Tx_0x360_E2E_P01_CONTROLLER_0_S32K312 7u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x119_Routing 8u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x114_SignalRouting 9u
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_CAN1_0x115_SignalRouting 10u
 
-#define CANIF_RXPDU_NUMBER 3u
+#define CANIF_RXPDU_NUMBER 8u
 #define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x114_SignalRouting 0u
 #define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x12a 1u
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing 2u
+#define CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x200_Cyclic_CONTROLLER_0_S32K312 2u
+#define CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x201_Event_CONTROLLER_0_S32K312 3u
+#define CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x202_Mixed_CONTROLLER_0_S32K312 4u
+#define CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x203_Cyclic_Counter_CONTROLLER_0_S32K312 5u
+#define CanIfConf_CanIfRxPduCfg_RX_PDU_CAN0_Rx_0x250_Cyclic_PN17_CONTROLLER_0_S32K312 6u
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_CAN0_0x119_Routing 7u
 
 /* ================================================ type definitions ================================================ */
 
